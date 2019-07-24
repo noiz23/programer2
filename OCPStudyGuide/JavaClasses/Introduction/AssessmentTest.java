@@ -1,5 +1,7 @@
 import Question1.*;
 import Question2.*;
+import Question3.*;
+import Question4.*;
 
 public class AssessmentTest{
 
@@ -14,8 +16,14 @@ public class AssessmentTest{
                         break;
                 case 2: //Question 2 has a error(Class Message define method abstrat and final.).
                         //Executes MessageOK:
-                        Message.main("");
-                        //MessageOK.main("");
+                        //Message.main("");
+                        MessageOK.main("");
+                        break;
+                case 3://Question 3 
+                        System.out.println("Class Never Compiles!.");
+                        break;
+                case 4://Question 4
+                        Box.main("");
                         break;
             
             
