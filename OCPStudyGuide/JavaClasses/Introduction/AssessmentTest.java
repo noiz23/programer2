@@ -2,6 +2,7 @@ import Question1.*;
 import Question2.*;
 import Question3.*;
 import Question4.*;
+import Question5.*;
 
 public class AssessmentTest{
 
@@ -24,6 +25,9 @@ public class AssessmentTest{
                         break;
                 case 4://Question 4
                         Box.main("");
+                        break;
+                case 5://Question 5
+                        Question5.main("");
                         break;
             
             
