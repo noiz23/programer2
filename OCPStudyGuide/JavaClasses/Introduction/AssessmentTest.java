@@ -4,6 +4,8 @@ import Question3.*;
 import Question4.*;
 import Question5.*;
 import Question10.*;
+import Question15.*;
+import Question16.*;
 
 public class AssessmentTest{
 
@@ -35,6 +37,15 @@ public class AssessmentTest{
                         break;
                 case 11://Question 11:
                         System.out.println("Question 11: No compila el metodo dado. Faltan imports (MagicClassOK.java)");
+                        break;
+                case 14://Question 14:
+                        System.out.println("Question 141: Codigo dado tiene mas de 3 errores.");
+                        break;
+                case 15://Question 15:
+                        VisitPark.main("");
+                        break;
+                case 16://Question 16:
+                        Q16.main("");
                         break;
             
             }
