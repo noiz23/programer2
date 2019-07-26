@@ -7,7 +7,7 @@ Analisis -> Compilacion
 10 C    ->  F
 11 G    ->  G
 12 E    -> *
-13 F    ->
+13 F    -> F
 14 C    ->
 15 A    ->
 16 B    ->

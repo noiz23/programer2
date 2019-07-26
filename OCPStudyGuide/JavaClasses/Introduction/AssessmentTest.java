@@ -4,6 +4,7 @@ import Question3.*;
 import Question4.*;
 import Question5.*;
 import Question10.*;
+import Question13.*;
 
 public class AssessmentTest{
 
@@ -36,7 +37,10 @@ public class AssessmentTest{
                 case 11://Question 11:
                         System.out.println("Question 11: No compila el metodo dado. Faltan imports (MagicClassOK.java)");
                         break;
-            
+                case 13://Question 13:
+                        System.out.println("Question 13: Code compiles only if add \"import java.io.Console;\" (ConsoleClass.java)");
+                        ConsoleClass.main("");
+                        break;
             }
         }else{
             System.out.println("Mucho pirobo no!!!!!!!!!!!!!!!!!!!!!!!!!!!");
