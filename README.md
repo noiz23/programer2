@@ -17,3 +17,53 @@ Analisis -> Compilacion
 20 C    ->
 
 * Sin codigo a compilar
+
+Notes:
+    Anonymous inner classes are a special type of local inner class that does not have a name.
+    Anonymous inner classes are required to extend exactly one class by name or implement
+    exactly one interface. Static nested classes can exist without an instance of the outer class.
+
+    Be able to identify the output of code using instanceof. instanceof checks if the left
+    operand is the same class or interface (or a subclass) as the right operand. If the left oper-
+    and is null, the result is false. If the two operands are not in the same class hierarchy, the
+    code will not compile.
+    
+    Recognize correct and incorrect implementations of equals(), hashCode(), and
+    toString(). public boolean equals(Object obj) returns false when called with null or
+    a class of the wrong type. public int hashCode() returns a number calculated with all or
+    some of the instance variables used in equals(). public String toString() returns any
+    String.
+    
+    For enum types, can have instance variables. The constructors are required to be private or package private.
+    
+    The Java compiler allows methods to be overridden in subclasses if certain rules are followed: a method must have
+    the same signature, be at least as accessible as the parent method, must not declare any new
+    or broader exceptions, and must use covariant return types. Methods are overloaded if they
+    have the same method name but a different argument list. 
+    
+Review Questions
+
+Response            Compiled
+1  A
+2  A
+3  B
+4  C
+5  B,D
+6  B
+7  E
+8  C
+9  B
+10 C
+11 D
+12 C
+13 B
+14 F
+15 B,E
+16 A
+17 B
+18 G
+19 A,C,D
+20 C
+21 E
+    
+
