@@ -41,29 +41,32 @@ Notes:
     or broader exceptions, and must use covariant return types. Methods are overloaded if they
     have the same method name but a different argument list. 
     
+    ==      --> referencias
+    equals  --> contenido
+    
 Review Questions
 
 Response            Compiled
-1  A
-2  A
-3  B
-4  C
-5  B,D
-6  B
-7  E
-8  C
-9  B
-10 C
-11 D
-12 C
-13 B
-14 F
-15 B,E
-16 A
-17 B
-18 G
-19 A,C,D
-20 C
-21 E
-    
+1  A                    A
+2  A                    A
+3  B                    C
+4  C                    D
+5  B,D                  
+6  B                    
+7  E                    
+8  C                    
+9  B                    
+10 C                    
+11 D                    
+12 C                    
+13 B                    
+14 F                    
+15 B,E                  
+16 A                    
+17 B                    
+18 G                    
+19 A,C,D                
+20 C                    
+21 E                    
+
 
