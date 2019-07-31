@@ -7,6 +7,7 @@ import Question10.*;
 import Question13.*;
 import Question15.*;
 import Question16.*;
+import Question18.*;
 
 public class AssessmentTest{
 
@@ -52,7 +53,9 @@ public class AssessmentTest{
                 case 16://Question 16:
                         Q16.main("");
                         break;
-            
+                case 18://Question 18: Opciones C y D correctas
+                        Q18.main("");
+                        break;
             }
         }else{
             System.out.println("Mucho pirobo no!!!!!!!!!!!!!!!!!!!!!!!!!!!");
