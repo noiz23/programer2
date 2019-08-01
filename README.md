@@ -50,10 +50,10 @@ Response            Compiled
 1  A                    A
 2  A                    A
 3  B                    C
-4  C                    D
-5  B,D                  
-6  B                    
-7  E                    
+4  C                    ?
+5  B,D                  ?
+6  B                    B
+7  E                    E
 8  C                    
 9  B                    
 10 C                    
