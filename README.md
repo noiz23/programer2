@@ -69,4 +69,10 @@ Response            Compiled
 20 C                    C
 21 E                    A,C,E
 
+--------------------------------------------- CH 2---------------------
+    - An interface may extend another interface, and in doing so it inherits all of the abstract methods.
+    - In an interface, the compiler automatically adds public to all interface methods and abstract to all non‐static and non‐default methods
+    - 
+
+---------- Purpose of an Interface
 
