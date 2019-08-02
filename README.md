@@ -54,19 +54,19 @@ Response            Compiled
 5  B,D                  ?
 6  B                    B
 7  E                    E
-8  C                    
-9  B                    
-10 C                    
-11 D                    
-12 C                    
-13 B                    
-14 F                    
-15 B,E                  
-16 A                    
-17 B                    
-18 G                    
-19 A,C,D                
-20 C                    
-21 E                    
+8  C                    C
+9  B                    B
+10 C                    C
+11 D                    D
+12 C                    E
+13 B                    B
+14 F                    E
+15 B,E                  ?
+16 A                    E
+17 B                    B
+18 G                    G
+19 A,C,D                A,C
+20 C                    C
+21 E                    A,C,E
 
 
