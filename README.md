@@ -41,6 +41,21 @@ Notes:
     or broader exceptions, and must use covariant return types. Methods are overloaded if they
     have the same method name but a different argument list. 
     
+    The relevant rule is that two objects that return true for equals() objects must
+    return the same hash code.
+    
+    The ordinal() method of an enum returns its corresponding int value. Like arrays,
+    enums are zero based. Remember that the index of an enum may change when you recompile
+    the code and should not be used for comparison.
+    
+    Inner classes are not allowed to contain static methods
+    or static variables. Only nested static classes are permitted to contain statics.
+    
+    
+
+
+
+    
     ==      --> referencias
     equals  --> contenido
     
