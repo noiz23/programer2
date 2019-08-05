@@ -90,4 +90,9 @@ Response            Compiled
     - 
 
 ---------- Purpose of an Interface
+    - Class: can implemnts n interfaces. Can extends only 1 class.
+    - Interfaces: Can extends n interfaces. Can't implements interfaces or classess.
 
+---- Introducing Functional Programming pag 52
+    - Java defines a functional interface as an interface that contains a single abstract method.
+    - 
