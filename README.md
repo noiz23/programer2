@@ -34,7 +34,7 @@ Notes:
     some of the instance variables used in equals(). public String toString() returns any
     String.
     
-    For enum types, can have instance variables. The constructors are required to be private or package private.
+    Enum types, can have instance variables. The constructors are required to be private or package private.
     
     The Java compiler allows methods to be overridden in subclasses if certain rules are followed: a method must have
     the same signature, be at least as accessible as the parent method, must not declare any new
@@ -51,48 +51,57 @@ Notes:
     Inner classes are not allowed to contain static methods
     or static variables. Only nested static classes are permitted to contain statics.
     
-    
-
-
-
-    
     ==      --> referencias
     equals  --> contenido
     
-Review Questions
-
-Response            Compiled
-1  A                    A
-2  A                    A
-3  B                    C
-4  C                    ?
-5  B,D                  ?
-6  B                    B
-7  E                    E
-8  C                    C
-9  B                    B
-10 C                    C
-11 D                    D
-12 C                    E
-13 B                    B
-14 F                    E
-15 B,E                  ?
-16 A                    E
-17 B                    B
-18 G                    G
-19 A,C,D                A,C
-20 C                    C
-21 E                    A,C,E
-
 --------------------------------------------- CH 2---------------------
     - An interface may extend another interface, and in doing so it inherits all of the abstract methods.
     - In an interface, the compiler automatically adds public to all interface methods and abstract to all non‐static and non‐default methods
-    - 
 
 ---------- Purpose of an Interface
     - Class: can implemnts n interfaces. Can extends only 1 class.
     - Interfaces: Can extends n interfaces. Can't implements interfaces or classess.
 
----- Introducing Functional Programming pag 52
-    - Java defines a functional interface as an interface that contains a single abstract method.
-    - 
+---------- Introducing Functional Programming
+    - Java defines a functional interface as an                     interface that contains a single abstract   method.
+    - Remember that the parentheses are optional only when there is one parameter and it doesn’t have a type declared.
+    - The data types for the input parameters of a lambda expression are optional. When one parameter has a data type listed, though, all parameters must provide a data type.
+    - A Java object may be accessed using a
+    reference with the same type as the object, a reference that is a superclass of the object, or
+    a reference that defines an interface that the object implements, either directly or through
+    a superclass. Furthermore, a cast is not required if the object is being reassigned to a
+    supertype or interface of the object.
+    -   1. The type of the object determines which properties exist within the object in memory.
+        2.The type of the reference to the object determines which methods and variables are
+        accessible to the Java program.
+    
+    Here are some basic rules to keep in mind when casting variables:
+        1.Casting an object from a subclass to a superclass doesn’t require an explicit cast.
+        2.Casting an object from a superclass to a subclass requires an explicit cast.
+        3.The compiler will not allow casts to unrelated types.
+        4.Even when the code compiles without issue, an exception may be thrown at runtime if
+          the object being cast is not actually an instance of that class.
+
+---------- Understanding Design Principles
+    - A design principle is an established idea or best practice that facilitates the software design
+      process. 
+--------- Creating JavaBeans
+    - Although boolean values use is to start their getter method, the same does not apply to instances of the wrap-
+      per Boolean class, which use get.
+--------- Applying the Is‐a Relationship
+    - The is‐a relationship is also known as the inheritance test.
+      The fundamental result of the is‐a principle is that if A is‐a B, then any instance of A can
+      be treated like an instance of B. This holds true for a child that is a subclass of any parent,
+      be it a direct subclass or a distant child.
+--------- Applying the Has‐a Relationship
+    - The has‐a relationship is also known as the object composition test.
+  
+
+
+    
+
+
+
+    
+
+
