@@ -61,6 +61,7 @@ Notes:
 ---------- Purpose of an Interface
     - Class: can implemnts n interfaces. Can extends only 1 class.
     - Interfaces: Can extends n interfaces. Can't implements interfaces or classess.
+    - Interfaces may extend other interfaces, although they may not extend a class and vice versa. Interfaces may also contain public static final constant values,     public static methods, and public default methods. All members of an interface are public.
 
 ---------- Introducing Functional Programming
     - Java defines a functional interface as an                     interface that contains a single abstract   method.
@@ -95,13 +96,17 @@ Notes:
       be it a direct subclass or a distant child.
 --------- Applying the Has‐a Relationship
     - The has‐a relationship is also known as the object composition test.
-  
+--------- Singleton Pattern
+    - The singleton pattern is a creational pattern focused on creating only one instance of an object in memory within an application, sharable by all classes and threads within the application.
+    - All constructors in a singleton class are marked private, which ensures that no other class iscapable of instantiating another version of the class.
+    - The singleton class is effectively final -> all constructors in a singleton class are marked private.
+    - Singletons are used in situations where we need access to a single set of data throughout an application. For example, application configuration data and reusable  data caches are commonly implemented using singletons. Singletons may also be used to coordinate access to shared resources, such as coordinating write access to a file.
+--------Immutable Objects pattern*
+    - The immutable object pattern is a creational pattern based on the idea of creating objects whose state does not change after they are created and can be easily    shared across multiple classes. 
+    - 
+-------Review Questions
+    - A design pattern is focused on solving a specific commonly occurring problem. 
+    - 
 
-
-    
-
-
-
-    
-
+    1. A,E 
 
