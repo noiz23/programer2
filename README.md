@@ -54,7 +54,7 @@ Notes:
     ==      --> referencias
     equals  --> contenido
     
---------------------------------------------- CH 2---------------------
+=================================================== CH 2 =========================
     - An interface may extend another interface, and in doing so it inherits all of the abstract methods.
     - In an interface, the compiler automatically adds public to all interface methods and abstract to all non‐static and non‐default methods
 
@@ -103,10 +103,15 @@ Notes:
     - Singletons are used in situations where we need access to a single set of data throughout an application. For example, application configuration data and reusable  data caches are commonly implemented using singletons. Singletons may also be used to coordinate access to shared resources, such as coordinating write access to a file.
 --------Immutable Objects pattern*
     - The immutable object pattern is a creational pattern based on the idea of creating objects whose state does not change after they are created and can be easily    shared across multiple classes. 
-    - 
+    - Static methods are not part of the inmutable object pattern y getter methods are not required to be marked synchronized.
 -------Review Questions
     - A design pattern is focused on solving a specific commonly occurring problem. 
-    - 
+    - Object composition tends to promote greater code reuse than inheritance.
+    - Object composition requires a class variable to be declared public or accessible from a public method to be used by a class in a different package.
+    - Caching data is one of the most common uses of the singleton pattern.
 
-    1. A,E 
+    =================================================== CH 3 =========================
+    - An ArrayList can't contain primitives.
+    
+
 
