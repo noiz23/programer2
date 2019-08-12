@@ -112,6 +112,20 @@ Notes:
 
     =================================================== CH 3 =========================
     - An ArrayList can't contain primitives.
+    - Collections written with-out generics are also known as raw collections.
+    * To review, the lesson is to be careful when you see code that doesn’t use generics. Pay spe-cial attention to looking for compiler warnings, ClassCastException s,and compiler errors.
     
+------- Unbounded Wildcards
+    - An unbounded wildcard represents any data type. You use ? when you want to specify that any type is OK with you. 
+        Ex: List<?> l = new ArrayList<String>();
+-------Upper-Bounded Wildcards
+    - A generic type can’t just use a subclass:
+        ArrayList<Number> list = new ArrayList<Integer>(); // DOES NOT COMPILE
+    - Upper bounds are like anonymous classes in that they use extends regardless of whether we are working with a class or an interface.
+
+
+
+
+
 
 
