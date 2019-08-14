@@ -153,6 +153,30 @@ Notes:
     - E set(int index, E e)  Replaces element at index and returns original
 -----Using the Set Interface
     - You use a set when you don’t want to allow duplicate entries.
+    - A HashSet stores its elements in a hash table. This means that it uses the hashCode() method of the objects to retrieve them more efficiently. 
+    - A TreeSet stores its elements in a sorted tree structure. The main benefit is that the set is always in sorted order.
+-----Using the Queue Interface
+    - You use a queue when elements are added and removed in a specific order.
+    - The main benefit of a LinkedList is that it implements both the List and Queue interfaces. The tradeoff is that it isn’t as efficient as a “pure” queue.
+    - An ArrayDeque is a “pure” double-ended queue. It was introduced in Java 6, and it stores its elements in a resizable array. The main benefit of an ArrayDeque is that it is more efficient than a LinkedList.
+    - A queue is like a line of people. You get on in the back and ofin the front. A stack is like a stack of plates. You put the plate on the top and take it off the top. Since the stack is implemented using ArrayDeque, we refer to “top” and “front” interchangeably.
+-----Map
+    - You use a map when you want to identify values by a key.
+    - TreeSet cannot contain null elements. It also means that TreeMap cannot contain null keys. Null values are OK.
+    - TreeMap—no null keys
+    - Hashtable—no null keys or values
+    - TreeSet—no null elements
+    - ArrayDeque—no null elements
+-----Comparable
+    - 
+
+
+
+
+
+
+
+
 
 
 
