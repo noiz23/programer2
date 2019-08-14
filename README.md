@@ -122,6 +122,49 @@ Notes:
     - A generic type can’t just use a subclass:
         ArrayList<Number> list = new ArrayList<Integer>(); // DOES NOT COMPILE
     - Upper bounds are like anonymous classes in that they use extends regardless of whether we are working with a class or an interface.
+    - List<? extends Number> list = new ArrayList<Integer>(); -> The upper-bounded wildcard says that any class that extends Number or Number itself can be used as the formal parameter type:
+************************ Buscar info Lower-Bounded Wildcards y Upper-Bounded Wildcards
+
+-------Using Lists, Sets, Maps, and Queues
+    -A collection is a group of objects contained in a single object. The Java Collections Framework is a set of classes in java.util for storing collections. There are four main interfaces in the Java Collections Framework:
+
+    -   List: A list is an ordered collection of elements that allows duplicate entries. Elements in a list can be accessed by an int index.
+    -   Set: A set is a collection that does not allow duplicate entries.
+    -   Queue: A queue is a collection that orders its elements in a specific order for processing.
+        A typical queue processes its elements in a first-in, first-out order, but other orderings
+        are possible.
+    -   Map: A map is a collection that maps keys to values, with no duplicate keys allowed. The elements in a map are key/value pairs.
+
+    - The add() method inserts a new element into the Collection and returns whether it was successful. The method signature is: boolean add(E element)
+    - A List allows duplicates. In a Set does not allow duplicates, so that Java returns false from the add() method.
+    - The remove() method removes a single matching value in the Collection and returns whether it was successful. The method signature is boolean remove(Object object).
+      Remember that there are overloaded remove() methods. One takes the element to remove. The other takes the index of the element to remove. The latter is being called here.
+------Using the List Interface
+    - You use a list when you want an ordered collection that can contain duplicate entries.
+    - A LinkedList is special because it implements both List and Queue. The main benefits of a LinkedList are that you can access, add, and remove from the beginning and end of the list in constant time. The tradeoff is that dealing with an arbitrary index takes linear time. This makes a LinkedList a good choice when you’ll be using it as Queue. 
+    - A Stack is a data structure where you add and remove elements from the top of the stack.  If you need a stack, use an ArrayDeque instead.
+-----Methods List Interface:
+    - boolean add(E e)	It is used to append the specified element at the end of a list.
+    - void add(int index, E element)	It is used to insert the specified element at the specified position in a list.
+    - E get(int index)	It is used to fetch the element from the particular position of the list.
+    - int lastIndexOf(Object o)	It is used to return the index in this list of the last occurrence of the specified element, or -1 if the list does not contain this                                        element.
+    - int lastIndexOf(Object o) Returns last matching index or -1 if not found
+    - E remove(int index)	It is used to remove the element present at the specified position in the list.
+    - E set(int index, E e)  Replaces element at index and returns original
+-----Using the Set Interface
+    - You use a set when you don’t want to allow duplicate entries.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

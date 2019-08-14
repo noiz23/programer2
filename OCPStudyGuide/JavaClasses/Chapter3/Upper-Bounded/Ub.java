@@ -9,7 +9,7 @@ public class Ub{
         //birds.add(new Sparrow());
         
         List<? extends Number> list = new ArrayList<Integer>();
-        Integer a = 0;
+        Number a = 0;
         list.add(a);
     }
 }
