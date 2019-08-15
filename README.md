@@ -123,9 +123,16 @@ Notes:
         ArrayList<Number> list = new ArrayList<Integer>(); // DOES NOT COMPILE
     - Upper bounds are like anonymous classes in that they use extends regardless of whether we are working with a class or an interface.
     - List<? extends Number> list = new ArrayList<Integer>(); -> The upper-bounded wildcard says that any class that extends Number or Number itself can be used as the formal parameter type:
-************************ Buscar info Lower-Bounded Wildcards y Upper-Bounded Wildcards
+************************ Buscar info Lower-Bounded Wildcards y Upper-Bounded Wildcards, Comparator vs. Comparable, New Java 8 Map APIs
+
+    - <? extends Object> is an upper bound that means any type that is Object or extends it. 
+    - <? extends MyInterface> means any type that implements MyInterface. 
+    - <? super Number> is a lower bound that means any type that is Number or a superclass. A compiler error results from code that attempts to add or remove an item in a list with an unbounded or upper-bounded wildcard.
+
 
 -------Using Lists, Sets, Maps, and Queues
+    - The Java Collections Framework includes four main types of data structures: lists, sets,queues, and maps. The Collection interface is the parent interface of List, Set, and Queue. The Map interface does not extend Collection. You need to recognize the following:
+
     -A collection is a group of objects contained in a single object. The Java Collections Framework is a set of classes in java.util for storing collections. There are four main interfaces in the Java Collections Framework:
 
     -   List: A list is an ordered collection of elements that allows duplicate entries. Elements in a list can be accessed by an int index.
@@ -167,8 +174,44 @@ Notes:
     - Hashtable—no null keys or values
     - TreeSet—no null elements
     - ArrayDeque—no null elements
+ 
+ List—An ordered collection of elements that allows duplicate entries
+
+ ArrayList—Standard resizable list.
+
+ LinkedList—Can easily add/remove from beginning or end.
+
+ Vector—Older thread-safe version of ArrayList.
+
+ Stack—Older last-in, first-out class.
+
+ Set—Does not allow duplicates
+
+ HashSet—Uses hashcode() to find unordered elements.
+
+ TreeSet—Sorted and navigable. Does not allow null values.
+
+ Queue—Orders elements for processing
+
+ LinkedList—Can easily add/remove from beginning or end.
+
+ ArrayDeque—First-in, first-out or last-in, first-out. Does not allow null values.
+
+ Map—Maps unique keys to values
+
+ HashMap—Uses hashcode() to find keys.
+
+ TreeMap—Sorted map. Does not allow null keys.
+
+ Hashtable—Older version of hashmap. Does not allow null keys or values.
+    
 -----Comparable
-    - 
+    - The Comparable interface has only one method. In fact, this is the entire interface:
+        public interface Comparable<T> {
+            public int compareTo(T o);
+        }
+
+
 
 
 
