@@ -115,18 +115,21 @@ Notes:
     - Collections written with-out generics are also known as raw collections.
     * To review, the lesson is to be careful when you see code that doesn’t use generics. Pay spe-cial attention to looking for compiler warnings, ClassCastException s,and compiler errors.
     
-------- Unbounded Wildcards
+-------Unbounded Wildcards
     - An unbounded wildcard represents any data type. You use ? when you want to specify that any type is OK with you. 
         Ex: List<?> l = new ArrayList<String>();
 -------Upper-Bounded Wildcards
+    - Upper bounded wildcard restricts the unknown type to be a specific type or a subtype of that type. -> <? extends A>
     - A generic type can’t just use a subclass:
         ArrayList<Number> list = new ArrayList<Integer>(); // DOES NOT COMPILE
     - Upper bounds are like anonymous classes in that they use extends regardless of whether we are working with a class or an interface.
-    - List<? extends Number> list = new ArrayList<Integer>(); -> The upper-bounded wildcard says that any class that extends Number or Number itself can be used as the formal parameter type:
+    - List<? extends Number> list = new ArrayList<Integer>(); -> The upper-bounded wildcard says that any class that extends Number or Number itself can be used as the formal parameter type -> Number or any subclass
 ************************ Buscar info Lower-Bounded Wildcards y Upper-Bounded Wildcards, Comparator vs. Comparable, New Java 8 Map APIs
 
     - <? extends Object> is an upper bound that means any type that is Object or extends it. 
     - <? extends MyInterface> means any type that implements MyInterface. 
+------Lower-Bounded Wildcards
+    - A lower bounded wildcard restricts the unknown type to be a specific type or a super type of that type. -> <? super A>
     - <? super Number> is a lower bound that means any type that is Number or a superclass. A compiler error results from code that attempts to add or remove an item in a list with an unbounded or upper-bounded wildcard.
 
 
@@ -210,6 +213,17 @@ Notes:
         public interface Comparable<T> {
             public int compareTo(T o);
         }
+    - The Comparator interface defines a compare(arg1, arg2) method with two arguments which represent compared objects and works similarly to the Comparable.compareTo() method.
+    
+---- Classes that implement Comparable are said to have a natural ordering and implement the compareTo() method. A class is
+        allowed to have only one natural ordering. 
+        
+---- A Comparator takes two objects in the compare() method. Different Comparators can have different sort orders. A Comparator is
+     often implemented using a lambda such as (a, b) -> a.num – b.num.
+    - The list or array must be sorted before it is searched using the same definition of order for both.
+    
+
+
 
 
 
