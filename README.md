@@ -110,7 +110,7 @@ Notes:
     - Object composition requires a class variable to be declared public or accessible from a public method to be used by a class in a different package.
     - Caching data is one of the most common uses of the singleton pattern.
 
-    =================================================== CH 3 =========================
+=================================================== CH 3 =========================
     - An ArrayList can't contain primitives.
     - Collections written with-out generics are also known as raw collections.
     * To review, the lesson is to be careful when you see code that doesn’t use generics. Pay spe-cial attention to looking for compiler warnings, ClassCastException s,and compiler errors.
@@ -229,7 +229,12 @@ Notes:
 - The java.lang.Comparable interface is implemented on the object to compare. It specifies the compareTo() method, which takes one parameter. 
 - The java.util.Comparator interface specifies the compare() method, which takes two parameters.
 - Map does not have a contains() method. It has containsKey() and containsValue() instead.
-- 
+
+=================================================== CH 4 =========================
+---- Using Variables in Lambdas
+    - Lambda expressions can access static variables, instance variables, effectively final method parameters, and effectively final local variables.
+---- Working with Built-In Functional Interfaces
+    - 
 
 
 
