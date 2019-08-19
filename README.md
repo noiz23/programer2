@@ -222,6 +222,14 @@ Notes:
      often implemented using a lambda such as (a, b) -> a.num – b.num.
     - The list or array must be sorted before it is searched using the same definition of order for both.
     
+- HashSet does not guarantee any iteration order.
+- The Map interface uses put() rather than add().
+- Wildcard is not allowed to be on the right side of an assignment.
+- Vector is an old type of List.
+- The java.lang.Comparable interface is implemented on the object to compare. It specifies the compareTo() method, which takes one parameter. 
+- The java.util.Comparator interface specifies the compare() method, which takes two parameters.
+- Map does not have a contains() method. It has containsKey() and containsValue() instead.
+- 
 
 
 
