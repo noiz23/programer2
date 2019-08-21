@@ -234,7 +234,54 @@ Notes:
 ---- Using Variables in Lambdas
     - Lambda expressions can access static variables, instance variables, effectively final method parameters, and effectively final local variables.
 ---- Working with Built-In Functional Interfaces
+    - Runnable interface doesn’t take any parameters, return any data, or use generics.
+    - Supplier Interface: is used when you want to generate or supply values without taking any input.
+        @FunctionalInterface public class Supplier<T> {
+            public T get();
+        }
+    - Consumer and BiConsumer:You use a Consumer when you want to do something with a parameter but not return anything. BiConsumer does the same thing except that it takes two parameters. 
+        @FunctionalInterface public class Consumer<T> {
+            void accept(T t);
+        }
+        @FunctionalInterface public class BiConsumer<T, U> {
+            void accept(T t, U u);
+        }
+    - BiConsumer can use the same type for both the T and U generic parameters.
+    - Predicate and BiPredicate: 
+        @FunctionalInterface public class Predicate<T> {
+            boolean test(T t);
+        }
+        @FunctionalInterface public class BiPredicate<T, U> {
+            boolean test(T t, U u);
+        }
+    - Function and BiFunction: A Function is responsible for turning one parameter into a value of a potentially different type and returning it. Similarly, a BiFunction is responsible for turning two parameters into a value and returning it.
+        @FunctionalInterface public class Function<T, R> {
+            R apply(T t);
+        }
+        @FunctionalInterface public class BiFunction<T, U, R> {
+            R apply(T t, U u);
+        }
+    - UnaryOperator and BinaryOperator:They require all type parameters to be the same type.
+------Checking Functional Interfaces
+    - When you see a boolean returned, think Predicate unless the generics specify a Boolean return type.
+-------Returning an Optional
     - 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
