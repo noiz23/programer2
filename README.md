@@ -264,8 +264,9 @@ Notes:
     - UnaryOperator and BinaryOperator:They require all type parameters to be the same type.
 ------Checking Functional Interfaces
     - When you see a boolean returned, think Predicate unless the generics specify a Boolean return type.
--------Returning an Optional
-    - 
+-------Using Streams:  java.util.stream 
+    - A stream in Java is a sequence of data. A stream pipeline is the operations that run on a stream to produce a result. 
+
 
 
 
