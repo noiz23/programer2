@@ -264,8 +264,15 @@ Notes:
     - UnaryOperator and BinaryOperator:They require all type parameters to be the same type.
 ------Checking Functional Interfaces
     - When you see a boolean returned, think Predicate unless the generics specify a Boolean return type.
--------Using Streams:  java.util.stream 
+------Using Streams:  java.util.stream 
     - A stream in Java is a sequence of data. A stream pipeline is the operations that run on a stream to produce a result. 
+
+    - You can call forEach() directly on a Collection or on a Stream.
+    - Streams cannot use a traditional for loop to run because they don’t implement the Iterable interface.
+    - 
+
+
+
 
 
 
