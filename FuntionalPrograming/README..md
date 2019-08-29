@@ -5,5 +5,5 @@ On the other hand, a Function<T, R> represents a function that takes a parameter
 
 The Optional class is useful whenever the result may be absent. It protects us from getting a NullPointerException by accident and makes it quite explicit to the reader that “no result found” is a possible outcome.
 
-
+CH7
 
