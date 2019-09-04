@@ -5,5 +5,8 @@ On the other hand, a Function<T, R> represents a function that takes a parameter
 
 The Optional class is useful whenever the result may be absent. It protects us from getting a NullPointerException by accident and makes it quite explicit to the reader that “no result found” is a possible outcome.
 
-CH7
+ A List is an ordered Collection. A collection is an object that groups multiple elements into a single unit.
+ 
+CH9
 
+Statements perform actions but don’t return anything, whereas expressions perform actions and return a result.
