@@ -127,7 +127,7 @@ public class FunctionTest {
 	public void LongToIntFunction_convertLongToInt_via_lambda() {
 		LongToIntFunction longToIntFun = num -> (int) num;
 
-		assertEquals(123456, longToIntFun.applyAsInt(123456));
+		assertEquals(123456, longToIntFun.applyAsInt(123456L));
 	}
 	@Test
 	public void stream_map_via_methodReference() {
@@ -164,8 +164,8 @@ public class FunctionTest {
 
 	@Test
 	public void ToIntBiFunction_multiple_two_int() {
-		ToIntBiFunction<Integer, Integer> concat = (a, b) -> a * b;
-		Integer product = concat.applyAsInt(3, 4);
+		ToIntBiFunction<Integer, Integer> concat1 = (a, b) -> a * b;
+		Integer product = concat1.applyAsInt(3, 4);
 		assertEquals(12, product.intValue());
 	}
 	

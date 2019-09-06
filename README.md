@@ -250,13 +250,15 @@ Notes:
         }
     - BiConsumer can use the same type for both the T and U generic parameters.
     - Predicate and BiPredicate: 
+        A Predicate FI accepts one argument and returns a Boolean value. Its abstract method is test(Object). A BiPredicate FI accepts two arguments and return a Boolean value. 
         @FunctionalInterface public class Predicate<T> {
             boolean test(T t);
         }
         @FunctionalInterface public class BiPredicate<T, U> {
             boolean test(T t, U u);
         }
-    - Function and BiFunction: A Function is responsible for turning one parameter into a value of a potentially different type and returning it. Similarly, a BiFunction is responsible for turning two parameters into a value and returning it.
+    - Function and BiFunction: A Function is responsible for turning one parameter into a value of a potentially different type and returning it. 
+    Similarly, a BiFunction is responsible for turning two parameters into a value and returning it.
         @FunctionalInterface public class Function<T, R> {
             R apply(T t);
         }

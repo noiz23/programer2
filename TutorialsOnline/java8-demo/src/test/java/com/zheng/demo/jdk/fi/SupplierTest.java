@@ -42,4 +42,10 @@ public class SupplierTest {
 		Supplier<String> message = () -> "Mary is fun";
 		assertEquals("Mary is fun", message.get());
 	}
+	
+	@Test
+	public void Supplier_getAsLong() {
+		Supplier<Long> maxLongValue = () -> Long.MAX_VALUE;
+		assertEquals(new Long(9223372036854775807L), maxLongValue.get());
+	}
 }

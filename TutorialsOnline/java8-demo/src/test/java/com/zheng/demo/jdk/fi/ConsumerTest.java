@@ -32,7 +32,7 @@ public class ConsumerTest {
 		convertToLowercase.accept("This Will convert to all lowercase");
 	}
 
-	@Test
+	@Test//******
 	public void Consumer_print_prefix() {
 		Consumer<String> sayHello = name -> System.out.println("Hello, " + name);
 		for (String name : Arrays.asList("Mary", "Terry", "John")) {
