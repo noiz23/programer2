@@ -273,10 +273,16 @@ Notes:
 
     - You can call forEach() directly on a Collection or on a Stream.
     - Streams cannot use a traditional for loop to run because they don’t implement the Iterable interface.
+    - IntStream: Used for the primitive types int, short, byte, and char
+    - LongStream: Used for the primitive type long
+    - DoubleStream: Used for the primitive types double and float
     - 
 
 
 
+
+Implementing UnaryOperator and BinaryOperator
+180
 
 
 
