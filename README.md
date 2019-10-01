@@ -289,11 +289,19 @@ Notes:
     - DoubleStream: Used for the primitive types double and float
     - 
 
+CH 5:
+ Resources are closed after the try clause ends and before any catch/ finally clauses.
+ Resources are closed in the reverse order from which they were created.
+ 
+The syntax for an assert statement has two forms:
+assert boolean_expression;
+assert boolean_expression: error_message;
 
+The main difference between AutoCloseable and Closeable is that AutoCloseable has Exception in the signature and Closeable has only IOException in the signature. 
+Since IllegalStateException is a runtime exception, it can be thrown by any method.
 
+A thread is the smallest unit of execution that can be scheduled by the operating system. A process is a group of associated threads that execute in the same, shared environment. It follows,then, that a single-threaded process is one that contains exactly one thread, whereas a multi-threaded process is one that contains one or more threads.
 
-Implementing UnaryOperator and BinaryOperator
-180
 
 
 
