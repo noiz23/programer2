@@ -22,5 +22,34 @@ are put on notice that this variable is shared and that operations on it should 
 be reordered with other memory operations. A read of a
 volatile variable always returns the most recent write by any thread.
 
+Volatile variables: to ensure that updates to a variable are propagated predictably to other threads.
+
+Read of a volatile variable always returns the most recent write by any thread.
+
+Atomic variables do provide atomic read-modify-write support
+and can often be used as “better volatile variables”.
+
+Locking can guarantee both visibility and atomicity; volatile variables can
+only guarantee visibility.
+
+Publishing an object means making it available to code outside of its current scope,
+such as by storing a reference to it where other code can find it, returning it
+from a nonprivate method, or passing it to a method in another class. 
+
+An object that is published when it should not have been is said to
+have escaped.
+
+Accessing shared, mutable data requires using synchronization; one way to avoid
+this requirement is to not share. If data is only accessed from a single thread,
+no synchronization is needed. This technique, thread confinement, is one of the
+simplest ways to achieve thread safety.
+
+Stack confinement is a special case of thread confinement in which an object can
+only be reached through local variables. Language semantics ensure that
+primitive local variables are always stack confined.
+
+Immutable objects are always thread-safe.
+
+
 
 
