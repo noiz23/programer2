@@ -8,6 +8,7 @@ public class NN{
     }
 }
 
+* -> Java 8 Concurrency
 
 # programer2
 - Carpeta OCPStudyGuide.JavaClasses contiene las clases java de los ejemplos y examenes del libro

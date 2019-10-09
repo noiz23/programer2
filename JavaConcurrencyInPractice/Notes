@@ -1,0 +1,26 @@
+16 pag x dia  --> 52 Volatile variables
+
+A class is thread-safe if it behaves correctly when accessed from multiple
+threads, regardless of the scheduling or interleaving of the execution of
+those threads by the runtime environment, and with no additional syn-
+chronization or other coordination on the part of the calling code.
+
+Thread-safe classes encapsulate any needed synchronization so that
+clients need not provide their own.
+
+stateless: it has no fields and references no fields from other classes. 
+Stateless objects are always thread-safe.
+
+The goal of lazy initialization is to defer initializing an object until it is actually needed while at
+the same time ensuring that it is initialized only once.
+
+It is not safe to use shared mutable long and double variables in multithreaded programs unless they are declared volatile
+or guarded by a lock.
+
+When a field is declared volatile, the compiler and runtime
+are put on notice that this variable is shared and that operations on it should not
+be reordered with other memory operations. A read of a
+volatile variable always returns the most recent write by any thread.
+
+
+
