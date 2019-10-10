@@ -50,6 +50,12 @@ primitive local variables are always stack confined.
 
 Immutable objects are always thread-safe.
 
+The synchronization policy defines how an object coordinates access to its state
+without violating its invariants or postconditions.
+
+
+
+
 
 
 

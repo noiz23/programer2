@@ -10,6 +10,8 @@ public class NN{
 
 * -> Java 8 Concurrency
 
+https://docs.oracle.com/javase/8/docs/api/java/util/function/package-summary.html
+
 # programer2
 - Carpeta OCPStudyGuide.JavaClasses contiene las clases java de los ejemplos y examenes del libro
     OCP Oracle Certified Professional Java SE 8 Programes 2.
