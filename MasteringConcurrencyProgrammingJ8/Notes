@@ -1,0 +1,9 @@
+Mastering Concurrency Programming with Java 8 Notes:
+
+CP 1:
+
+java -cp "$JAVA_HOME/db/lib/derby.jar:." SetupDerbyDatabase
+
+$$DERBY_HOME/lib/
+
+

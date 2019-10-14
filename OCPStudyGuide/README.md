@@ -329,7 +329,56 @@ The Files class provides the method Files.getLastModifiedTime(Path), which retur
  
  -----------------------------------JDBC
  CH 10
- 
+JDBC stands for Java Database Connectivity: Accesses data as rows and columns.
+
+\\ java -cp "/opt/derby-10.14.2.0/lib/derby.jar:." SetupDerbyDatabase
+Interfaces in JDBC for exam:
+
+Driver: Knows how to get a connection to the database
+Connection: Knows how to communicate with the database
+Statement: Knows how to run the SQL
+ResultSet: Knows what was returned by a SELECT query
+
+There are two main ways to get a Connection: DriverManager or DataSource.
+Es better use DataSource then DriverManager, but the last one is in the exam objectives.
+
+By default, a ResultSet is in TYPE_FORWARD_ONLY mode and is in CONCUR_READ_ONLY mode.
+
+DELETE, INSERT, or UPDATE. They typically use a method called executeUpdate(). The name is a little tricky because the SQL UPDATE statement is not the
+only statement that uses this method.
+
+Query -> Select; execute() can run query or an update. It returns a boolean so that we know whether there is a ResultSet.
+For a SELECT SQL statement, use executeQuery() or execute() . For other SQL statements, use executeUpdate() or execute().
+
+The rows in a ResultSet are numbered start-ing with 1. Calling absolute(4) moves the cursor to the fourth row. Calling absolute(0)
+moves the cursor to a location immediately before the result. Calling absolute(-1) moves the cursor to the last row.
+
+
+Remember that JDBC starts counting with one rather than zero.
+
+Closing a Connection also closes the Statement and ResultSet.
+Closing a Statement also closes the ResultSet.
+
+The ResultSet is closed first, followed by the Statement, and then the Connection.
+
+Exceptions:
+The getMessage() method returns a human-readable message as to what went wrong. 
+The getSQLState() method returns a code as to what went wrong. You can Google the name of your database
+and the SQL state to get more information about the error. 
+The getErrorCode() is a database-specific code.
+
+Modes for ResultSet concurrency when creating a Statement:
+    CONCUR_READ_ONLY, means that you can read the ResultSet but not write to it. --> is the default.
+    CONCUR_UPDATABLE means that you can both read and write to it.
+    
+
+
+
+
+
+
+
+
 
 
 

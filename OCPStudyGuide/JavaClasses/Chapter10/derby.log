@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Mon Oct 14 15:48:12 CLST 2019:
+ Iniciando instancia a816c00e-016d-cb99-6b5c-00000e6d6730 de Derby, versión The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): 
+en el directorio de base de datos /home/rdario/Documents/P2/programer2/OCPStudyGuide/JavaClasses/Chapter10/zoo con el cargador de clases sun.misc.Launcher$AppClassLoader@330bedb4
+Cargado desde file:/opt/derby-10.14.2.0/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_221-b11
+user.dir=/home/rdario/Documents/P2/programer2/OCPStudyGuide/JavaClasses/Chapter10
+os.name=Linux
+os.arch=amd64
+os.version=4.19.69-1-MANJARO
+derby.system.home=null
+Cargador de clases de base de datos iniciado - derby.database.classpath=''
