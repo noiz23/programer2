@@ -309,6 +309,34 @@ A thread is the smallest unit of execution that can be scheduled by the operatin
 CH 7
 The key here is that using the atomic classes ensures that the data is consistent between workers and that no values are lost due to concurrent modifications.
 
+----------------------------------------NIO.2
+CH 9
+createDirectory()   ->  Files.createDirectory(Path) method to create a directory
+createDirectories() ->  like mkdirs() creates the target directory along with any nonexistent parent directories leading up to the target directory in the path.
+
+Moving a non-empty directory across a drive will throw an NIO.2 DirectoryNotEmptyException. --> Files.move(Paths.get("c:\\zoo"),Paths.get("c:\\zoo-new"));
+
+delete() and deleteIfExists() -> If the target of the path is a symbol link, then the symbolic link will be deleted, not the target of the link.
+
+Like the isDirectory(), isRegularFile(), and isSymbolicLink() methods, the isReadable() and isExecutable() methods do not throw exceptions if the file does not
+exist but instead return false.
+
+The Files class provides the method Files.getLastModifiedTime(Path), which returns a FileTime object to accomplish this. The FileTime class is a simple container class that stores the date/time information about when a file was accessed, modified, or created. For convenience, it has a toMillis() method that returns the epoch time.
+
+ The FileTime class also has a static fromMillis() method that converts from the epoch time to a FileTime object.
+ 
+ BasicFileAttributeView is used to modify a file’s set of date/time values
+ 
+ -----------------------------------JDBC
+ CH 10
+ 
+
+
+
+
+
+
+
 
 
 
