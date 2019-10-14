@@ -53,7 +53,15 @@ Immutable objects are always thread-safe.
 The synchronization policy defines how an object coordinates access to its state
 without violating its invariants or postconditions.
 
+Synchronized collection classes include Vector and Hashtable.
 
+Bounded queues make your program more robust to overload
+by throttling activities that threaten to produce more work than can be
+handled.
+
+A synchronizer is any object that coordinates the control flow of threads based
+on its state. Blocking queues can act as synchronizers; other types of synchroniz-
+ers include semaphores, barriers, and latches.
 
 
 
