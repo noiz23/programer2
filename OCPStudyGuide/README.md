@@ -293,7 +293,7 @@ Notes:
     - DoubleStream: Used for the primitive types double and float
     - 
 
-CH 5:
+=====================================================================CH 5:
  Resources are closed after the try clause ends and before any catch/ finally clauses.
  Resources are closed in the reverse order from which they were created.
  
@@ -307,11 +307,11 @@ Since IllegalStateException is a runtime exception, it can be thrown by any meth
 A thread is the smallest unit of execution that can be scheduled by the operating system. A process is a group of associated threads that execute in the same, shared environment. It follows,then, that a single-threaded process is one that contains exactly one thread, whereas a multi-threaded process is one that contains one or more threads.
 
 
-CH 7
+=======================================================================CH 7
 The key here is that using the atomic classes ensures that the data is consistent between workers and that no values are lost due to concurrent modifications.
 
 ----------------------------------------NIO.2
-CH 9
+=======================================================================CH 9
 createDirectory()   ->  Files.createDirectory(Path) method to create a directory
 createDirectories() ->  like mkdirs() creates the target directory along with any nonexistent parent directories leading up to the target directory in the path.
 
@@ -329,7 +329,7 @@ The Files class provides the method Files.getLastModifiedTime(Path), which retur
  BasicFileAttributeView is used to modify a file’s set of date/time values
  
  -----------------------------------JDBC
- CH 10
+===================================================CH 10
 JDBC stands for Java Database Connectivity: Accesses data as rows and columns.
 
 \\ java -cp "/opt/derby-10.14.2.0/lib/derby.jar:." SetupDerbyDatabase
