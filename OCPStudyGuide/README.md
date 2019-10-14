@@ -33,9 +33,10 @@ Analisis -> Compilacion
 * Sin codigo a compilar
 
 Notes:
-    Anonymous inner classes are a special type of local inner class that does not have a name.
-    Anonymous inner classes are required to extend exactly one class by name or implement
-    exactly one interface. Static nested classes can exist without an instance of the outer class.
+    Anonymous inner classes:
+        - Are a special type of local inner class that does not have a name.
+        - Are required to extend exactly one class by name or implement exactly one interface. 
+    Static nested classes can exist without an instance of the outer class.
 
     Be able to identify the output of code using instanceof. instanceof checks if the left
     operand is the same class or interface (or a subclass) as the right operand. If the left oper-
@@ -43,10 +44,10 @@ Notes:
     code will not compile.
     
     Recognize correct and incorrect implementations of equals(), hashCode(), and
-    toString(). public boolean equals(Object obj) returns false when called with null or
-    a class of the wrong type. public int hashCode() returns a number calculated with all or
-    some of the instance variables used in equals(). public String toString() returns any
-    String.
+    toString(). 
+    public boolean equals(Object obj) returns false when called with null or a class of the wrong type. 
+    public int hashCode() returns a number calculated with all or some of the instance variables used in equals(). 
+    public String toString() returns any String.
     
     Enum types, can have instance variables. The constructors are required to be private or package private.
     
