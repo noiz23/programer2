@@ -51,6 +51,11 @@ Notes:
     
     Enum types, can have instance variables. The constructors are required to be private or package private.
     
+    Enums are not allowed to have a public constructor.
+    
+    Just as an abstract superclass requires concrete subclasses to have an implementation, abstract enum methods require each enum type to implement the method.
+     
+    
     The Java compiler allows methods to be overridden in subclasses if certain rules are followed: a method must have
     the same signature, be at least as accessible as the parent method, must not declare any new
     or broader exceptions, and must use covariant return types. Methods are overloaded if they
@@ -64,10 +69,23 @@ Notes:
     the code and should not be used for comparison.
     
     Inner classes are not allowed to contain static methods
-    or static variables. Only nested static classes are permitted to contain statics.
+    or static variables. 
+    Only nested static classes are permitted to contain statics.
     
     ==      --> referencias
     equals  --> contenido
+    
+    If equals(null) is called, the method should return false.
+    If equals() is passed the wrong type, the method should return false
+    An equals() method should have a null check and an instanceof check.
+
+    
+    Unlike a "regular" class, an inner class can be private or protected or static. 
+    Like a principal class, can be public or default. Principal class must be public or default and never static.
+    
+    Just like static attributes and methods, a static inner class does not have access to members of the outer class that are not static.
+    
+    Virtual method invocation says that the subclass method gets called at runtime rather than the type in the variable reference.
     
 =================================================== CH 2 =========================
     - An interface may extend another interface, and in doing so it inherits all of the abstract methods.
