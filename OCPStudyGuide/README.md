@@ -94,11 +94,11 @@ Notes:
 ---------- Purpose of an Interface
     - Class: can implemnts n interfaces. Can extends only 1 class.
     - Interfaces: Can extends n interfaces. Can't implements interfaces or classess.
-    - Interfaces may extend other interfaces, although they may not extend a class and vice versa. Interfaces may also contain public static final constant values,     public static methods, and public default methods. All members of an interface are public.
+    - Interfaces may extend other interfaces, although they may not extend a class and vice versa. Interfaces may also contain public static final constant values, public static methods, and public default methods. All members of an interface are public.
 
 ---------- Introducing Functional Programming
     - Java defines a functional interface as an                     interface that contains a single abstract   method.
-    - Remember that the parentheses are optional only when there is one parameter and it doesn’t have a type declared.
+    - Remember that the parentheses are optional in a lambda expresion only when there is one parameter and it doesn’t have a type declared.
     - The data types for the input parameters of a lambda expression are optional. When one parameter has a data type listed, though, all parameters must provide a data type.
     - A Java object may be accessed using a
     reference with the same type as the object, a reference that is a superclass of the object, or
@@ -120,8 +120,7 @@ Notes:
     - A design principle is an established idea or best practice that facilitates the software design
       process. 
 --------- Creating JavaBeans
-    - Although boolean values use is to start their getter method, the same does not apply to instances of the wrap-
-      per Boolean class, which use get.
+    - Although boolean values use is to start their getter method, the same does not apply to instances of the wrapper Boolean class, which use get.
 --------- Applying the Is‐a Relationship
     - The is‐a relationship is also known as the inheritance test.
       The fundamental result of the is‐a principle is that if A is‐a B, then any instance of A can
@@ -131,7 +130,7 @@ Notes:
     - The has‐a relationship is also known as the object composition test.
 --------- Singleton Pattern
     - The singleton pattern is a creational pattern focused on creating only one instance of an object in memory within an application, sharable by all classes and threads within the application.
-    - All constructors in a singleton class are marked private, which ensures that no other class iscapable of instantiating another version of the class.
+    - All constructors in a singleton class are marked private, which ensures that no other class is capable of instantiating another version of the class.
     - The singleton class is effectively final -> all constructors in a singleton class are marked private.
     - Singletons are used in situations where we need access to a single set of data throughout an application. For example, application configuration data and reusable  data caches are commonly implemented using singletons. Singletons may also be used to coordinate access to shared resources, such as coordinating write access to a file.
 --------Immutable Objects pattern*
@@ -139,9 +138,22 @@ Notes:
     - Static methods are not part of the inmutable object pattern y getter methods are not required to be marked synchronized.
 -------Review Questions
     - A design pattern is focused on solving a specific commonly occurring problem. 
+    - Design principles are often applied throughout an application, whereas design patterns are applied to solve specific problems.
+    - Design principles and design patterns tend to produce code that is easier to maintain and easier for other developers to read.
+    - Inmutable pattern:  all instance variables should be private and final to prevent them from being changed by a caller and the class must be markend as final.
+    - interfaces have static and default methods, as well as static final variables.
+    -  abstract and final can never be used together.
+    - A reference to an object requires an explicit cast if referenced with a subclass. If the cast is to a superclass reference, then an explicit cast is not required.
+    - Inheritance supports access to protected variables.
+    - Inheritance tends to use the is-a principle, whereas object composition relies on the has-a principle.
+    - Caching data or Manage write access to a log file are some common uses of the singleton pattern.
+    - interface can have public or default access.
+    - 
+    
     - Object composition tends to promote greater code reuse than inheritance.
     - Object composition requires a class variable to be declared public or accessible from a public method to be used by a class in a different package.
     - Caching data is one of the most common uses of the singleton pattern.
+    
 
 =================================================== CH 3 =========================
     - An ArrayList can't contain primitives.
