@@ -158,7 +158,7 @@ Notes:
 =================================================== CH 3 =========================
     - An ArrayList can't contain primitives.
     - Collections written with-out generics are also known as raw collections.
-    * To review, the lesson is to be careful when you see code that doesn’t use generics. Pay spe-cial attention to looking for compiler warnings, ClassCastException s,and compiler errors.
+    * To review, the lesson is to be careful when you see code that doesn’t use generics. Pay special attention to looking for compiler warnings, ClassCastExceptions,and compiler errors.
     - An array is a built-in data structure that contains other objects or primitives.
 
     
