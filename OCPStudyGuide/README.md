@@ -86,7 +86,7 @@ Notes:
     Just like static attributes and methods, a static inner class does not have access to members of the outer class that are not static.
     
     Virtual method invocation says that the subclass method gets called at runtime rather than the type in the variable reference.
-    
+**************************************************************************************************************************    
 =================================================== CH 2 =========================
     - An interface may extend another interface, and in doing so it inherits all of the abstract methods.
     - In an interface, the compiler automatically adds public to all interface methods and abstract to all non‐static and non‐default methods
@@ -154,7 +154,7 @@ Notes:
     - Object composition requires a class variable to be declared public or accessible from a public method to be used by a class in a different package.
     - Caching data is one of the most common uses of the singleton pattern.
     
-
+**************************************************************************************************************************
 =================================================== CH 3 =========================
     - An ArrayList can't contain primitives.
     - Collections written with-out generics are also known as raw collections.
@@ -185,17 +185,17 @@ Notes:
 
     -A collection is a group of objects contained in a single object. The Java Collections Framework is a set of classes in java.util for storing collections. There are four main interfaces in the Java Collections Framework:
 
-    -   List: A list is an ordered collection of elements that allows duplicate entries. Elements in a list can be accessed by an int index.
-    -   Set: A set is a collection that does not allow duplicate entries.
-    -   Queue: A queue is a collection that orders its elements in a specific order for processing.
-        A typical queue processes its elements in a first-in, first-out order, but other orderings
-        are possible.
-    -   Map: A map is a collection that maps keys to values, with no duplicate keys allowed. The elements in a map are key/value pairs.
+    --List: A list is an ordered collection of elements that allows duplicate entries. Elements in a list can be accessed by an int index.
+    --Set: A set is a collection that does not allow duplicate entries.
+    --Queue: A queue is a collection that orders its elements in a specific order for processing.
+    A typical queue processes its elements in a first-in, first-out order, but other orderings
+    are possible.
+    --Map: A map is a collection that maps keys to values, with no duplicate keys allowed. The elements in a map are key/value pairs.
 
     - The add() method inserts a new element into the Collection and returns whether it was successful. The method signature is: boolean add(E element)
     - A List allows duplicates. In a Set does not allow duplicates, so that Java returns false from the add() method.
     - The remove() method removes a single matching value in the Collection and returns whether it was successful. The method signature is boolean remove(Object object).
-      Remember that there are overloaded remove() methods. One takes the element to remove. The other takes the index of the element to remove. The latter is being called here.
+    Remember that there are overloaded remove() methods. One takes the element to remove. The other takes the index of the element to remove. The latter is being called here.
 ------Using the List Interface
     - You use a list when you want an ordered collection that can contain duplicate entries.
     - A LinkedList is special because it implements both List and Queue. The main benefits of a LinkedList are that you can access, add, and remove from the beginning and end of the list in constant time. The tradeoff is that dealing with an arbitrary index takes linear time. This makes a LinkedList a good choice when you’ll be using it as Queue. 
@@ -220,40 +220,38 @@ Notes:
 -----Map
     - You use a map when you want to identify values by a key.
     - TreeSet cannot contain null elements. It also means that TreeMap cannot contain null keys. Null values are OK.
-    - TreeMap—no null keys
-    - Hashtable—no null keys or values
-    - TreeSet—no null elements
-    - ArrayDeque—no null elements
+    - TreeMap —> no null keys
+    - Hashtable —>no null keys or values
+    - TreeSet —>no null elements
+    - ArrayDeque —> no null elements
  
- List—An ordered collection of elements that allows duplicate entries
+ List —> An ordered collection of elements that allows duplicate entries
 
- ArrayList—Standard resizable list.
+ ArrayList —> Standard resizable list.
 
- LinkedList—Can easily add/remove from beginning or end.
+ LinkedList —> Can easily add/remove from beginning or end.
 
- Vector—Older thread-safe version of ArrayList.
+ Vector —> Older thread-safe version of ArrayList.
 
- Stack—Older last-in, first-out class.
+ Stack —> Older last-in, first-out class.
 
- Set—Does not allow duplicates
+ Set —> Does not allow duplicates
 
- HashSet—Uses hashcode() to find unordered elements.
+ HashSet —> Uses hashcode() to find unordered elements.
 
- TreeSet—Sorted and navigable. Does not allow null values.
+ TreeSet —> Sorted and navigable. Does not allow null values.
 
- Queue—Orders elements for processing
+ Queue —> Orders elements for processing
 
- LinkedList—Can easily add/remove from beginning or end.
+ ArrayDeque —> First-in, first-out or last-in, first-out. Does not allow null values.
 
- ArrayDeque—First-in, first-out or last-in, first-out. Does not allow null values.
+ Map —> Maps unique keys to values
 
- Map—Maps unique keys to values
+ HashMap —> Uses hashcode() to find keys.
 
- HashMap—Uses hashcode() to find keys.
+ TreeMap —> Sorted map. Does not allow null keys.
 
- TreeMap—Sorted map. Does not allow null keys.
-
- Hashtable—Older version of hashmap. Does not allow null keys or values.
+ Hashtable —> Older version of hashmap. Does not allow null keys or values.
     
 -----Comparable
     - The Comparable interface has only one method. In fact, this is the entire interface:
@@ -262,11 +260,10 @@ Notes:
         }
     - The Comparator interface defines a compare(arg1, arg2) method with two arguments which represent compared objects and works similarly to the Comparable.compareTo() method.
     
----- Classes that implement Comparable are said to have a natural ordering and implement the compareTo() method. A class is
-        allowed to have only one natural ordering. 
+---- Classes that implement Comparable are said to have a natural ordering and implement the compareTo() method. A class is allowed to have only one natural ordering. 
         
----- A Comparator takes two objects in the compare() method. Different Comparators can have different sort orders. A Comparator is
-     often implemented using a lambda such as (a, b) -> a.num – b.num.
+---- A Comparator takes two objects in the compare() method. Different Comparators can have different sort orders. A Comparator is often implemented using a lambda such as 
+(a, b) -> a.num – b.num.
     - The list or array must be sorted before it is searched using the same definition of order for both.
     
 - HashSet does not guarantee any iteration order.
@@ -276,7 +273,14 @@ Notes:
 - The java.lang.Comparable interface is implemented on the object to compare. It specifies the compareTo() method, which takes one parameter. 
 - The java.util.Comparator interface specifies the compare() method, which takes two parameters.
 - Map does not have a contains() method. It has containsKey() and containsValue() instead.
+- In Map, map.get(n) n starts in 1.
+- ArrayDeque: push() -> LIFO
+              offer() -> FIFO
+- TreeSet: sorts the elements. The ceiling() method returns the smallest element
+greater than the specified one. 
+-LinkedList:The List interface has a method to remove by index. Queue has only the remove by object method,
 
+**************************************************************************************************************************
 =================================================== CH 4 =========================
 ---- Using Variables in Lambdas
     - Lambda expressions can access static variables, instance variables, effectively final method parameters, and effectively final local variables.
