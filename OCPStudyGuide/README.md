@@ -42,49 +42,34 @@ Notes:
     operand is the same class or interface (or a subclass) as the right operand. If the left oper-
     and is null, the result is false. If the two operands are not in the same class hierarchy, the
     code will not compile.
-    
     Recognize correct and incorrect implementations of equals(), hashCode(), and
     toString(). 
     public boolean equals(Object obj) returns false when called with null or a class of the wrong type. 
     public int hashCode() returns a number calculated with all or some of the instance variables used in equals(). 
     public String toString() returns any String.
-    
     Enum types, can have instance variables. The constructors are required to be private or package private.
-    
     Enums are not allowed to have a public constructor.
-    
     Just as an abstract superclass requires concrete subclasses to have an implementation, abstract enum methods require each enum type to implement the method.
-     
-    
     The Java compiler allows methods to be overridden in subclasses if certain rules are followed: a method must have
     the same signature, be at least as accessible as the parent method, must not declare any new
     or broader exceptions, and must use covariant return types. Methods are overloaded if they
     have the same method name but a different argument list. 
-    
     The relevant rule is that two objects that return true for equals() objects must
     return the same hash code.
-    
     The ordinal() method of an enum returns its corresponding int value. Like arrays,
     enums are zero based. Remember that the index of an enum may change when you recompile
     the code and should not be used for comparison.
-    
     Inner classes are not allowed to contain static methods
     or static variables. 
     Only nested static classes are permitted to contain statics.
-    
     ==      --> referencias
     equals  --> contenido
-    
     If equals(null) is called, the method should return false.
     If equals() is passed the wrong type, the method should return false
     An equals() method should have a null check and an instanceof check.
-
-    
     Unlike a "regular" class, an inner class can be private or protected or static. 
     Like a principal class, can be public or default. Principal class must be public or default and never static.
-    
     Just like static attributes and methods, a static inner class does not have access to members of the outer class that are not static.
-    
     Virtual method invocation says that the subclass method gets called at runtime rather than the type in the variable reference.
 **************************************************************************************************************************    
 =================================================== CH 2 =========================
@@ -184,14 +169,12 @@ Notes:
     - The Java Collections Framework includes four main types of data structures: lists, sets,queues, and maps. The Collection interface is the parent interface of List, Set, and Queue. The Map interface does not extend Collection. You need to recognize the following:
 
     -A collection is a group of objects contained in a single object. The Java Collections Framework is a set of classes in java.util for storing collections. There are four main interfaces in the Java Collections Framework:
-
     --List: A list is an ordered collection of elements that allows duplicate entries. Elements in a list can be accessed by an int index.
     --Set: A set is a collection that does not allow duplicate entries.
     --Queue: A queue is a collection that orders its elements in a specific order for processing.
     A typical queue processes its elements in a first-in, first-out order, but other orderings
     are possible.
     --Map: A map is a collection that maps keys to values, with no duplicate keys allowed. The elements in a map are key/value pairs.
-
     - The add() method inserts a new element into the Collection and returns whether it was successful. The method signature is: boolean add(E element)
     - A List allows duplicates. In a Set does not allow duplicates, so that Java returns false from the add() method.
     - The remove() method removes a single matching value in the Collection and returns whether it was successful. The method signature is boolean remove(Object object).
@@ -280,8 +263,9 @@ Notes:
 greater than the specified one. 
 -LinkedList:The List interface has a method to remove by index. Queue has only the remove by object method,
 
-**************************************************************************************************************************
-=================================================== CH 4 =========================
+
+****************************************************************************************************************************
+=================================================== CHp 4 =========================
 ---- Using Variables in Lambdas
     - Lambda expressions can access static variables, instance variables, effectively final method parameters, and effectively final local variables.
 ---- Working with Built-In Functional Interfaces
@@ -325,7 +309,13 @@ greater than the specified one.
     - IntStream: Used for the primitive types int, short, byte, and char
     - LongStream: Used for the primitive type long
     - DoubleStream: Used for the primitive types double and float
+    - The sorted() method is used in a stream pipeline to return a sorted Stream.
+    - The average() method returns an OptionalDouble since averages of any type can
+result in a fraction
+    -  The partitioningBy() operation always returns a map with two Boolean keys, even if there are no corresponding values
+    - The three common types of double, int and, long have dedicated supplier classes. --> BooleanSupplier.
     - 
+
 
 =====================================================================CH 5:
  Resources are closed after the try clause ends and before any catch/ finally clauses.
