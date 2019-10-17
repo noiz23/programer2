@@ -316,7 +316,7 @@ result in a fraction
     - The three common types of double, int and, long have dedicated supplier classes. --> BooleanSupplier.
     - 
 
-
+****************************************************************************************************************************
 =====================================================================CH 5:
  Resources are closed after the try clause ends and before any catch/ finally clauses.
  Resources are closed in the reverse order from which they were created.
@@ -330,6 +330,17 @@ Since IllegalStateException is a runtime exception, it can be thrown by any meth
 
 A thread is the smallest unit of execution that can be scheduled by the operating system. A process is a group of associated threads that execute in the same, shared environment. It follows,then, that a single-threaded process is one that contains exactly one thread, whereas a multi-threaded process is one that contains one or more threads.
 
+- Locale is created using a constructor.
+-  The convention is to use lowercase for a language code and uppercase for a country code. The language is mandatory when using a constructor
+- Java class resource bundles can have non-String values while property files are limited to strings
+- Java specifies that it will look for a Java class resource bundle before a property file of the same name.
+- Calendar constants for months begins with 0.
+- Period does not allow chaining. Only the last Period method called counts.
+-  Period format begins with a P and a Dura-
+tion format begins with PT. They are different types and do not represent the same value even though they are both a day.
+-  Remember that Duration uses hours/minutes/seconds and Period uses years months/days for measures
+- Without a time zone, Java doesn’t know what moment in time to use for the Instant.
+- 
 
 =======================================================================CH 7
 The key here is that using the atomic classes ensures that the data is consistent between workers and that no values are lost due to concurrent modifications.
