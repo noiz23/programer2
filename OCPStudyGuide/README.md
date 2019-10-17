@@ -343,7 +343,7 @@ tion format begins with PT. They are different types and do not represent the sa
 
 ****************************************************************************************************************************
 =====================================================================CH 6:
-
+Pregunta 6
 
 =======================================================================CH 7
 The key here is that using the atomic classes ensures that the data is consistent between workers and that no values are lost due to concurrent modifications.
