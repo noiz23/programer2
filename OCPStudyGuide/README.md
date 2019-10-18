@@ -343,7 +343,16 @@ tion format begins with PT. They are different types and do not represent the sa
 
 ****************************************************************************************************************************
 =====================================================================CH 6:
-Pregunta 6
+- Java uses the flags –ea or –enableassertions to turn on assertions. –da or
+–disableassertions turns off assertions. The colon indicates for a specific class. 
+- An assertion consists of a boolean expression followed by an optional colon and message. The boolean expression is allowed to be in parenthesis, but this is not required.
+- assertions should not have side effects.
+- ** memorize the contents of Table 6.2 and Table 6.3 before the exam
+- Since a multi-catch is used, the variable in the catch block is effectively final and cannot be reassigned.
+- A multi-catch cannot catch both a superclass and subclass.
+- The main difference between AutoCloseable and Closeable is that AutoCloseable has Exception in the signature and Closeable has only IOException in the signature.
+- 
+
 
 =======================================================================CH 7
 The key here is that using the atomic classes ensures that the data is consistent between workers and that no values are lost due to concurrent modifications.
