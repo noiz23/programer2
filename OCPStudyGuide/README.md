@@ -51,36 +51,31 @@ Notes:
 **************************************************************************************************************************    
 =================================================== CH 2 =========================
     - An interface may extend another interface, and in doing so it inherits all of the abstract methods.
-    - In an interface, the compiler automatically adds public to all interface methods and abstract to all non‐static and non‐default methods
+    - In an interface, the compiler automatically adds public to all interface methods, abstract to all non‐static and non‐default methods
 
 ---------- Purpose of an Interface
     - Class: can implemnts n interfaces. Can extends only 1 class.
-    - Interfaces: Can extends n interfaces. Can't implements interfaces or classess.
+    - Interfaces: Can implements n interfaces. Can't implements interfaces or classess.
     - Interfaces may extend other interfaces, although they may not extend a class and vice versa. Interfaces may also contain public static final constant values, public static methods, and public default methods. All members of an interface are public.
 
 ---------- Introducing Functional Programming
-    - Java defines a functional interface as an                     interface that contains a single abstract   method.
+    - Java defines a functional interface as an interface that contains a single abstract method.
     - Remember that the parentheses are optional in a lambda expresion only when there is one parameter and it doesn’t have a type declared.
     - The data types for the input parameters of a lambda expression are optional. When one parameter has a data type listed, though, all parameters must provide a data type.
-    - A Java object may be accessed using a
-    reference with the same type as the object, a reference that is a superclass of the object, or
-    a reference that defines an interface that the object implements, either directly or through
-    a superclass. Furthermore, a cast is not required if the object is being reassigned to a
-    supertype or interface of the object.
-    -   1. The type of the object determines which properties exist within the object in memory.
-        2.The type of the reference to the object determines which methods and variables are
-        accessible to the Java program.
+    - A Java object may be accessed using a reference with the same type as the object, a reference that is a superclass of the object, or
+    a reference that defines an interface that the object implements, either directly or through a superclass. 
+    - Furthermore, a cast is not required if the object is being reassigned to a supertype or interface of the object.
+    -   1.The type of the object determines which properties exist within the object in memory.
+        2.The type of the reference to the object determines which methods and variables are accessible to the Java program.
     
     Here are some basic rules to keep in mind when casting variables:
         1.Casting an object from a subclass to a superclass doesn’t require an explicit cast.
         2.Casting an object from a superclass to a subclass requires an explicit cast.
         3.The compiler will not allow casts to unrelated types.
-        4.Even when the code compiles without issue, an exception may be thrown at runtime if
-          the object being cast is not actually an instance of that class.
+        4.Even when the code compiles without issue, an exception may be thrown at runtime if the object being cast is not actually an instance of that class.
 
 ---------- Understanding Design Principles
-    - A design principle is an established idea or best practice that facilitates the software design
-      process. 
+    - A design principle is an established idea or best practice that facilitates the software design process. 
 --------- Creating JavaBeans
     - Although boolean values use is to start their getter method, the same does not apply to instances of the wrapper Boolean class, which use get.
 --------- Applying the Is‐a Relationship
@@ -97,7 +92,7 @@ Notes:
     - Singletons are used in situations where we need access to a single set of data throughout an application. For example, application configuration data and reusable  data caches are commonly implemented using singletons. Singletons may also be used to coordinate access to shared resources, such as coordinating write access to a file.
 --------Immutable Objects pattern*
     - The immutable object pattern is a creational pattern based on the idea of creating objects whose state does not change after they are created and can be easily    shared across multiple classes. 
-    - Static methods are not part of the inmutable object pattern y getter methods are not required to be marked synchronized.
+    - Static methods are not part of the inmutable object pattern and getter methods are not required to be marked synchronized.
 -------Review Questions
     - A design pattern is focused on solving a specific commonly occurring problem. 
     - Design principles are often applied throughout an application, whereas design patterns are applied to solve specific problems.
@@ -105,17 +100,16 @@ Notes:
     - Inmutable pattern:  all instance variables should be private and final to prevent them from being changed by a caller and the class must be markend as final.
     - interfaces have static and default methods, as well as static final variables.
     -  abstract and final can never be used together.
-    - A reference to an object requires an explicit cast if referenced with a subclass. If the cast is to a superclass reference, then an explicit cast is not required.
+    - A reference to an object requires an explicit cast if referenced with a subclass. 
+    - If the cast is to a superclass reference, then an explicit cast is not required.
     - Inheritance supports access to protected variables.
     - Inheritance tends to use the is-a principle, whereas object composition relies on the has-a principle.
     - Caching data or Manage write access to a log file are some common uses of the singleton pattern.
     - interface can have public or default access.
-    - 
-    
     - Object composition tends to promote greater code reuse than inheritance.
     - Object composition requires a class variable to be declared public or accessible from a public method to be used by a class in a different package.
     - Caching data is one of the most common uses of the singleton pattern.
-    
+  
 **************************************************************************************************************************
 =================================================== CH 3 =========================
     - An ArrayList can't contain primitives.

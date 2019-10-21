@@ -80,112 +80,102 @@ BACK:No, Is just like static attributes and methods in a regular class.
 FRONT:What is Virtual method invocation?
 BACK:Is when the subclass method gets called at runtime rather than the type in the variable reference.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT:
-BACK:
+FRONT:An interface may extend another interface?
+BACK:Yes, and in doing so it inherits all of the abstract methods.
 -----------------------------------------------------------------------------------------------------------------------------------
-
-FRONT:
-BACK:
+FRONT:Which actions the compiler do in interfaces?
+BACK:automatically adds public to all interface methods, abstract to all non‐static and non‐default methods
 -----------------------------------------------------------------------------------------------------------------------------------
-
-FRONT:
-BACK:
+FRONT:A class can extends any number of classes?
+BACK: No, can extends only one class, but can implements any interfaces.
 -----------------------------------------------------------------------------------------------------------------------------------
-
-FRONT:
-BACK:
+FRONT:Which members an interface can contain?
+BACK: They can contain public static final constant values, public static methods, and public default methods. All members of an interface are public.
 -----------------------------------------------------------------------------------------------------------------------------------
-
-FRONT:
-BACK:
+FRONT:What is a functional interface?
+BACK:Is an interface that contains a single (only one) abstract method. It can contais statict methods and/or default methods.
 -----------------------------------------------------------------------------------------------------------------------------------
-
-FRONT:
-BACK:
+FRONT: When the parentheses are optional in a lambda expresion?
+BACK: Only when there is one parameter and it doesn’t have a type declared.
 -----------------------------------------------------------------------------------------------------------------------------------
-
-FRONT:
-BACK:
+FRONT: When data types for the input parameters of a lambda expression are optional?
+BACK: When none parameter has it. If one paramter has a data type listed, all input parameters must provide a data type.
 -----------------------------------------------------------------------------------------------------------------------------------
-
-FRONT:
-BACK:
+FRONT:How we can access to a java object?
+BACK: A Java object may be accessed using:
+     - a reference with the same type as the object.
+     - a reference that is a superclass of the object.
+     - a reference that defines an interface that the object implements.
 -----------------------------------------------------------------------------------------------------------------------------------
-
-FRONT:
-BACK:
+FRONT: When is not required cast?
+BACK: a cast is not required if the object is being reassigned to a supertype or interface of the object:
+        Number nu = 0;
+        Integer i = 2;
+      
+        nu = i;//Ok
+        i = nu;//Not compile
 -----------------------------------------------------------------------------------------------------------------------------------
-
-FRONT:
-BACK:
+FRONT:How we can determinated which properties exist within the object in memory?
+BACK: The type of the object determines that.
 -----------------------------------------------------------------------------------------------------------------------------------
-
-FRONT:
-BACK:
+FRONT:Which methods and variables are accessible to the Java program?
+BACK:The type of the reference to the object determines that.
 -----------------------------------------------------------------------------------------------------------------------------------
-
-FRONT:
-BACK:
+FRONT:When is not required an explicit cast?
+BACK: Casting an object from a subclass to a superclass.Casting an object from a superclass to a subclass requires it.
 -----------------------------------------------------------------------------------------------------------------------------------
-
-FRONT:
-BACK:
+FRONT:The compiler will not allow casts to unrelated types.?
+BACK:No.
 -----------------------------------------------------------------------------------------------------------------------------------
-
-FRONT:
-BACK:
+FRONT: What happen if the object being cast is not actually an instance of that class.?
+BACK: Even when the code compiles without issue, an exception may be thrown at runtime.
 -----------------------------------------------------------------------------------------------------------------------------------
-
-FRONT:
-BACK:
+FRONT:What is a design principle?
+BACK:is an established idea or best practice that facilitates the software design process. 
 -----------------------------------------------------------------------------------------------------------------------------------
-
-FRONT:
-BACK:
+FRONT:In the wrapper Boolean class, how we can start their getter method?
+BACK:Using get, for primitive boolean use is.
 -----------------------------------------------------------------------------------------------------------------------------------
-
-FRONT:
-BACK:
+FRONT:What is-a relationship is?.
+BACK:is a inheritance test.The fundamental result of the is‐a principle is that if A is‐a B, then any instance of A can
+      be treated like an instance of B. This holds true for a child that is a subclass of any parent,be it a direct subclass or a distant child.
 -----------------------------------------------------------------------------------------------------------------------------------
-
-FRONT:
-BACK:
+FRONT:What is the Has‐a Relationship?
+BACK:is the object composition test.
 -----------------------------------------------------------------------------------------------------------------------------------
-
-FRONT:
-BACK:
+FRONT:What is the singleton pattern?
+BACK:is a creational pattern focused on creating only one instance of an object in memory within an application, sharable by all classes and 
+     threads within the pplication.
 -----------------------------------------------------------------------------------------------------------------------------------
-
-FRONT:
-BACK:
+FRONT:How are the constructors in the singletong pattern?
+BACK: All constructors in a singleton class are marked private (The singleton class is effectively final), which ensures that 
+     no other class is capable of instantiating another version of the class.
 -----------------------------------------------------------------------------------------------------------------------------------
-
-FRONT:
-BACK:
+FRONT:When we can use singletong?
+BACK:Used in situations where we need access to a single set of data throughout an application, ex: application configuration data and reusable data caches.
+     Singletons may also be used to coordinate access to shared resources, such as coordinating write access to a file.
 -----------------------------------------------------------------------------------------------------------------------------------
-
-FRONT:
-BACK:
+FRONT:What is the Immutable Objects pattern?
+BACK:Is a creational pattern based on the idea of creating objects whose state does not change after they are created and can be easily
+     shared across multiple classes.
 -----------------------------------------------------------------------------------------------------------------------------------
-
-FRONT:
-BACK:
+FRONT:Name n features of Immutable Objects pattern.
+BACK: - Static methods are not part of the inmutable object pattern.
+      - getter methods are not required to be marked synchronized.
+      - all instance variables should be private and final to prevent them from being changed by a caller.
+      - the class must be markend as final.
 -----------------------------------------------------------------------------------------------------------------------------------
-
-FRONT:
-BACK:
+FRONT:What is a design pattern?
+BACK:Is a general repeatable solution to a commonly occurring problem in software design. Focused on solving a specific commonly occurring problem.
 -----------------------------------------------------------------------------------------------------------------------------------
-
-FRONT:
-BACK:
+FRONT:Diference between design principles and design patterns.
+BACK:Design principles are often applied throughout an application, whereas design patterns are applied to solve specific problems.
 -----------------------------------------------------------------------------------------------------------------------------------
-
-FRONT:
-BACK:
+FRONT:An object can be marked as abstract final o viceversa?
+BACK:  No, abstract and final can never be used together
 -----------------------------------------------------------------------------------------------------------------------------------
-
-FRONT:
-BACK:
+FRONT: Inheritance supports access to protected variables.?
+BACK: Yes.
 -----------------------------------------------------------------------------------------------------------------------------------
 
 FRONT:
