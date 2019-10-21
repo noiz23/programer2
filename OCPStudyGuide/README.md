@@ -353,9 +353,26 @@ tion format begins with PT. They are different types and do not represent the sa
 - The main difference between AutoCloseable and Closeable is that AutoCloseable has Exception in the signature and Closeable has only IOException in the signature.
 - 
 
-
+****************************************************************************************************************************
 =======================================================================CH 7
 The key here is that using the atomic classes ensures that the data is consistent between workers and that no values are lost due to concurrent modifications.
+
+
+****************************************************************************************************************************
+=======================================================================CH 8
+- FileInputStream is a low-level stream that interacts directly with a file resource, not a stream resource.
+- you cannot use BufferedReader/BufferedWriter directly on a stream.
+- The readLine() method returns a String and reads a line of input from the console. readPassword() returns a char[]
+- The System class has three streams: in is for input, err is for error, and out is for output. 
+- Serialization of an object stores only the instance variable data, not the static class data.
+- ObjectOutputStream and ObjectInputStream perform serialization and deserialization on a low-level stream, respectively.
+- PrintStream and PrintWriter format text for a low-level OutputStream and Writer.
+- FileWriter and FileInputStream operate on a file directly and are low-level streams.
+- OutputStream is an abstract parent class and is neither high-level nor low-level.
+- Console defines two output methods, format() and printf(), that are identical in function.
+- Character stream classes often include built-in convenience methods for working with String data. They also handle character encoding automatically.
+- The variables marked as transient, which means that their values will not be saved upon serialization.
+- 
 
 ----------------------------------------NIO.2
 =======================================================================CH 9
@@ -371,11 +388,24 @@ exist but instead return false.
 
 The Files class provides the method Files.getLastModifiedTime(Path), which returns a FileTime object to accomplish this. The FileTime class is a simple container class that stores the date/time information about when a file was accessed, modified, or created. For convenience, it has a toMillis() method that returns the epoch time.
 
- The FileTime class also has a static fromMillis() method that converts from the epoch time to a FileTime object.
+The FileTime class also has a static fromMillis() method that converts from the epoch time to a FileTime object.
  
- BasicFileAttributeView is used to modify a file’s set of date/time values
- 
- -----------------------------------JDBC
+BasicFileAttributeView is used to modify a file’s set of date/time values.
+
+- The setTimes() method is available only on BasicFileAttributeView, not the read only BasicFileAttributes class.
+- the resolve() method does not normalize any path symbols.
+- resolve() with an absolute path as a parameter returns the absolute path.
+- Files.lines() returns a Stream<Path> and Files.readAllLines() returns a List<String>
+- Files.lines() reads the file in a lazy manner, while Files.readAllLines() reads the entire file into memory all at once; therefore Files.lines() works better on large files with limited memory available
+- the NOFOLLOW_LINKS option means that if the source is a symbolic link, the link itself and not the target will be copied at runtime.
+- The option ATOMIC_MOVE means that any process monitoring the file system will not see an incomplete file during the move.
+- isSameFile()returns true only if the files pointed to in the file system are the same, without regard to the file contents.
+- the java.io.File.listFiles() method retrieves the members of the current directory without traversing any subdirectories.
+- Files.walk() and Files.find() recursively traverse a directory tree rather than list the contents of the current directory.
+- 
+
+
+-----------------------------------JDBC
 ===================================================CH 10
 JDBC stands for Java Database Connectivity: Accesses data as rows and columns.
 
