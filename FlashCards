@@ -17,6 +17,69 @@ BACK:  The Path interface includes a resolve(Path) method for creating a new Pat
 FRONT: What functionality does it provide the method normalize(Path)?
 BACK:  The Path interface includes a normalize(Path) method to eliminate the redundancies in the path.
 -----------------------------------------------------------------------------------------------------------------------------------
+FRONT: What are Anonymous inner classes?
+BACK: Are a special type of local inner class that does not have a name.
+-----------------------------------------------------------------------------------------------------------------------------------
+FRONT: There are some inheritence rule for anonymous class?
+BACK: Yes, they are required to extend exactly one class by name or implement exactly one interface.
+-----------------------------------------------------------------------------------------------------------------------------------
+FRONT: Static nested classes can exist without an instance of the outer class?
+BACK: Yes.
+-----------------------------------------------------------------------------------------------------------------------------------
+FRONT:In the instanceof operation, which is the result if some operand is null? 
+BACK: If the left operand is null, the result is false. If the rigth operand is null, the code doesn't compile because null is not an Object.
+-----------------------------------------------------------------------------------------------------------------------------------
+FRONT:instanceof operand can be applied to two operands that are not in the same class hierarchy?
+BACK:No, the code will not compile.
+-----------------------------------------------------------------------------------------------------------------------------------
+FRONT:boolean equals(Object obj) compiles when called with null or a class of the wrong type?
+BACK:Yes, and returns false.
+-----------------------------------------------------------------------------------------------------------------------------------
+FRONT:Which is the return hashCode()?
+BACK: public int hashCode() returns a number calculated with all or some of the instance variables used in equals(). 
+-----------------------------------------------------------------------------------------------------------------------------------
+FRONT: Name n caracterictics of Enum types.
+BACK: - can have instance variables
+      - The constructors are required to be private or package private (dafault).
+      - Are not allowed to have a public or protected constructor.
+-----------------------------------------------------------------------------------------------------------------------------------
+FRONT:abstract enum methods require each enum type to implement the method?
+BACK:Yes. is similar as an abstract superclass requires concrete subclasses to have an implementation of the abstracts methods.
+-----------------------------------------------------------------------------------------------------------------------------------
+FRONT:What are the rules for methods to be overridden in subclasses?
+BACK: - a method must have the same signature.
+      - a method must be at least as accessible as the parent method.
+      - must not declare any new or broader exceptions.
+      - must use covariant return types.
+-----------------------------------------------------------------------------------------------------------------------------------
+FRONT:two objects that return true for equals() objects must return the same hash code?
+BACK: Yes.
+-----------------------------------------------------------------------------------------------------------------------------------
+FRONT:Which is the return of method ordinal() in an Enum type?
+BACK:The ordinal() method of an enum returns its corresponding int value. Like arrays, enums are zero based. 
+    Remember that the index of an enum may change when you recompile the code and should not be used for comparison.
+-----------------------------------------------------------------------------------------------------------------------------------
+FRONT: static methods or static variables are permited in Inner classes?.
+BACK: No, only nested static classes are permitted to contain statics members.
+-----------------------------------------------------------------------------------------------------------------------------------
+FRONT:How many categories(terminology) have nested clases?
+BACK: Two: static and non-static. Nested classes that are declared static are called static nested classes. Non-static nested classes are called inner classes.
+-----------------------------------------------------------------------------------------------------------------------------------
+FRONT:Which is the diference between equals and == ?
+BACK: == compare references, equals compare content.
+-----------------------------------------------------------------------------------------------------------------------------------
+FRONT:Which access modifiers can be used for an inner class?
+BACK:All, unlike a "regular" class, an inner class can be private or protected or static.
+-----------------------------------------------------------------------------------------------------------------------------------
+FRONT: Which access modifiers can be used for an principal class?
+BACK: Principal class must be public or default and never static.
+-----------------------------------------------------------------------------------------------------------------------------------
+FRONT:static inner class have access to members of the outer class that are not static?
+BACK:No, Is just like static attributes and methods in a regular class.
+-----------------------------------------------------------------------------------------------------------------------------------
+FRONT:What is Virtual method invocation?
+BACK:Is when the subclass method gets called at runtime rather than the type in the variable reference.
+-----------------------------------------------------------------------------------------------------------------------------------
 FRONT:
 BACK:
 -----------------------------------------------------------------------------------------------------------------------------------
@@ -100,3 +163,30 @@ BACK:
 FRONT:
 BACK:
 -----------------------------------------------------------------------------------------------------------------------------------
+
+FRONT:
+BACK:
+-----------------------------------------------------------------------------------------------------------------------------------
+
+FRONT:
+BACK:
+-----------------------------------------------------------------------------------------------------------------------------------
+
+FRONT:
+BACK:
+-----------------------------------------------------------------------------------------------------------------------------------
+
+FRONT:
+BACK:
+-----------------------------------------------------------------------------------------------------------------------------------
+
+FRONT:
+BACK:
+-----------------------------------------------------------------------------------------------------------------------------------
+
+FRONT:
+BACK:
+-----------------------------------------------------------------------------------------------------------------------------------
+
+FRONT:
+BACK:

@@ -16,34 +16,15 @@ https://docs.oracle.com/javase/8/docs/api/java/util/function/package-summary.htm
 - Carpeta OCPStudyGuide.JavaClasses contiene las clases java de los ejemplos y examenes del libro
     OCP Oracle Certified Professional Java SE 8 Programes 2.
     
-Respuestas 1 test libro 10 a 20:
-Analisis -> Compilacion
-10 C    ->  F
-11 G    ->  G
-12 E    -> *
-13 F    ->
-14 C    -> E
-15 A    -> A
-16 B    -> A
-17 ?    -> ?
-18 A,B  -> 
-19 D    ->
-20 C    ->
-
-* Sin codigo a compilar
-
 Notes:
     Anonymous inner classes:
         - Are a special type of local inner class that does not have a name.
         - Are required to extend exactly one class by name or implement exactly one interface. 
     Static nested classes can exist without an instance of the outer class.
 
-    Be able to identify the output of code using instanceof. instanceof checks if the left
-    operand is the same class or interface (or a subclass) as the right operand. If the left oper-
-    and is null, the result is false. If the two operands are not in the same class hierarchy, the
-    code will not compile.
-    Recognize correct and incorrect implementations of equals(), hashCode(), and
-    toString(). 
+    Be able to identify the output of code using instanceof. instanceof checks if the left operand is the same class or interface (or a subclass) as the right operand. If the left operand is null, the result is false. 
+    If the two operands are not in the same class hierarchy, the code will not compile.
+    Recognize correct and incorrect implementations of equals(), hashCode(), and toString(). 
     public boolean equals(Object obj) returns false when called with null or a class of the wrong type. 
     public int hashCode() returns a number calculated with all or some of the instance variables used in equals(). 
     public String toString() returns any String.
@@ -52,15 +33,11 @@ Notes:
     Just as an abstract superclass requires concrete subclasses to have an implementation, abstract enum methods require each enum type to implement the method.
     The Java compiler allows methods to be overridden in subclasses if certain rules are followed: a method must have
     the same signature, be at least as accessible as the parent method, must not declare any new
-    or broader exceptions, and must use covariant return types. Methods are overloaded if they
-    have the same method name but a different argument list. 
-    The relevant rule is that two objects that return true for equals() objects must
-    return the same hash code.
-    The ordinal() method of an enum returns its corresponding int value. Like arrays,
-    enums are zero based. Remember that the index of an enum may change when you recompile
-    the code and should not be used for comparison.
-    Inner classes are not allowed to contain static methods
-    or static variables. 
+    or broader exceptions, and must use covariant return types. 
+    Methods are overloaded if they have the same method name but a different argument list. 
+    The relevant rule is that two objects that return true for equals() objects must return the same hash code.
+    The ordinal() method of an enum returns its corresponding int value. Like arrays,enums are zero based. Remember that the index of an enum may change when you recompile the code and should not be used for comparison.
+    Inner classes are not allowed to contain static methods or static variables. 
     Only nested static classes are permitted to contain statics.
     ==      --> referencias
     equals  --> contenido
