@@ -1,114 +1,114 @@
 FRONT:  What are some advantages of using NIO.2 views to read metadata rather than individually from java.nio.Files methods? 
-BACK:   - It makes fewer round-trips to the file system.
+_BACK:   - It makes fewer round-trips to the file system.
         - It can be used to access file system–dependent attributes.
         - For reading multiple attributes, it is often more performant.
 -----------------------------------------------------------------------------------------------------------------------------------
 FRONT: Name 3 advantages of the NIO.2 API over the legacy java.io.File class for working with files.
-BACK:  - NIO.2 supports file system-dependent attributes.
+_BACK:  - NIO.2 supports file system-dependent attributes.
        - NIO.2 allows you to traverse a directory tree directly.
        - NIO.2 supports symbolic links.
 -----------------------------------------------------------------------------------------------------------------------------------
 FRONT: What functionality does it provide the method relativize(Path)?
-BACK:  The Path interface provides a method relativize(Path) for constructing the relative path from one Path object to another.
+_BACK:  The Path interface provides a method relativize(Path) for constructing the relative path from one Path object to another.
 -----------------------------------------------------------------------------------------------------------------------------------
 FRONT: What functionality does it provide the method resolve(Path)?
-BACK:  The Path interface includes a resolve(Path) method for creating a new Path by joining an existing path to the current path.
+_BACK:  The Path interface includes a resolve(Path) method for creating a new Path by joining an existing path to the current path.
 -----------------------------------------------------------------------------------------------------------------------------------
 FRONT: What functionality does it provide the method normalize(Path)?
-BACK:  The Path interface includes a normalize(Path) method to eliminate the redundancies in the path.
+_BACK:  The Path interface includes a normalize(Path) method to eliminate the redundancies in the path.
 -----------------------------------------------------------------------------------------------------------------------------------
 FRONT: What are Anonymous inner classes?
-BACK: Are a special type of local inner class that does not have a name.
+_BACK: Are a special type of local inner class that does not have a name.
 -----------------------------------------------------------------------------------------------------------------------------------
 FRONT: There are some inheritence rule for anonymous class?
-BACK: Yes, they are required to extend exactly one class by name or implement exactly one interface.
+_BACK: Yes, they are required to extend exactly one class by name or implement exactly one interface.
 -----------------------------------------------------------------------------------------------------------------------------------
 FRONT: Static nested classes can exist without an instance of the outer class?
-BACK: Yes.
+_BACK: Yes.
 -----------------------------------------------------------------------------------------------------------------------------------
 FRONT:In the instanceof operation, which is the result if some operand is null? 
-BACK: If the left operand is null, the result is false. If the rigth operand is null, the code doesn't compile because null is not an Object.
+_BACK: If the left operand is null, the result is false. If the rigth operand is null, the code doesn't compile because null is not an Object.
 -----------------------------------------------------------------------------------------------------------------------------------
 FRONT:instanceof operand can be applied to two operands that are not in the same class hierarchy?
-BACK:No, the code will not compile.
+_BACK:No, the code will not compile.
 -----------------------------------------------------------------------------------------------------------------------------------
 FRONT:boolean equals(Object obj) compiles when called with null or a class of the wrong type?
-BACK:Yes, and returns false.
+_BACK:Yes, and returns false.
 -----------------------------------------------------------------------------------------------------------------------------------
 FRONT:Which is the return hashCode()?
-BACK: public int hashCode() returns a number calculated with all or some of the instance variables used in equals(). 
+_BACK: public int hashCode() returns a number calculated with all or some of the instance variables used in equals(). 
 -----------------------------------------------------------------------------------------------------------------------------------
 FRONT: Name n caracterictics of Enum types.
-BACK: - can have instance variables
+_BACK: - can have instance variables
       - The constructors are required to be private or package private (dafault).
       - Are not allowed to have a public or protected constructor.
 -----------------------------------------------------------------------------------------------------------------------------------
 FRONT:abstract enum methods require each enum type to implement the method?
-BACK:Yes. is similar as an abstract superclass requires concrete subclasses to have an implementation of the abstracts methods.
+_BACK:Yes. is similar as an abstract superclass requires concrete subclasses to have an implementation of the abstracts methods.
 -----------------------------------------------------------------------------------------------------------------------------------
 FRONT:What are the rules for methods to be overridden in subclasses?
-BACK: - a method must have the same signature.
+_BACK: - a method must have the same signature.
       - a method must be at least as accessible as the parent method.
       - must not declare any new or broader exceptions.
       - must use covariant return types.
 -----------------------------------------------------------------------------------------------------------------------------------
 FRONT:two objects that return true for equals() objects must return the same hash code?
-BACK: Yes.
+_BACK: Yes.
 -----------------------------------------------------------------------------------------------------------------------------------
 FRONT:Which is the return of method ordinal() in an Enum type?
-BACK:The ordinal() method of an enum returns its corresponding int value. Like arrays, enums are zero based. 
+_BACK:The ordinal() method of an enum returns its corresponding int value. Like arrays, enums are zero based. 
     Remember that the index of an enum may change when you recompile the code and should not be used for comparison.
 -----------------------------------------------------------------------------------------------------------------------------------
 FRONT: static methods or static variables are permited in Inner classes?.
-BACK: No, only nested static classes are permitted to contain statics members.
+_BACK: No, only nested static classes are permitted to contain statics members.
 -----------------------------------------------------------------------------------------------------------------------------------
 FRONT:How many categories(terminology) have nested clases?
-BACK: Two: static and non-static. Nested classes that are declared static are called static nested classes. Non-static nested classes are called inner classes.
+_BACK: Two: static and non-static. Nested classes that are declared static are called static nested classes. Non-static nested classes are called inner classes.
 -----------------------------------------------------------------------------------------------------------------------------------
 FRONT:Which is the diference between equals and == ?
-BACK: == compare references, equals compare content.
+_BACK: == compare references, equals compare content.
 -----------------------------------------------------------------------------------------------------------------------------------
 FRONT:Which access modifiers can be used for an inner class?
-BACK:All, unlike a "regular" class, an inner class can be private or protected or static.
+_BACK:All, unlike a "regular" class, an inner class can be private or protected or static.
 -----------------------------------------------------------------------------------------------------------------------------------
 FRONT: Which access modifiers can be used for an principal class?
-BACK: Principal class must be public or default and never static.
+_BACK: Principal class must be public or default and never static.
 -----------------------------------------------------------------------------------------------------------------------------------
 FRONT:static inner class have access to members of the outer class that are not static?
-BACK:No, Is just like static attributes and methods in a regular class.
+_BACK:No, Is just like static attributes and methods in a regular class.
 -----------------------------------------------------------------------------------------------------------------------------------
 FRONT:What is Virtual method invocation?
-BACK:Is when the subclass method gets called at runtime rather than the type in the variable reference.
+_BACK:Is when the subclass method gets called at runtime rather than the type in the variable reference.
 -----------------------------------------------------------------------------------------------------------------------------------
 FRONT:An interface may extend another interface?
-BACK:Yes, and in doing so it inherits all of the abstract methods.
+_BACK:Yes, and in doing so it inherits all of the abstract methods.
 -----------------------------------------------------------------------------------------------------------------------------------
 FRONT:Which actions the compiler do in interfaces?
-BACK:automatically adds public to all interface methods, abstract to all non‐static and non‐default methods
+_BACK:automatically adds public to all interface methods, abstract to all non‐static and non‐default methods
 -----------------------------------------------------------------------------------------------------------------------------------
 FRONT:A class can extends any number of classes?
-BACK: No, can extends only one class, but can implements any interfaces.
+_BACK: No, can extends only one class, but can implements any interfaces.
 -----------------------------------------------------------------------------------------------------------------------------------
 FRONT:Which members an interface can contain?
-BACK: They can contain public static final constant values, public static methods, and public default methods. All members of an interface are public.
+_BACK: They can contain public static final constant values, public static methods, and public default methods. All members of an interface are public.
 -----------------------------------------------------------------------------------------------------------------------------------
 FRONT:What is a functional interface?
-BACK:Is an interface that contains a single (only one) abstract method. It can contais statict methods and/or default methods.
+_BACK:Is an interface that contains a single (only one) abstract method. It can contais statict methods and/or default methods.
 -----------------------------------------------------------------------------------------------------------------------------------
 FRONT: When the parentheses are optional in a lambda expresion?
-BACK: Only when there is one parameter and it doesn’t have a type declared.
+_BACK: Only when there is one parameter and it doesn’t have a type declared.
 -----------------------------------------------------------------------------------------------------------------------------------
 FRONT: When data types for the input parameters of a lambda expression are optional?
-BACK: When none parameter has it. If one paramter has a data type listed, all input parameters must provide a data type.
+_BACK: When none parameter has it. If one paramter has a data type listed, all input parameters must provide a data type.
 -----------------------------------------------------------------------------------------------------------------------------------
 FRONT:How we can access to a java object?
-BACK: A Java object may be accessed using:
+_BACK: A Java object may be accessed using:
      - a reference with the same type as the object.
      - a reference that is a superclass of the object.
      - a reference that defines an interface that the object implements.
 -----------------------------------------------------------------------------------------------------------------------------------
 FRONT: When is not required cast?
-BACK: a cast is not required if the object is being reassigned to a supertype or interface of the object:
+_BACK: a cast is not required if the object is being reassigned to a supertype or interface of the object:
         Number nu = 0;
         Integer i = 2;
       
@@ -116,67 +116,186 @@ BACK: a cast is not required if the object is being reassigned to a supertype or
         i = nu;//Not compile
 -----------------------------------------------------------------------------------------------------------------------------------
 FRONT:How we can determinated which properties exist within the object in memory?
-BACK: The type of the object determines that.
+_BACK: The type of the object determines that.
 -----------------------------------------------------------------------------------------------------------------------------------
 FRONT:Which methods and variables are accessible to the Java program?
-BACK:The type of the reference to the object determines that.
+_BACK:The type of the reference to the object determines that.
 -----------------------------------------------------------------------------------------------------------------------------------
 FRONT:When is not required an explicit cast?
-BACK: Casting an object from a subclass to a superclass.Casting an object from a superclass to a subclass requires it.
+_BACK: Casting an object from a subclass to a superclass.Casting an object from a superclass to a subclass requires it.
 -----------------------------------------------------------------------------------------------------------------------------------
 FRONT:The compiler will not allow casts to unrelated types.?
-BACK:No.
+_BACK:No.
 -----------------------------------------------------------------------------------------------------------------------------------
 FRONT: What happen if the object being cast is not actually an instance of that class.?
-BACK: Even when the code compiles without issue, an exception may be thrown at runtime.
+_BACK: Even when the code compiles without issue, an exception may be thrown at runtime.
 -----------------------------------------------------------------------------------------------------------------------------------
 FRONT:What is a design principle?
-BACK:is an established idea or best practice that facilitates the software design process. 
+_BACK:is an established idea or best practice that facilitates the software design process. 
 -----------------------------------------------------------------------------------------------------------------------------------
 FRONT:In the wrapper Boolean class, how we can start their getter method?
-BACK:Using get, for primitive boolean use is.
+_BACK:Using get, for primitive boolean use is.
 -----------------------------------------------------------------------------------------------------------------------------------
 FRONT:What is-a relationship is?.
-BACK:is a inheritance test.The fundamental result of the is‐a principle is that if A is‐a B, then any instance of A can
+_BACK:is a inheritance test.The fundamental result of the is‐a principle is that if A is‐a B, then any instance of A can
       be treated like an instance of B. This holds true for a child that is a subclass of any parent,be it a direct subclass or a distant child.
 -----------------------------------------------------------------------------------------------------------------------------------
 FRONT:What is the Has‐a Relationship?
-BACK:is the object composition test.
+_BACK:is the object composition test.
 -----------------------------------------------------------------------------------------------------------------------------------
 FRONT:What is the singleton pattern?
-BACK:is a creational pattern focused on creating only one instance of an object in memory within an application, sharable by all classes and 
+_BACK:is a creational pattern focused on creating only one instance of an object in memory within an application, sharable by all classes and 
      threads within the pplication.
 -----------------------------------------------------------------------------------------------------------------------------------
 FRONT:How are the constructors in the singletong pattern?
-BACK: All constructors in a singleton class are marked private (The singleton class is effectively final), which ensures that 
+_BACK: All constructors in a singleton class are marked private (The singleton class is effectively final), which ensures that 
      no other class is capable of instantiating another version of the class.
 -----------------------------------------------------------------------------------------------------------------------------------
 FRONT:When we can use singletong?
-BACK:Used in situations where we need access to a single set of data throughout an application, ex: application configuration data and reusable data caches.
+_BACK:Used in situations where we need access to a single set of data throughout an application, ex: application configuration data and reusable data caches.
      Singletons may also be used to coordinate access to shared resources, such as coordinating write access to a file.
 -----------------------------------------------------------------------------------------------------------------------------------
 FRONT:What is the Immutable Objects pattern?
-BACK:Is a creational pattern based on the idea of creating objects whose state does not change after they are created and can be easily
+_BACK:Is a creational pattern based on the idea of creating objects whose state does not change after they are created and can be easily
      shared across multiple classes.
 -----------------------------------------------------------------------------------------------------------------------------------
 FRONT:Name n features of Immutable Objects pattern.
-BACK: - Static methods are not part of the inmutable object pattern.
+_BACK: - Static methods are not part of the inmutable object pattern.
       - getter methods are not required to be marked synchronized.
       - all instance variables should be private and final to prevent them from being changed by a caller.
       - the class must be markend as final.
 -----------------------------------------------------------------------------------------------------------------------------------
 FRONT:What is a design pattern?
-BACK:Is a general repeatable solution to a commonly occurring problem in software design. Focused on solving a specific commonly occurring problem.
+_BACK:Is a general repeatable solution to a commonly occurring problem in software design. Focused on solving a specific commonly occurring problem.
 -----------------------------------------------------------------------------------------------------------------------------------
 FRONT:Diference between design principles and design patterns.
-BACK:Design principles are often applied throughout an application, whereas design patterns are applied to solve specific problems.
+_BACK:Design principles are often applied throughout an application, whereas design patterns are applied to solve specific problems.
 -----------------------------------------------------------------------------------------------------------------------------------
 FRONT:An object can be marked as abstract final o viceversa?
-BACK:  No, abstract and final can never be used together
+_BACK:  No, abstract and final can never be used together
 -----------------------------------------------------------------------------------------------------------------------------------
 FRONT: Inheritance supports access to protected variables.?
-BACK: Yes.
+_BACK: Yes.
 -----------------------------------------------------------------------------------------------------------------------------------
-
+FRONT:What type of objects can contain an ArrayList?
+_BACK: Any object, but an ArrayList can't contain primitives.
+-----------------------------------------------------------------------------------------------------------------------------------
+FRONT:What are raw collections?
+_BACK: Collections written with-out generics (?).
+-----------------------------------------------------------------------------------------------------------------------------------
+FRONT:What is an array?
+_BACK: An array is a built-in data structure that contains other objects or primitives.
+-----------------------------------------------------------------------------------------------------------------------------------
+FRONT:When we want to specify that any type is OK, what can we use?
+_BACK: Use ?, it is an unbounded wildcard and represents any data type. 
+-----------------------------------------------------------------------------------------------------------------------------------
+FRONT:How Upper-Bounded Wildcards works?
+_BACK: Upper bounded wildcard restricts the unknown type to be a specific type or a subtype of that type. -> <? extends A>.
+-----------------------------------------------------------------------------------------------------------------------------------
+FRONT: Compiles?: ArrayList<Number> list = new ArrayList<Integer>();
+_BACK: No, a generic type can’t just use a subclass.
+-----------------------------------------------------------------------------------------------------------------------------------
+FRONT: Compile List<? extends Number> list = new ArrayList<Integer>(); ?
+_BACK: Yes, The upper-bounded wildcard says that any class that extends Number or Number itself can be used as the formal parameter type -> Number or any subclass.
+-----------------------------------------------------------------------------------------------------------------------------------
+FRONT: What is <? extends Object>?
+_BACK: Is an upper bound that means any type that is Object or extends it. 
+-----------------------------------------------------------------------------------------------------------------------------------
+FRONT: What is <? extends MyInterface> ?
+_BACK: Is an upper bound that means that any type that implements MyInterface.
+-----------------------------------------------------------------------------------------------------------------------------------
+FRONT: How bounded wildcard  works?
+_BACK: It restricts the unknown type to be a specific type or a super type of that type. -> <? super A>.
+-----------------------------------------------------------------------------------------------------------------------------------
+FRONT: What is <? super Number> ?.
+_BACK: Is a lower bound that means any type that is Number or a superclass of Number.
+-----------------------------------------------------------------------------------------------------------------------------------
 FRONT:
-BACK:
+_BACK:
+-----------------------------------------------------------------------------------------------------------------------------------
+FRONT:
+_BACK:
+-----------------------------------------------------------------------------------------------------------------------------------
+FRONT:
+_BACK:
+-----------------------------------------------------------------------------------------------------------------------------------
+FRONT:
+_BACK:
+-----------------------------------------------------------------------------------------------------------------------------------
+FRONT:
+_BACK:
+-----------------------------------------------------------------------------------------------------------------------------------
+FRONT:
+_BACK:
+-----------------------------------------------------------------------------------------------------------------------------------
+FRONT:
+_BACK:
+-----------------------------------------------------------------------------------------------------------------------------------
+FRONT:
+_BACK:
+-----------------------------------------------------------------------------------------------------------------------------------
+FRONT:
+_BACK:
+-----------------------------------------------------------------------------------------------------------------------------------
+FRONT:
+_BACK:
+-----------------------------------------------------------------------------------------------------------------------------------
+FRONT:
+_BACK:
+-----------------------------------------------------------------------------------------------------------------------------------
+FRONT:
+_BACK:
+-----------------------------------------------------------------------------------------------------------------------------------
+FRONT:
+_BACK:
+-----------------------------------------------------------------------------------------------------------------------------------
+FRONT:
+_BACK:
+-----------------------------------------------------------------------------------------------------------------------------------
+FRONT:
+_BACK:
+-----------------------------------------------------------------------------------------------------------------------------------
+FRONT:
+_BACK:
+-----------------------------------------------------------------------------------------------------------------------------------
+FRONT:
+_BACK:
+-----------------------------------------------------------------------------------------------------------------------------------
+FRONT:
+_BACK:
+-----------------------------------------------------------------------------------------------------------------------------------
+FRONT:
+_BACK:
+-----------------------------------------------------------------------------------------------------------------------------------
+FRONT:
+_BACK:
+-----------------------------------------------------------------------------------------------------------------------------------
+FRONT:
+_BACK:
+-----------------------------------------------------------------------------------------------------------------------------------
+FRONT:
+_BACK:
+-----------------------------------------------------------------------------------------------------------------------------------
+FRONT:
+_BACK:
+-----------------------------------------------------------------------------------------------------------------------------------
+FRONT:
+_BACK:
+-----------------------------------------------------------------------------------------------------------------------------------
+FRONT:
+_BACK:
+-----------------------------------------------------------------------------------------------------------------------------------
+FRONT:
+_BACK:
+-----------------------------------------------------------------------------------------------------------------------------------
+FRONT:
+_BACK:
+-----------------------------------------------------------------------------------------------------------------------------------
+FRONT:
+_BACK:
+-----------------------------------------------------------------------------------------------------------------------------------
+FRONT:
+_BACK:
+-----------------------------------------------------------------------------------------------------------------------------------
+FRONT:
+_BACK:
