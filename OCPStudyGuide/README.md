@@ -134,14 +134,17 @@ Notes:
 ------Lower-Bounded Wildcards
     - A lower bounded wildcard restricts the unknown type to be a specific type or a super type of that type. -> <? super A>
     - <? super Number> is a lower bound that means any type that is Number or a superclass. 
-    A compiler error results from code that attempts to add or remove an item in a list with an unbounded or upper-bounded wildcard.
-//TO-DO read : https://docs.oracle.com/javase/tutorial/java/generics/wildcards.html    
+    - A compiler error results from code that attempts to add or remove an item in a list with an unbounded or upper-bounded wildcard.
+//TO-DO read : https://docs.oracle.com/javase/tutorial/java/generics/wildcards.html
 
 
 -------Using Lists, Sets, Maps, and Queues
-    - The Java Collections Framework includes four main types of data structures: lists, sets,queues, and maps. The Collection interface is the parent interface of List, Set, and Queue. The Map interface does not extend Collection. You need to recognize the following:
+    - The Java Collections Framework includes four main types of data structures: lists, sets,queues, and maps. 
+    - The Collection interface is the parent interface of List, Set, and Queue. The Map interface does not extend Collection. 
+    - You need to recognize the following:
 
-    -A collection is a group of objects contained in a single object. The Java Collections Framework is a set of classes in java.util for storing collections. There are four main interfaces in the Java Collections Framework:
+    -A collection is a group of objects contained in a single object. The Java Collections Framework is a set of classes in java.util for storing collections. 
+    There are four main interfaces in the Java Collections Framework:
     --List: A list is an ordered collection of elements that allows duplicate entries. Elements in a list can be accessed by an int index.
     --Set: A set is a collection that does not allow duplicate entries.
     --Queue: A queue is a collection that orders its elements in a specific order for processing.
@@ -151,7 +154,7 @@ Notes:
     - The add() method inserts a new element into the Collection and returns whether it was successful. The method signature is: boolean add(E element)
     - A List allows duplicates. In a Set does not allow duplicates, so that Java returns false from the add() method.
     - The remove() method removes a single matching value in the Collection and returns whether it was successful. The method signature is boolean remove(Object object).
-    Remember that there are overloaded remove() methods. One takes the element to remove. The other takes the index of the element to remove. The latter is being called here.
+    Remember that there are overloaded remove() methods. One takes the element to remove. The other takes the index of the element to remove.
 ------Using the List Interface
     - You use a list when you want an ordered collection that can contain duplicate entries.
     - A LinkedList is special because it implements both List and Queue. The main benefits of a LinkedList are that you can access, add, and remove from the beginning and end of the list in constant time. The tradeoff is that dealing with an arbitrary index takes linear time. This makes a LinkedList a good choice when you’ll be using it as Queue. 
@@ -220,10 +223,10 @@ Notes:
         
 ---- A Comparator takes two objects in the compare() method. Different Comparators can have different sort orders. A Comparator is often implemented using a lambda such as 
 (a, b) -> a.num – b.num.
-    - The list or array must be sorted before it is searched using the same definition of order for both.
+- The list or array must be sorted before it is searched using the same definition of order for both.
     
 - HashSet does not guarantee any iteration order.
-- The Map interface uses put() rather than add().
+- The Map interface  uses put() rather than add().
 - Wildcard is not allowed to be on the right side of an assignment.
 - Vector is an old type of List.
 - The java.lang.Comparable interface is implemented on the object to compare. It specifies the compareTo() method, which takes one parameter. 

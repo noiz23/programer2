@@ -210,92 +210,102 @@ _BACK: It restricts the unknown type to be a specific type or a super type of th
 FRONT: What is <? super Number> ?.
 _BACK: Is a lower bound that means any type that is Number or a superclass of Number.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT:
-_BACK:
+//TO-DO read : https://docs.oracle.com/javase/tutorial/java/generics/wildcards.html
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT:
-_BACK:
+FRONT: Which are the four main types (interfaces) of data structures that Java Collections Framework includes?
+_BACK: lists, sets,queues, and maps.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT:
-_BACK:
+FRONT: The Collection interface is the parent interface of ?
+_BACK: List, Set, and Queue. The Map interface does not extend Collection
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT:
-_BACK:
+FRONT: What is a collection?
+_BACK: is a group of objects contained in a single object.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT:
-_BACK:
+FRONT: What is the Java Collections Framework?.
+_BACK: is a set of classes in java.util for storing collections.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT:
-_BACK:
+FRONT: What is a List?
+_BACK: is an ordered collection of elements that allows duplicate entries. Elements in a list can be accessed by an int index.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT:
-_BACK:
+FRONT: What is a Set?
+_BACK: A set is a collection that does not allow duplicate entries, so Java returns false from the add() method.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT:
-_BACK:
+FRONT: What is a Queue?
+_BACK: A queue is a collection that orders its elements in a specific order for processing.
+       A typical queue processes its elements in a first-in, first-out order, but other orderings are possible.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT:
-_BACK:
+FRONT: What is a Map?
+_BACK: A map is a collection that maps keys to values, with no duplicate keys allowed. The elements in a map are key/value pairs.Uses put() rather than add().
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT:
-_BACK:
+FRONT: What is a LinkedList?
+_BACK: is an interface that implements both List and Queue, but isn’t as efficient as a “pure” queue.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT:
-_BACK:
+FRONT: Which is the benefit of LinkedList?
+_BACK: The main benefits of a LinkedList are that you can access, add, and remove from the beginning and end of the list in constant time.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT:
-_BACK:
+FRONT: What is a Stack?
+_BACK: is a data structure where you add and remove elements from the top of the stack (Older last-in, first-out class).  If you need a stack, use an ArrayDeque instead.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT:
-_BACK:
+FRONT: What does boolean add(E e)?
+_BACK: It is used to append the specified element at the end of a list.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT:
-_BACK:
+FRONT: What does void add(int index, E element)?
+_BACK: It is used to insert the specified element at the specified position in a list.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT:
-_BACK:
+FRONT: What does E get(int index)?
+_BACK: It is used to fetch the element from the particular position of the list.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT:
-_BACK:
+FRONT: What does int lastIndexOf(Object o)?
+_BACK: It is used to return the index in this list of the last occurrence of the specified element, or -1 if the list does not contain this element.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT:
-_BACK:
+FRONT: What does E set(int index, E e)?
+_BACK: Replaces element at index and returns original.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT:
-_BACK:
+FRONT: How works a HashSet?
+_BACK: stores its elements in a hash table. This means that it uses the hashCode() method of the objects to retrieve them more efficiently. Not guarantee any iteration order.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT:
-_BACK:
+FRONT: How works a TreeSet?
+_BACK: stores its elements in a sorted tree structure. The main benefit is that the set is always in sorted order.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT:
-_BACK:
+FRONT: When use a queue?
+_BACK: when elements are added and removed in a specific order.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT:
-_BACK:
+FRONT: What is a ArrayDeque?
+_BACK: is a “pure” double-ended queue. It stores its elements in a resizable array. The main benefit of an ArrayDeque is that it is more efficient than a LinkedList.
+       First-in, first-out or last-in, first-out. Does not allow null values.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT:
-_BACK:
+FRONT: TreeSet cannot contain null elements?
+_BACK: No, It also means that TreeMap cannot contain null keys. Null values are OK.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT:
-_BACK:
+FRONT: Which values can contain Hashtable?
+_BACK: It can no null keys or values.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT:
-_BACK:
+FRONT: ArrayDeque can caontain null elements?
+_BACK: No.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT:
-_BACK:
+FRONT: What is a Vector?
+_BACK: Is an Older thread-safe version of ArrayList.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT:
-_BACK:
+FRONT: What is Comparable?
+_BACK: java.lang.Comparable is a functional interface:
+         public interface Comparable<T> {
+            public int compareTo(T o);
+        }
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT:
-_BACK:
+FRONT: What is Comparator?
+_BACK: java.util.Comparator is an interface that defines a compare(arg1, arg2) method with two arguments which represent compared objects and works similarly to the Comparable.compareTo() method.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT:
-_BACK:
+FRONT: Map have a contains() method?
+_BACK: No, It has containsKey() and containsValue() instead.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT:
-_BACK:
+FRONT: Map index start form 0.
+_BACK: False. Starts from 1: map.get(n) n starts in 1.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT:
-_BACK:
+FRONT: How to recognize the order type in a ArrayDeque?
+_BACK: push() -> LIFO. offer() -> FIFO
+-----------------------------------------------------------------------------------------------------------------------------------
+FRONT: How works the ceiling() method in TreeSet?
+_BACK: Returns the smallest element greater than the specified one.
+-----------------------------------------------------------------------------------------------------------------------------------
+FRONT: Name a diference between List and Queue.
+_BACK: List interface has a method to remove by index. Queue has only the remove by object method
