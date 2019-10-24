@@ -401,44 +401,50 @@ FRONT: How we can create an Instant object?
 _BACK: Instant.now() or Instant.ofEpochSecond(epochSeconds) or zonedDateTime.toInstant()
        Without a time zone, Java doesn’t know what moment in time to use for the Instant.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: How enable assertions?
+_BACK: Java uses the flags –ea or –enableassertions to turn on assertions. 
+       –da or –disableassertions turns off assertions. The colon indicates for a specific class.
+-----------------------------------------------------------------------------------------------------------------------------------
+FRONT: What is an assertion?
+_BACK: is a boolean expression followed by an optional colon and message. The boolean expression is allowed to be in parenthesis, but this is not required. 
+       They should not have side effects.
+-----------------------------------------------------------------------------------------------------------------------------------
+FRONT: How is the variable in a multi-catch?
+_BACK: Since a multi-catch is used, the variable in the catch block is effectively final and cannot be reassigned.
+-----------------------------------------------------------------------------------------------------------------------------------
+FRONT: A multi-catch can catch both a superclass and subclass?
+_BACK: No.
+-----------------------------------------------------------------------------------------------------------------------------------
+FRONT: What is the diference between Low-level streams  and High-level streams ?
+_BACK: Low-level streams provide access directly to underlying bytes. High-level streams build upon low-level streams for additional capabilities.
+       The InputStream and OutputStream are abstract classes that use low-level I/O streams.
+-----------------------------------------------------------------------------------------------------------------------------------
+FRONT: What is a FileInputStream?
+_BACK: is a low-level stream that interacts directly with a file resource, not a stream resource.
+-----------------------------------------------------------------------------------------------------------------------------------
+FRONT: Which are low-level stream classes? 
+_BACK: All low-level stream classes inherit from either the InputStream or OutputStream abstract classes. 
+-----------------------------------------------------------------------------------------------------------------------------------
+FRONT: What are ByteArrayInputStream and ByteArrayOutputStream?
+_BACK: Are low-level stream classes that read and write arrays of bytes with buffering.
+-----------------------------------------------------------------------------------------------------------------------------------
+FRONT: What are FileInputStream and FileOutputStream?
+_BACK: Are low-level stream classes. The FileInputStream receives data from a file in byte form. The FileOutputStream outputs the data to a file.
+       ObjectInputStream and ObjectOutputStream
+-----------------------------------------------------------------------------------------------------------------------------------
+FRONT: What are ObjectInputStream and ObjectOutputStream?
+_BACK: Are low-level stream classes.The ObjectInputStream deserializes primitive data and objects that have been previously serialized using an 
+       ObjectOutputStream object.
+-----------------------------------------------------------------------------------------------------------------------------------
+FRONT: What are PipedInputStream and PipedOutputStream?
+_BACK: Are low-level stream classes. The PipedInputStream and PipedOutputStream classes work with thread communication. They enable you to create 
+       and connect two sides of a stream.
+-----------------------------------------------------------------------------------------------------------------------------------
+FRONT: What is SequenceInputStream?
+_BACK: Are low-level stream class. The SequenceInputStream class enables you to concatenate other input streams and to read from each of them, in turn.
 -----------------------------------------------------------------------------------------------------------------------------------
 FRONT: 
-_BACK:
------------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
------------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
------------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
------------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
------------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
------------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
------------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
------------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
------------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
------------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
------------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+_BACK: 
 -----------------------------------------------------------------------------------------------------------------------------------
 FRONT: 
 _BACK:

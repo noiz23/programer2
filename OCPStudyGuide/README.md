@@ -318,8 +318,7 @@ A thread is the smallest unit of execution that can be scheduled by the operatin
 
 ****************************************************************************************************************************
 =====================================================================CH 6:
-- Java uses the flags –ea or –enableassertions to turn on assertions. –da or
-–disableassertions turns off assertions. The colon indicates for a specific class. 
+- Java uses the flags –ea or –enableassertions to turn on assertions. –da or –disableassertions turns off assertions. The colon indicates for a specific class. 
 - An assertion consists of a boolean expression followed by an optional colon and message. The boolean expression is allowed to be in parenthesis, but this is not required.
 - assertions should not have side effects.
 - ** memorize the contents of Table 6.2 and Table 6.3 before the exam
