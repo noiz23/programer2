@@ -366,38 +366,40 @@ _BACK: Is a predefined method of java.util.stream.Collectors class which is used
 FRONT: Which are the dedicated supplier classes?
 _BACK: BooleanSupplier, DoubleSupplier,IntSupplier,LongSupplier.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: How code runs in a try-with-resources statement?
+_BACK: Resources are closed after the try clause ends and before any catch/ finally clauses and in the reverse order from which they were created.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: Which is the syntax for an assert statement?
+_BACK: Has two: assert boolean_expression; and assert boolean_expression: error_message;. error_message is optional.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: Which is the difference between AutoCloseable and Closeable?
+_BACK: AutoCloseable has Exception in the signature and Closeable has only IOException in the signature.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: How we can create a Locale object?.
+_BACK: Locale is created using a constructor. The convention is to use lowercase for a language code and uppercase for a country code. The
+       language is mandatory when using a constructor
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: Which is the diference between Java class resource bundles and property files?
+_BACK: Java class resource bundles can have non-String values while property files are limited to strings.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: How Java look for properties?
+_BACK: Java specifies that it will look for a Java class resource bundle before a property file of the same name.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: How is the index for months Calendar constants?
+_BACK: it begins with 0.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: How is the chaining method in Period Objects?
+_BACK: Period does not allow chaining. Only the last Period method called counts.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: Name a diference between Period and Duration.
+_BACK: Period format begins with a P and a Duration format begins with PT. They are different types and do not represent the same value even though they are both a day.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: Name a diference between Period and Duration for measures
+_BACK: Duration uses hours/minutes/seconds and Period uses years months/days for measures
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: How we can create an Instant object?
+_BACK: Instant.now() or Instant.ofEpochSecond(epochSeconds) or zonedDateTime.toInstant()
+       Without a time zone, Java doesn’t know what moment in time to use for the Instant.
 -----------------------------------------------------------------------------------------------------------------------------------
 FRONT: 
 _BACK:

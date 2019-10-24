@@ -312,9 +312,8 @@ A thread is the smallest unit of execution that can be scheduled by the operatin
 - Java specifies that it will look for a Java class resource bundle before a property file of the same name.
 - Calendar constants for months begins with 0.
 - Period does not allow chaining. Only the last Period method called counts.
--  Period format begins with a P and a Dura-
-tion format begins with PT. They are different types and do not represent the same value even though they are both a day.
--  Remember that Duration uses hours/minutes/seconds and Period uses years months/days for measures
+- Period format begins with a P and a Duration format begins with PT. They are different types and do not represent the same value even though they are both a day.
+- Remember that Duration uses hours/minutes/seconds and Period uses years months/days for measures
 - Without a time zone, Java doesn’t know what moment in time to use for the Instant.
 
 ****************************************************************************************************************************
@@ -332,8 +331,6 @@ tion format begins with PT. They are different types and do not represent the sa
 ****************************************************************************************************************************
 =======================================================================CH 7
 The key here is that using the atomic classes ensures that the data is consistent between workers and that no values are lost due to concurrent modifications.
-
-
 ****************************************************************************************************************************
 =======================================================================CH 8
 - FileInputStream is a low-level stream that interacts directly with a file resource, not a stream resource.
