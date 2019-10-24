@@ -310,56 +310,61 @@ _BACK: Returns the smallest element greater than the specified one.
 FRONT: Name a diference between List and Queue.
 _BACK: List interface has a method to remove by index. Queue has only the remove by object method
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: What type of objects can a lamnda expresion access?.
+_BACK: Lambda expressions can access static variables, instance variables, effectively final method parameters, and effectively final local variables.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: Name some features of Runnable interface.
+_BACK: Runnable interface doesn’t take any parameters, return any data, or use generics.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: When we can use Supplier Interface?
+_BACK: is used when you want to generate or supply values without taking any input.
+        @FunctionalInterface public class Supplier<T> {
+            public T get();
+        }
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: When use Consumer and BiConsumer interface?
+_BACK: You use a Consumer when you want to do something with a parameter (void accept(T t) but not return anything. BiConsumer does the same thing except that it takes two parameters (void accept(T t, U u);). 
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: What is Predicate and BiPredicate?
+_BACK: A Predicate FI accepts one argument and returns a boolean value. Its abstract method is (boolean test(T t);). A BiPredicate FI accepts two arguments 
+       and return a boolean value (boolean test(T t, U u);).
+       When you see a boolean returned, think Predicate unless the generics specify a Boolean return type.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: What does the Function interface?
+_BACK: Is responsible for turning one parameter into a value of a potentially different type and returning it (R apply(T t);).
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: What does the BiFunction interface?
+_BACK: Is responsible for turning two parameters into a value and returning it.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: What characteristic do UnaryOperator and BinaryOperator share?
+_BACK: They require all type parameters to be the same type.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: Which is the diference between stream in Java and stream pipeline?
+_BACK: A stream in Java is a sequence of data. A stream pipeline is the operations that run on a stream to produce a result.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: Which method can be invoked from Collections or a Stream?
+_BACK: You can call forEach() directly on a Collection or on a Stream.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: Why Streams cannot use a traditional for loop to run?
+_BACK: because Streams don’t implement the Iterable interface.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: What is the use of a IntStream?
+_BACK: Used for the primitive types int, short, byte, and char.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: What is the use of LongStream?
+_BACK: Used for the primitive type long.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: What is the DoubleStream?
+_BACK: Used for the primitive types double and float.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: Which is the return of average() method?.
+_BACK: Returns an OptionalDouble since averages of any type can result in a fraction.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: What is Collectors partitioningBy() method ?
+_BACK: Is a predefined method of java.util.stream.Collectors class which is used to partition a stream of objects(or a set of elements) based on a given predicate
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: Which are the dedicated supplier classes?
+_BACK: BooleanSupplier, DoubleSupplier,IntSupplier,LongSupplier.
 -----------------------------------------------------------------------------------------------------------------------------------
 FRONT: 
 _BACK:
