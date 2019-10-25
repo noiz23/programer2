@@ -394,7 +394,6 @@ BasicFileAttributeView is used to modify a file’s set of date/time values.
 ===================================================CH 10
 JDBC stands for Java Database Connectivity: Accesses data as rows and columns.
 
-\\ java -cp "/opt/derby-10.14.2.0/lib/derby.jar:." SetupDerbyDatabase
 Interfaces in JDBC for exam:
 
 Driver: Knows how to get a connection to the database

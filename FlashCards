@@ -526,68 +526,70 @@ _BACK: retrieves the members of the current directory without traversing any sub
 FRONT: How Files.walk() and Files.find() work?
 _BACK: recursively traverse a directory tree rather than list the contents of the current directory.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: What JDBC means?
+_BACK: Java Database Connectivity: Accesses data as rows and columns.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: Which are de 4 most important interfaces in JDBC?
+_BACK: Driver,Connection,Statement,ResultSet.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: What is the use of Driver Interface?
+_BACK: Knows how to get a connection to the database
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: What is the use of Connection Interface?
+_BACK: Knows how to communicate with the database
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: What is the use of Statement Interface?
+_BACK: Knows how to run the SQL
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: What is the use of ResultSet Interface?
+_BACK: Knows what was returned by a SELECT query
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: How we can get a Connection?
+_BACK: There are two main ways to get a Connection: DriverManager or DataSource.
+       Es better use DataSource then DriverManager, but the last one is in the exam objectives.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: Which is the defauld mode of ResultSet?
+_BACK: By default, a ResultSet is in TYPE_FORWARD_ONLY mode and is in CONCUR_READ_ONLY mode.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: Which statement can be executed with executeUpdate() method?
+_BACK: DELETE, INSERT, or UPDATE.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: What can run execute() method?
+_BACK: can run query or an update. It returns a boolean so that we know whether there is a ResultSet. true-> ran query. false-> ran update
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: Which method can we use for a SELECT (query)?
+_BACK: For a SELECT SQL statement, use executeQuery() or execute() . For other SQL statements, use executeUpdate() or execute().
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: How is the index in a ResultSet?
+_BACK: The rows in a ResultSet are numbered start-ing with 1.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: What absolute(4) does? 
+_BACK: Calling absolute(4) moves the cursor to the fourth row. Calling absolute(0) moves the cursor to a location immediately 
+       before the result. Calling absolute(-1) moves the cursor to the last row.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: What happen if we close a Connection?
+_BACK: Closing a Connection also closes the Statement and ResultSet.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: What happen if we close a Statement?
+_BACK: Closing a Statement also closes the ResultSet.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: Which is the correct order for closing JDBC interface objects?
+_BACK: The ResultSet is closed first, followed by the Statement, and then the Connection.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: In JDBC excptions, what returns getMessage() method?
+_BACK: The getMessage() method returns a human-readable message as to what went wrong.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: In JDBC excptions, what returns getSQLState() method?
+_BACK: The getSQLState() method returns a code as to what went wrong. 
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: In JDBC excptions, what is getErrorCode() method?
+_BACK: The getErrorCode() is a database-specific code.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: What is CONCUR_READ_ONLY?
+_BACK: Is a mode for Resulset concurrency when creating a Statement. Means that you can read the ResultSet but not write to it. --> is the default.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: What is  CONCUR_UPDATABLE?
+_BACK: s a mode for Resulset concurrency when creating a Statement. Means that you can both read and write to it.
 -----------------------------------------------------------------------------------------------------------------------------------
 FRONT: 
 _BACK:
