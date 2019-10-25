@@ -8,9 +8,22 @@ public class NN{
     }
 }
 
-* -> Java 8 Concurrency
+* -> Java 8 Concurrency: - CyclicBarrier and CopyOnWriteArrayList
+                         - Fork/Join Framework
+
+
 
 https://docs.oracle.com/javase/8/docs/api/java/util/function/package-summary.html
+https://www.oracle.com/technetwork/es/articles/java/expresiones-lambda-api-stream-java-2737544-esa.html
+https://www.oracle.com/technetwork/es/articles/java/procesamiento-streams-java-se-8-2763402-esa.html
+https://winterbe.com/posts/2015/04/07/java8-concurrency-tutorial-thread-executor-examples/
+https://docs.oracle.com/javase/tutorial/java/javaOO/nested.html
+https://docs.oracle.com/javase/tutorial/java/generics/wildcards.html
+https://www.zoltanraffai.com/blog/streams-in-java-8-2/
+http://javadevwannabe.blogspot.com/2012/02/low-level-streams.html
+https://www.geeksforgeeks.org/java-8-booleansupplier-interface-with-examples/
+https://www.baeldung.com/java-stream-reduce
+http://javadevwannabe.blogspot.com/2012/02/high-level-streams.html
 
 # programer2
 - Carpeta OCPStudyGuide.JavaClasses contiene las clases java de los ejemplos y examenes del libro

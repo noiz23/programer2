@@ -443,86 +443,88 @@ _BACK: Are low-level stream classes. The PipedInputStream and PipedOutputStream 
 FRONT: What is SequenceInputStream?
 _BACK: Are low-level stream class. The SequenceInputStream class enables you to concatenate other input streams and to read from each of them, in turn.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK: 
+FRONT: Which is the result of the bufferedReader.readLine()?
+_BACK: returns a String and reads a line of input from the console. readPassword() returns a char[].
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: How many stream has the System class?
+_BACK: The System class has three streams: in is for input, err is for error, and out is for output.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: Serialization of an object stores the static class data?
+_BACK: No, stores only the instance variable data.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: What do ObjectOutputStream and ObjectInputStream?
+_BACK: perform serialization and deserialization on a low-level stream, respectively.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: What do PrintStream and PrintWriter?
+_BACK: format text for a low-level OutputStream and Writer.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: FileWriter and FileInputStream are low-level streams?
+_BACK: yes, they operate on a file directly.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: What is OutputStream?
+_BACK: is an abstract parent class and is neither high-level nor low-level.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: How many output methods have Console?
+_BACK: Console defines two output methods, format() and printf(), that are identical in function.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: What means a transient variable?
+_BACK: that their values will not be saved upon serialization.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: How we can create a directory?
+_BACK: Files.createDirectory(Path) method to create a directory.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: How we can create many directories?
+_BACK: like mkdirs() creates the target directory along with any nonexistent parent directories leading up to the target directory in the path.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: When DirectoryNotEmptyException is thrown?
+_BACK: Moving a non-empty directory across a drive will throw an NIO.2 DirectoryNotEmptyException. --> Files.move(Paths.get("c:\\zoo"),Paths.get("c:\\zoo-new"));
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: How works delete() and deleteIfExists() for symbol link?
+_BACK: If the target of the path is a symbol link, then the symbolic link will be deleted, not the target of the link.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: What returns isReadable() and isExecutable() methods when the file not exist?.
+_BACK: Like the isDirectory(), isRegularFile(), and isSymbolicLink() methods do not throw exceptions if the file does not exist but instead return false.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: What is FileTime class?
+_BACK: is a simple container class that stores the date/time information about when a file was accessed, modified, or created. For convenience, it has a 
+       toMillis() method that returns the epoch time.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: What Files.getLastModifiedTime(Path) returns?
+_BACK: returns a FileTime object to accomplish this.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: How convert from the epoch time to a FileTime object?
+_BACK: The FileTime class also has a static fromMillis() method this.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: How we can use BasicFileAttributeView?
+_BACK: is used to modify a file’s set of date/time values.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: Where is available the setTimes() method?
+_BACK: only on BasicFileAttributeView, not the read only BasicFileAttributes class.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: What returns resolve() with an absolute path as a parameter?
+_BACK: returns the absolute path. resolve() method does not normalize any path symbols.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: What is the return of Files.lines() and Files.readAllLines()?
+_BACK: The first one returns a Stream<Path>. The second one, returns a List<String>
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: Which is the diference between Files.lines() and Files.readAllLines()?
+_BACK: Files.lines() reads the file in a lazy manner, while Files.readAllLines() reads the entire file into memory all at once; therefore Files.lines() 
+       works better on large files with limited memory available
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: What it means NOFOLLOW_LINKS option?
+_BACK: that if the source is a symbolic link, the link itself and not the target will be copied at runtime.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: What it means ATOMIC_MOVE option?
+_BACK: that any process monitoring the file system will not see an incomplete file during the move.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: When isSameFile() returns true?
+_BACK: only if the files pointed to in the file system are the same, without regard to the file contents.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: What is the result of the java.io.File.listFiles() method?
+_BACK: retrieves the members of the current directory without traversing any subdirectories.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: 
-_BACK:
+FRONT: How Files.walk() and Files.find() work?
+_BACK: recursively traverse a directory tree rather than list the contents of the current directory.
 -----------------------------------------------------------------------------------------------------------------------------------
 FRONT: 
 _BACK:
