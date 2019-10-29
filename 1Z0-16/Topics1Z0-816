@@ -1,12 +1,56 @@
                                             JDK 11.
 
 Java Fundamentals
-    - Create and use final classes  - ok
-    - Create and use inner, nested and anonymous classes.  - ok
+    - Create and use final classes.  
+    - Create and use inner, nested and anonymous classes. 
     - Create and use enumerations.
     
 Java Interfaces
-    - 
+    - Create and use interfaces with default methods:
+        FRONT:Name a diference between class and interface.
+        _BACK:The defining difference between an interface and a class is that a class can maintain state information, but an interface cannot.
+        
+    - Create and use interfaces with private methods:
+        --------------------------------------------------------------------------------------------------------------------------------------
+        FRONT:An interface can include a private method?
+        _BACK:Yes, beginning with JDK 9.
+        --------------------------------------------------------------------------------------------------------------------------------------
+        FRONT:Where a private method in an interface can be used?
+        _BACK:Can be called only by a default method or another private method defined by the same interface.
+        --------------------------------------------------------------------------------------------------------------------------------------
+
+Functional Interface and Lambda Expressions
+     - Define and write functional interfaces.
+     - Create and use lambda expressions including statement lambdas, local-variable for lambda parameters.
      
-    
+Built-in Functional Interfaces
+     - Use interfaces from java.util.function package
+     - Use core functional interfaces including Predicate, Consumer, Function and Supplier
+     - Use primitive and binary variations of base interfaces of java.util.function package
+     
+Migration to a Modular Application  --??
+     - Migrate the application developed using a Java version prior to SE 9 to SE 11 including top-down and bottom-up migration, splitting a Java SE 8 application 
+       into modules for migration.
+     - Use jdeps to determine dependencies and identify ways to address the cyclic dependencies.
+     
+Concurrency
+    - Create worker threads using Runnable, Callable and use an ExecutorService to concurrently execute tasks.
+    - Use java.util.concurrent collections and classes including CyclicBarrier and CopyOnWriteArrayList.
+        FRONT:What is CyclicBarrier?
+        _BACK:Is a synchronizer that allows a set of threads to wait for each other to reach a common execution point, also called a barrier.
+        --------------------------------------------------------------------------------------------------------------------------------------
+        FRONT:Which constructors CyclicBarrier have?
+        _BACK:CyclicBarrier(int numThreads) and
+              CyclicBarrier(int numThreads, Runnable action)
+        --------------------------------------------------------------------------------------------------------------------------------------
+        FRONT:Whats CyclicBarrier.await() method does? 
+        _BACK:pause execution of the thread until all of the other threads also call await( ).Once the specified number of threads has reached the 
+              barrier, await( ) will return and execution will resume. Also, if you have specified an action, then that thread is executed.
+        --------------------------------------------------------------------------------------------------------------------------------------
+        FRONT:Which are the CyclicBarrier.await() forms?
+        _BACK:int await( ) throws InterruptedException, BrokenBarrierException AND
+              int await(long wait, TimeUnit tu) throws InterruptedException, BrokenBarrierException, TimeoutException
+        --------------------------------------------------------------------------------------------------------------------------------------
+    - Write thread-safe code
+    - Identify threading problems such as deadlocks and livelocks     
     
