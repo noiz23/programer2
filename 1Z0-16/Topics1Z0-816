@@ -35,9 +35,40 @@ Migration to a Modular Application  --??
      
 Concurrency
     - Create worker threads using Runnable, Callable and use an ExecutorService to concurrently execute tasks.
+        F:How is execute a Callable task?
+        B:A Callable task is executed by an ExecutorService, by calling its submit( ) method: <T> Future<T> submit(Callable<T> task)
+        --------------------------------------------------------------------------------------------------------------------------------------
+        F:Which is the firts Future’s get( ) method and how works?
+        B:Waits for the result indefinitely: V get( ) throws InterruptedException, ExecutionException
+        --------------------------------------------------------------------------------------------------------------------------------------
+        F:Which is the second Future’s get( ) method and how works?
+        B:Specify a timeout period in wait: V get(long wait, TimeUnit tu) throws InterruptedException, ExecutionException, TimeoutException
+        --------------------------------------------------------------------------------------------------------------------------------------
+        F:What ExecutorService does?
+        B:Simplifies the execution of tasks in asynchronous mode.
+        --------------------------------------------------------------------------------------------------------------------------------------
+        F:How we can create ExecutorService?
+        B:Use one of the factory methods of the Executors class:
+            static ExecutorService newCachedThreadPool( )
+            static ExecutorService newFixedThreadPool(int numThreads)
+            static ScheduledExecutorService newScheduledThreadPool(int numThreads)
+        --------------------------------------------------------------------------------------------------------------------------------------
+        F:How tasks can be assigned to ExecutorService?
+        B:Using the methods execute(),submit()*, invokeAny(), invokeAll()*. 
+            * return an object or a collection of objects of type Future.
+        --------------------------------------------------------------------------------------------------------------------------------------
+        F:What ExecutorService.shutdown()  does?
+        B:Doesn't cause an immediate destruction of the ExecutorService. It will make the ExecutorService stop accepting new tasks and shut down 
+          after all running threads finish their current work.
+        --------------------------------------------------------------------------------------------------------------------------------------
+        F:What ExecutorService.shutdownNow() does? 
+        B:Tries to destroy the ExecutorService immediately, but it doesn't guarantee that all the running threads will be stopped at the same time. 
+          This method returns a list of tasks which are waiting to be processed.
+        
     - Use java.util.concurrent collections and classes including CyclicBarrier and CopyOnWriteArrayList.
         FRONT:What is CyclicBarrier?
-        _BACK:Is a synchronizer that allows a set of threads to wait for each other to reach a common execution point, also called a barrier.
+        _BACK:Is a synchronizer that allows a set of threads to wait for each other to reach a common execution point, also called a barrier. It's inside
+              java.util.concurrent package.
         --------------------------------------------------------------------------------------------------------------------------------------
         FRONT:Which constructors CyclicBarrier have?
         _BACK:CyclicBarrier(int numThreads) and
@@ -51,6 +82,36 @@ Concurrency
         _BACK:int await( ) throws InterruptedException, BrokenBarrierException AND
               int await(long wait, TimeUnit tu) throws InterruptedException, BrokenBarrierException, TimeoutException
         --------------------------------------------------------------------------------------------------------------------------------------
+        FRONT:When use CopyOnWriteArrayList API?
+        _BACK:When we want to iterate over a list in a thread-safe way without an explicit synchronization.
+        --------------------------------------------------------------------------------------------------------------------------------------
+        FRONT:In CopyOnWriteArrayList when UnsupportedOperationException is present?
+        _BACK:When executes the remove() operation on the returned Iterator.
+        --------------------------------------------------------------------------------------------------------------------------------------
     - Write thread-safe code
-    - Identify threading problems such as deadlocks and livelocks     
+    - Identify threading problems such as deadlocks and livelocks    
+    
+I/O (Fundamentals and NIO2)
+    - Read data from and write console and file data using I/O Streams
+        F:How reading console input?
+        B: import java.io.+;
+            BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+            Using char c = (char) br.read(); or String str = br.readLine(); 
+        --------------------------------------------------------------------------------------------------------------------------------------
+        F:How connect a PrintWriter to console output?
+        B: import java.io.;*
+           PrintWriter pw = new PrintWriter(System.out, true);
+        --------------------------------------------------------------------------------------------------------------------------------------    
+    - Use I/O Streams to read and write files
+        F:Which stream clases are most used to reading and writing files?
+        B:FileInputStream and FileOutputStream.
+        --------------------------------------------------------------------------------------------------------------------------------------
+        F:Which resources can be use try-with-resources statement?
+        B:resources that implement the AutoCloseable interface defined by java.lang.
+        --------------------------------------------------------------------------------------------------------------------------------------
+    - Read and write objects by using serialization
+    - Use Path interface to operate on file and directory paths
+    - Use Files class to check, delete, copy or move a file or directory
+    - Use Stream API with Files    
+    
     
