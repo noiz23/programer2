@@ -28,7 +28,7 @@ Built-in Functional Interfaces
      - Use core functional interfaces including Predicate, Consumer, Function and Supplier
      - Use primitive and binary variations of base interfaces of java.util.function package
      
-Migration to a Modular Application  --??
+Migration to a Modular Application 
      - Migrate the application developed using a Java version prior to SE 9 to SE 11 including top-down and bottom-up migration, splitting a Java SE 8 application 
        into modules for migration.
      - Use jdeps to determine dependencies and identify ways to address the cyclic dependencies.
@@ -102,16 +102,46 @@ I/O (Fundamentals and NIO2)
         B: import java.io.;*
            PrintWriter pw = new PrintWriter(System.out, true);
         --------------------------------------------------------------------------------------------------------------------------------------    
-    - Use I/O Streams to read and write files
+    - Use I/O Streams to read and write files.
         F:Which stream clases are most used to reading and writing files?
         B:FileInputStream and FileOutputStream.
         --------------------------------------------------------------------------------------------------------------------------------------
         F:Which resources can be use try-with-resources statement?
         B:resources that implement the AutoCloseable interface defined by java.lang.
         --------------------------------------------------------------------------------------------------------------------------------------
-    - Read and write objects by using serialization
-    - Use Path interface to operate on file and directory paths
-    - Use Files class to check, delete, copy or move a file or directory
-    - Use Stream API with Files    
+    - Read and write objects by using serialization.
+    - Use Path interface to operate on file and directory paths.
+    - Use Files class to check, delete, copy or move a file or directory.
+    - Use Stream API with Files.  
     
+Database Applications with JDBC
+    - Connect to databases using JDBC URLs and DriverManager.
+       F:How get a connection to db?
+       B:Connection conn = DriverManager.getConnection(dbURL, username, password)
+       --------------------------------------------------------------------------------------------------------------------------------------
+    - Use PreparedStatement to perform CRUD operations.
+       F:How create a PreparedStatement?
+       B:PreparedStatement statement = conn.prepareStatement(<<parameterized SQL query>>);
+       --------------------------------------------------------------------------------------------------------------------------------------
+    - Use PreparedStatement and CallableStatement APIs to perform database operations.  
+       F:When use CallableStatement?
+       B:When you want to access the database stored procedures. The CallableStatement interface can also accept runtime input parameters.
+       --------------------------------------------------------------------------------------------------------------------------------------
+       F:How create CallableStatement?
+       B:CallableStatement cstmt = conn.prepareCall (<<stored procedure, with parameter placeholders>>);
+       --------------------------------------------------------------------------------------------------------------------------------------
+       F:How register the OUT (INOUT) parameters in CallableStatement?
+       B:stmt.registerOutParameter(n, java.sql.Types.VARCHAR);
+       --------------------------------------------------------------------------------------------------------------------------------------
+       
+Annotations
+    - Describe the purpose of annotations and typical usage patterns.
+    - Apply annotations to classes and methods.
+    - Describe commonly used annotations in the JDK.
+    - Declare custom annotations.
+    
+Localization
+    - Use Locale class
+    - Use resource bundles
+    - Format messages, dates, and numbers with Java    
     
