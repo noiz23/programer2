@@ -1,594 +1,593 @@
-FRONT:  What are some advantages of using NIO.2 views to read metadata rather than individually from java.nio.Files methods? 
-_BACK:  - It makes fewer round-trips to the file system.
-        - It can be used to access file system–dependent attributes.
-        - For reading multiple attributes, it is often more performant.
+F:  What are some advantages of using NIO.2 views to read metadata rather than individually from java.nio.Files methods? 
+B:  - It makes fewer round-trips to the file system.
+    - It can be used to access file system–dependent attributes.
+    - For reading multiple attributes, it is often more performant.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: Name 3 advantages of the NIO.2 API over the legacy java.io.File class for working with files.
-_BACK: - NIO.2 supports file system-dependent attributes.
-       - NIO.2 allows you to traverse a directory tree directly.
-       - NIO.2 supports symbolic links.
+F: Name 3 advantages of the NIO.2 API over the legacy java.io.File class for working with files.
+B: - NIO.2 supports file system-dependent attributes.
+   - NIO.2 allows you to traverse a directory tree directly.
+   - NIO.2 supports symbolic links.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: What functionality does it provide the method relativize(Path)?
-_BACK:  The Path interface provides a method relativize(Path) for constructing the relative path from one Path object to another.
+F: What functionality does it provide the method relativize(Path)?
+B:  The Path interface provides a method relativize(Path) for constructing the relative path from one Path object to another.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: What functionality does it provide the method resolve(Path)?
-_BACK:  The Path interface includes a resolve(Path) method for creating a new Path by joining an existing path to the current path.
+F: What functionality does it provide the method resolve(Path)?
+B:  The Path interface includes a resolve(Path) method for creating a new Path by joining an existing path to the current path.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: What functionality does it provide the method normalize(Path)?
-_BACK:  The Path interface includes a normalize(Path) method to eliminate the redundancies in the path.
+F: What functionality does it provide the method normalize(Path)?
+B:  The Path interface includes a normalize(Path) method to eliminate the redundancies in the path.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: What are Anonymous inner classes?
-_BACK: Are a special type of local inner class that does not have a name.
+F: What are Anonymous inner classes?
+B: Are a special type of local inner class that does not have a name.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: There are some inheritence rule for anonymous class?
-_BACK: Yes, they are required to extend exactly one class by name or implement exactly one interface.
+F: There are some inheritence rule for anonymous class?
+B: Yes, they are required to extend exactly one class by name or implement exactly one interface.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: Static nested classes can exist without an instance of the outer class?
-_BACK: Yes.
+F: Static nested classes can exist without an instance of the outer class?
+B: Yes.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT:In the instanceof operation, which is the result if some operand is null? 
-_BACK: If the left operand is null, the result is false. If the rigth operand is null, the code doesn't compile because null is not an Object.
+F:In the instanceof operation, which is the result if some operand is null? 
+B:If the left operand is null, the result is false. If the rigth operand is null, the code doesn't compile because null is not an Object.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT:instanceof operand can be applied to two operands that are not in the same class hierarchy?
-_BACK:No, the code will not compile.
+F:instanceof operand can be applied to two operands that are not in the same class hierarchy?
+B:No, the code will not compile.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT:boolean equals(Object obj) compiles when called with null or a class of the wrong type?
-_BACK:Yes, and returns false.
+F:boolean equals(Object obj) compiles when called with null or a class of the wrong type?
+B:Yes, and returns false.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT:Which is the return hashCode()?
-_BACK: public int hashCode() returns a number calculated with all or some of the instance variables used in equals(). 
+F:Which is the return hashCode()?
+B: public int hashCode() returns a number calculated with all or some of the instance variables used in equals(). 
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: Name n caracterictics of Enum types.
-_BACK: - can have instance variables
-      - The constructors are required to be private or package private (dafault).
-      - Are not allowed to have a public or protected constructor.
+F: Name n caracterictics of Enum types.
+B: - can have instance variables
+   - The constructors are required to be private or package private (dafault).
+   - Are not allowed to have a public or protected constructor.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT:abstract enum methods require each enum type to implement the method?
-_BACK:Yes. is similar as an abstract superclass requires concrete subclasses to have an implementation of the abstracts methods.
+F:abstract enum methods require each enum type to implement the method?
+B:Yes. is similar as an abstract superclass requires concrete subclasses to have an implementation of the abstracts methods.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT:What are the rules for methods to be overridden in subclasses?
-_BACK: - a method must have the same signature.
-      - a method must be at least as accessible as the parent method.
-      - must not declare any new or broader exceptions.
-      - must use covariant return types.
+F:What are the rules for methods to be overridden in subclasses?
+B: - a method must have the same signature.
+   - a method must be at least as accessible as the parent method.
+   - must not declare any new or broader exceptions.
+   - must use covariant return types.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT:two objects that return true for equals() objects must return the same hash code?
-_BACK: Yes.
+F:two objects that return true for equals() objects must return the same hash code?
+B: Yes.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT:Which is the return of method ordinal() in an Enum type?
-_BACK:The ordinal() method of an enum returns its corresponding int value. Like arrays, enums are zero based. 
+F:Which is the return of method ordinal() in an Enum type?
+B:The ordinal() method of an enum returns its corresponding int value. Like arrays, enums are zero based. 
     Remember that the index of an enum may change when you recompile the code and should not be used for comparison.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: static methods or static variables are permited in Inner classes?.
-_BACK: No, only nested static classes are permitted to contain statics members.
+F: static methods or static variables are permited in Inner classes?.
+B: No, only nested static classes are permitted to contain statics members.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT:How many categories(terminology) have nested clases?
-_BACK: Two: static and non-static. Nested classes that are declared static are called static nested classes. Non-static nested classes are called inner classes.
+F:How many categories(terminology) have nested clases?
+B: Two: static and non-static. Nested classes that are declared static are called static nested classes. Non-static nested classes are called inner classes.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT:Which is the diference between equals and == ?
-_BACK: == compare references, equals compare content.
+F:Which is the diference between equals and == ?
+B: == compare references, equals compare content.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT:Which access modifiers can be used for an inner class?
-_BACK:All, unlike a "regular" class, an inner class can be private or protected or static.
+F:Which access modifiers can be used for an inner class?
+B:All, unlike a "regular" class, an inner class can be private or protected or static.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: Which access modifiers can be used for an principal class?
-_BACK: Principal class must be public or default and never static.
+F: Which access modifiers can be used for an principal class?
+B: Principal class must be public or default and never static.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT:static inner class have access to members of the outer class that are not static?
-_BACK:No, Is just like static attributes and methods in a regular class.
+F:static inner class have access to members of the outer class that are not static?
+B:No, Is just like static attributes and methods in a regular class.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT:What is Virtual method invocation?
-_BACK:Is when the subclass method gets called at runtime rather than the type in the variable reference.
+F:What is Virtual method invocation?
+B:Is when the subclass method gets called at runtime rather than the type in the variable reference.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT:An interface may extend another interface?
-_BACK:Yes, and in doing so it inherits all of the abstract methods.
+F:An interface may extend another interface?
+B:Yes, and in doing so it inherits all of the abstract methods.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT:Which actions the compiler do in interfaces?
-_BACK:automatically adds public to all interface methods, abstract to all non‐static and non‐default methods
+F:Which actions the compiler do in interfaces?
+B:automatically adds public to all interface methods, abstract to all non‐static and non‐default methods
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT:A class can extends any number of classes?
-_BACK: No, can extends only one class, but can implements any interfaces.
+F:A class can extends any number of classes?
+B: No, can extends only one class, but can implements any interfaces.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT:Which members an interface can contain?
-_BACK: They can contain public static final constant values, public static methods, and public default methods. All members of an interface are public.
+F:Which members an interface can contain?
+B: They can contain public static final constant values, public static methods, and public default methods. All members of an interface are public.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT:What is a functional interface?
-_BACK:Is an interface that contains a single (only one) abstract method. It can contais statict methods and/or default methods.
+F:What is a functional interface?
+B:Is an interface that contains a single (only one) abstract method. It can contais statict methods and/or default methods.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: When the parentheses are optional in a lambda expresion?
-_BACK: Only when there is one parameter and it doesn’t have a type declared.
+F: When the parentheses are optional in a lambda expresion?
+B: Only when there is one parameter and it doesn’t have a type declared.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: When data types for the input parameters of a lambda expression are optional?
-_BACK: When none parameter has it. If one paramter has a data type listed, all input parameters must provide a data type.
+F: When data types for the input parameters of a lambda expression are optional?
+B: When none parameter has it. If one paramter has a data type listed, all input parameters must provide a data type.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT:How we can access to a java object?
-_BACK: A Java object may be accessed using:
+F:How we can access to a java object?
+B: A Java object may be accessed using:
      - a reference with the same type as the object.
      - a reference that is a superclass of the object.
      - a reference that defines an interface that the object implements.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: When is not required cast?
-_BACK: a cast is not required if the object is being reassigned to a supertype or interface of the object:
+F: When is not required cast?
+B: a cast is not required if the object is being reassigned to a supertype or interface of the object:
         Number nu = 0;
         Integer i = 2;
       
         nu = i;//Ok
         i = nu;//Not compile
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT:How we can determinated which properties exist within the object in memory?
-_BACK: The type of the object determines that.
+F:How we can determinated which properties exist within the object in memory?
+B: The type of the object determines that.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT:Which methods and variables are accessible to the Java program?
-_BACK:The type of the reference to the object determines that.
+F:Which methods and variables are accessible to the Java program?
+B:The type of the reference to the object determines that.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT:When is not required an explicit cast?
-_BACK: Casting an object from a subclass to a superclass.Casting an object from a superclass to a subclass requires it.
+F:When is not required an explicit cast?
+B: Casting an object from a subclass to a superclass.Casting an object from a superclass to a subclass requires it.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT:The compiler will not allow casts to unrelated types.?
-_BACK:No.
+F:The compiler will not allow casts to unrelated types.?
+B:No.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: What happen if the object being cast is not actually an instance of that class.?
-_BACK: Even when the code compiles without issue, an exception may be thrown at runtime.
+F: What happen if the object being cast is not actually an instance of that class.?
+B: Even when the code compiles without issue, an exception may be thrown at runtime.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT:What is a design principle?
-_BACK:is an established idea or best practice that facilitates the software design process. 
+F:What is a design principle?
+B:is an established idea or best practice that facilitates the software design process. 
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT:In the wrapper Boolean class, how we can start their getter method?
-_BACK:Using get, for primitive boolean use is.
+F:In the wrapper Boolean class, how we can start their getter method?
+B:Using get, for primitive boolean use is.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT:What is-a relationship is?.
-_BACK:is a inheritance test.The fundamental result of the is‐a principle is that if A is‐a B, then any instance of A can
+F:What is-a relationship is?.
+B:is a inheritance test.The fundamental result of the is‐a principle is that if A is‐a B, then any instance of A can
       be treated like an instance of B. This holds true for a child that is a subclass of any parent,be it a direct subclass or a distant child.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT:What is the Has‐a Relationship?
-_BACK:is the object composition test.
+F:What is the Has‐a Relationship?
+B:is the object composition test.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT:What is the singleton pattern?
-_BACK:is a creational pattern focused on creating only one instance of an object in memory within an application, sharable by all classes and 
+F:What is the singleton pattern?
+B:is a creational pattern focused on creating only one instance of an object in memory within an application, sharable by all classes and 
      threads within the pplication.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT:How are the constructors in the singletong pattern?
-_BACK: All constructors in a singleton class are marked private (The singleton class is effectively final), which ensures that 
+F:How are the constructors in the singletong pattern?
+B: All constructors in a singleton class are marked private (The singleton class is effectively final), which ensures that 
      no other class is capable of instantiating another version of the class.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT:When we can use singletong?
-_BACK:Used in situations where we need access to a single set of data throughout an application, ex: application configuration data and reusable data caches.
+F:When we can use singletong?
+B:Used in situations where we need access to a single set of data throughout an application, ex: application configuration data and reusable data caches.
      Singletons may also be used to coordinate access to shared resources, such as coordinating write access to a file.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT:What is the Immutable Objects pattern?
-_BACK:Is a creational pattern based on the idea of creating objects whose state does not change after they are created and can be easily
+F:What is the Immutable Objects pattern?
+B:Is a creational pattern based on the idea of creating objects whose state does not change after they are created and can be easily
      shared across multiple classes.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT:Name n features of Immutable Objects pattern.
-_BACK: - Static methods are not part of the inmutable object pattern.
-      - getter methods are not required to be marked synchronized.
-      - all instance variables should be private and final to prevent them from being changed by a caller.
-      - the class must be markend as final.
+F:Name n features of Immutable Objects pattern.
+B: - Static methods are not part of the inmutable object pattern.
+   - getter methods are not required to be marked synchronized.
+   - all instance variables should be private and final to prevent them from being changed by a caller.
+   - the class must be markend as final.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT:What is a design pattern?
-_BACK:Is a general repeatable solution to a commonly occurring problem in software design. Focused on solving a specific commonly occurring problem.
+F:What is a design pattern?
+B:Is a general repeatable solution to a commonly occurring problem in software design. Focused on solving a specific commonly occurring problem.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT:Diference between design principles and design patterns.
-_BACK:Design principles are often applied throughout an application, whereas design patterns are applied to solve specific problems.
+F:Diference between design principles and design patterns.
+B:Design principles are often applied throughout an application, whereas design patterns are applied to solve specific problems.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT:An object can be marked as abstract final o viceversa?
-_BACK:  No, abstract and final can never be used together
+F:An object can be marked as abstract final o viceversa?
+B:  No, abstract and final can never be used together
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: Inheritance supports access to protected variables.?
-_BACK: Yes.
+F: Inheritance supports access to protected variables.?
+B: Yes.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT:What type of objects can contain an ArrayList?
-_BACK: Any object, but an ArrayList can't contain primitives.
+F:What type of objects can contain an ArrayList?
+B: Any object, but an ArrayList can't contain primitives.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT:What are raw collections?
-_BACK: Collections written with-out generics (?).
+F:What are raw collections?
+B: Collections written with-out generics (?).
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT:What is an array?
-_BACK: An array is a built-in data structure that contains other objects or primitives.
+F:What is an array?
+B: An array is a built-in data structure that contains other objects or primitives.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT:When we want to specify that any type is OK, what can we use?
-_BACK: Use ?, it is an unbounded wildcard and represents any data type. 
+F:When we want to specify that any type is OK, what can we use?
+B: Use ?, it is an unbounded wildcard and represents any data type. 
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT:How Upper-Bounded Wildcards works?
-_BACK: Upper bounded wildcard restricts the unknown type to be a specific type or a subtype of that type. -> <? extends A>.
+F:How Upper-Bounded Wildcards works?
+B: Upper bounded wildcard restricts the unknown type to be a specific type or a subtype of that type. -> <? extends A>.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: Compiles?: ArrayList<Number> list = new ArrayList<Integer>();
-_BACK: No, a generic type can’t just use a subclass.
+F: Compiles?: ArrayList<Number> list = new ArrayList<Integer>();
+B: No, a generic type can’t just use a subclass.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: Compile List<? extends Number> list = new ArrayList<Integer>(); ?
-_BACK: Yes, The upper-bounded wildcard says that any class that extends Number or Number itself can be used as the formal parameter type -> Number or any subclass.
+F: Compile List<? extends Number> list = new ArrayList<Integer>(); ?
+B: Yes, The upper-bounded wildcard says that any class that extends Number or Number itself can be used as the formal parameter type -> Number or any subclass.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: What is <? extends Object>?
-_BACK: Is an upper bound that means any type that is Object or extends it. 
+F: What is <? extends Object>?
+B: Is an upper bound that means any type that is Object or extends it. 
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: What is <? extends MyInterface> ?
-_BACK: Is an upper bound that means that any type that implements MyInterface.
+F: What is <? extends MyInterface> ?
+B: Is an upper bound that means that any type that implements MyInterface.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: How bounded wildcard  works?
-_BACK: It restricts the unknown type to be a specific type or a super type of that type. -> <? super A>.
+F: How bounded wildcard  works?
+B: It restricts the unknown type to be a specific type or a super type of that type. -> <? super A>.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: What is <? super Number> ?.
-_BACK: Is a lower bound that means any type that is Number or a superclass of Number.
+F: What is <? super Number> ?.
+B: Is a lower bound that means any type that is Number or a superclass of Number.
 -----------------------------------------------------------------------------------------------------------------------------------
 //TO-DO read : https://docs.oracle.com/javase/tutorial/java/generics/wildcards.html
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: Which are the four main types (interfaces) of data structures that Java Collections Framework includes?
-_BACK: lists, sets,queues, and maps.
+F: Which are the four main types (interfaces) of data structures that Java Collections Framework includes?
+B: lists, sets,queues, and maps.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: The Collection interface is the parent interface of ?
-_BACK: List, Set, and Queue. The Map interface does not extend Collection
+F: The Collection interface is the parent interface of ?
+B: List, Set, and Queue. The Map interface does not extend Collection
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: What is a collection?
-_BACK: is a group of objects contained in a single object.
+F: What is a collection?
+B: is a group of objects contained in a single object.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: What is the Java Collections Framework?.
-_BACK: is a set of classes in java.util for storing collections.
+F: What is the Java Collections Framework?.
+B: is a set of classes in java.util for storing collections.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: What is a List?
-_BACK: is an ordered collection of elements that allows duplicate entries. Elements in a list can be accessed by an int index.
+F: What is a List?
+B: is an ordered collection of elements that allows duplicate entries. Elements in a list can be accessed by an int index.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: What is a Set?
-_BACK: A set is a collection that does not allow duplicate entries, so Java returns false from the add() method.
+F: What is a Set?
+B: A set is a collection that does not allow duplicate entries, so Java returns false from the add() method.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: What is a Queue?
-_BACK: A queue is a collection that orders its elements in a specific order for processing.
+F: What is a Queue?
+B: A queue is a collection that orders its elements in a specific order for processing.
        A typical queue processes its elements in a first-in, first-out order, but other orderings are possible.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: What is a Map?
-_BACK: A map is a collection that maps keys to values, with no duplicate keys allowed. The elements in a map are key/value pairs.Uses put() rather than add().
+F: What is a Map?
+B: A map is a collection that maps keys to values, with no duplicate keys allowed. The elements in a map are key/value pairs.Uses put() rather than add().
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: What is a LinkedList?
-_BACK: is an interface that implements both List and Queue, but isn’t as efficient as a “pure” queue.
+F: What is a LinkedList?
+B: is an interface that implements both List and Queue, but isn’t as efficient as a “pure” queue.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: Which is the benefit of LinkedList?
-_BACK: The main benefits of a LinkedList are that you can access, add, and remove from the beginning and end of the list in constant time.
+F: Which is the benefit of LinkedList?
+B: The main benefits of a LinkedList are that you can access, add, and remove from the beginning and end of the list in constant time.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: What is a Stack?
-_BACK: is a data structure where you add and remove elements from the top of the stack (Older last-in, first-out class).  If you need a stack, use an ArrayDeque instead.
+F: What is a Stack?
+B: is a data structure where you add and remove elements from the top of the stack (Older last-in, first-out class).  If you need a stack, use an ArrayDeque instead.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: What does boolean add(E e)?
-_BACK: It is used to append the specified element at the end of a list.
+F: What does boolean add(E e)?
+B: It is used to append the specified element at the end of a list.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: What does void add(int index, E element)?
-_BACK: It is used to insert the specified element at the specified position in a list.
+F: What does void add(int index, E element)?
+B: It is used to insert the specified element at the specified position in a list.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: What does E get(int index)?
-_BACK: It is used to fetch the element from the particular position of the list.
+F: What does E get(int index)?
+B: It is used to fetch the element from the particular position of the list.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: What does int lastIndexOf(Object o)?
-_BACK: It is used to return the index in this list of the last occurrence of the specified element, or -1 if the list does not contain this element.
+F: What does int lastIndexOf(Object o)?
+B: It is used to return the index in this list of the last occurrence of the specified element, or -1 if the list does not contain this element.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: What does E set(int index, E e)?
-_BACK: Replaces element at index and returns original.
+F: What does E set(int index, E e)?
+B: Replaces element at index and returns original.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: How works a HashSet?
-_BACK: stores its elements in a hash table. This means that it uses the hashCode() method of the objects to retrieve them more efficiently. Not guarantee any iteration order.
+F: How works a HashSet?
+B: stores its elements in a hash table. This means that it uses the hashCode() method of the objects to retrieve them more efficiently. Not guarantee any iteration order.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: How works a TreeSet?
-_BACK: stores its elements in a sorted tree structure. The main benefit is that the set is always in sorted order.
+F: How works a TreeSet?
+B: stores its elements in a sorted tree structure. The main benefit is that the set is always in sorted order.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: When use a queue?
-_BACK: when elements are added and removed in a specific order.
+F: When use a queue?
+B: when elements are added and removed in a specific order.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: What is a ArrayDeque?
-_BACK: is a “pure” double-ended queue. It stores its elements in a resizable array. The main benefit of an ArrayDeque is that it is more efficient than a LinkedList.
+F: What is a ArrayDeque?
+B: is a “pure” double-ended queue. It stores its elements in a resizable array. The main benefit of an ArrayDeque is that it is more efficient than a LinkedList.
        First-in, first-out or last-in, first-out. Does not allow null values.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: TreeSet cannot contain null elements?
-_BACK: No, It also means that TreeMap cannot contain null keys. Null values are OK.
+F: TreeSet cannot contain null elements?
+B: No, It also means that TreeMap cannot contain null keys. Null values are OK.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: Which values can contain Hashtable?
-_BACK: It can no null keys or values.
+F: Which values can contain Hashtable?
+B: It can no null keys or values.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: ArrayDeque can caontain null elements?
-_BACK: No.
+F: ArrayDeque can caontain null elements?
+B: No.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: What is a Vector?
-_BACK: Is an Older thread-safe version of ArrayList.
+F: What is a Vector?
+B: Is an Older thread-safe version of ArrayList.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: What is Comparable?
-_BACK: java.lang.Comparable is a functional interface:
+F: What is Comparable?
+B: java.lang.Comparable is a functional interface:
          public interface Comparable<T> {
             public int compareTo(T o);
         }
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: What is Comparator?
-_BACK: java.util.Comparator is an interface that defines a compare(arg1, arg2) method with two arguments which represent compared objects and works similarly to the Comparable.compareTo() method.
+F: What is Comparator?
+B: java.util.Comparator is an interface that defines a compare(arg1, arg2) method with two arguments which represent compared objects and works similarly to the Comparable.compareTo() method.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: Map have a contains() method?
-_BACK: No, It has containsKey() and containsValue() instead.
+F: Map have a contains() method?
+B: No, It has containsKey() and containsValue() instead.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: Map index start form 0.
-_BACK: False. Starts from 1: map.get(n) n starts in 1.
+F: Map index start form 0.
+B: False. Starts from 1: map.get(n) n starts in 1.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: How to recognize the order type in a ArrayDeque?
-_BACK: push() -> LIFO. offer() -> FIFO
+F: How to recognize the order type in a ArrayDeque?
+B: push() -> LIFO. offer() -> FIFO
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: How works the ceiling() method in TreeSet?
-_BACK: Returns the smallest element greater than the specified one.
+F: How works the ceiling() method in TreeSet?
+B: Returns the smallest element greater than the specified one.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: Name a diference between List and Queue.
-_BACK: List interface has a method to remove by index. Queue has only the remove by object method
+F: Name a diference between List and Queue.
+B: List interface has a method to remove by index. Queue has only the remove by object method
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: What type of objects can a lamnda expresion access?.
-_BACK: Lambda expressions can access static variables, instance variables, effectively final method parameters, and effectively final local variables.
+F: What type of objects can a lamnda expresion access?.
+B: Lambda expressions can access static variables, instance variables, effectively final method parameters, and effectively final local variables.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: Name some features of Runnable interface.
-_BACK: Runnable interface doesn’t take any parameters, return any data, or use generics.
+F: Name some features of Runnable interface.
+B: Runnable interface doesn’t take any parameters, return any data, or use generics.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: When we can use Supplier Interface?
-_BACK: is used when you want to generate or supply values without taking any input.
+F: When we can use Supplier Interface?
+B: is used when you want to generate or supply values without taking any input.
         @FunctionalInterface public class Supplier<T> {
             public T get();
         }
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: When use Consumer and BiConsumer interface?
-_BACK: You use a Consumer when you want to do something with a parameter (void accept(T t) but not return anything. BiConsumer does the same thing except that it takes two parameters (void accept(T t, U u);). 
+F: When use Consumer and BiConsumer interface?
+B: You use a Consumer when you want to do something with a parameter (void accept(T t) but not return anything. BiConsumer does the same thing except that it takes two parameters (void accept(T t, U u);). 
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: What is Predicate and BiPredicate?
-_BACK: A Predicate FI accepts one argument and returns a boolean value. Its abstract method is (boolean test(T t);). A BiPredicate FI accepts two arguments 
+F: What is Predicate and BiPredicate?
+B: A Predicate FI accepts one argument and returns a boolean value. Its abstract method is (boolean test(T t);). A BiPredicate FI accepts two arguments 
        and return a boolean value (boolean test(T t, U u);).
        When you see a boolean returned, think Predicate unless the generics specify a Boolean return type.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: What does the Function interface?
-_BACK: Is responsible for turning one parameter into a value of a potentially different type and returning it (R apply(T t);).
+F: What does the Function interface?
+B: Is responsible for turning one parameter into a value of a potentially different type and returning it (R apply(T t);).
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: What does the BiFunction interface?
-_BACK: Is responsible for turning two parameters into a value and returning it.
+F: What does the BiFunction interface?
+B: Is responsible for turning two parameters into a value and returning it.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: What characteristic do UnaryOperator and BinaryOperator share?
-_BACK: They require all type parameters to be the same type.
+F: What characteristic do UnaryOperator and BinaryOperator share?
+B: They require all type parameters to be the same type.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: Which is the diference between stream in Java and stream pipeline?
-_BACK: A stream in Java is a sequence of data. A stream pipeline is the operations that run on a stream to produce a result.
+F: Which is the diference between stream in Java and stream pipeline?
+B: A stream in Java is a sequence of data. A stream pipeline is the operations that run on a stream to produce a result.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: Which method can be invoked from Collections or a Stream?
-_BACK: You can call forEach() directly on a Collection or on a Stream.
+F: Which method can be invoked from a Collections or a Stream?
+B: You can call forEach() directly on a Collection or on a Stream.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: Why Streams cannot use a traditional for loop to run?
-_BACK: because Streams don’t implement the Iterable interface.
+F: Why Streams cannot use a traditional for loop to run?
+B: because Streams don’t implement the Iterable interface.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: What is the use of a IntStream?
-_BACK: Used for the primitive types int, short, byte, and char.
+F: What is the use of a IntStream?
+B: Used for the primitive types int, short, byte, and char.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: What is the use of LongStream?
-_BACK: Used for the primitive type long.
+F: What is the use of LongStream?
+B: Used for the primitive type long.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: What is the DoubleStream?
-_BACK: Used for the primitive types double and float.
+F: What is the DoubleStream?
+B: Used for the primitive types double and float.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: Which is the return of average() method?.
-_BACK: Returns an OptionalDouble since averages of any type can result in a fraction.
+F: Which is the return of average() method?.
+B: Returns an OptionalDouble since averages of any type can result in a fraction.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: What is Collectors partitioningBy() method ?
-_BACK: Is a predefined method of java.util.stream.Collectors class which is used to partition a stream of objects(or a set of elements) based on a given predicate
+F: What is Collectors partitioningBy() method ?
+B: Is a predefined method of java.util.stream.Collectors class which is used to partition a stream of objects(or a set of elements) based on a given predicate
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: Which are the dedicated supplier classes?
-_BACK: BooleanSupplier, DoubleSupplier,IntSupplier,LongSupplier.
+F: Which are the dedicated supplier classes?
+B: BooleanSupplier, DoubleSupplier,IntSupplier,LongSupplier.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: How code runs in a try-with-resources statement?
-_BACK: Resources are closed after the try clause ends and before any catch/ finally clauses and in the reverse order from which they were created.
+F: How code runs in a try-with-resources statement?
+B: Resources are closed after the try clause ends and before any catch/ finally clauses and in the reverse order from which they were created.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: Which is the syntax for an assert statement?
-_BACK: Has two: assert boolean_expression; and assert boolean_expression: error_message;. error_message is optional.
+F: Which is the syntax for an assert statement?
+B: Has two: assert boolean_expression; and assert boolean_expression: error_message;. error_message is optional.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: Which is the difference between AutoCloseable and Closeable?
-_BACK: AutoCloseable has Exception in the signature and Closeable has only IOException in the signature.
+F: Which is the difference between AutoCloseable and Closeable?
+B: AutoCloseable has Exception in the signature and Closeable has only IOException in the signature.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: How we can create a Locale object?.
-_BACK: Locale is created using a constructor. The convention is to use lowercase for a language code and uppercase for a country code. The
+F: How we can create a Locale object?.
+B: Locale is created using a constructor. The convention is to use lowercase for a language code and uppercase for a country code. The
        language is mandatory when using a constructor
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: Which is the diference between Java class resource bundles and property files?
-_BACK: Java class resource bundles can have non-String values while property files are limited to strings.
+F: Which is the diference between Java class resource bundles and property files?
+B: Java class resource bundles can have non-String values while property files are limited to strings.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: How Java look for properties?
-_BACK: Java specifies that it will look for a Java class resource bundle before a property file of the same name.
+F: How Java look for properties?
+B: Java specifies that it will look for a Java class resource bundle before a property file of the same name.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: How is the index for months Calendar constants?
-_BACK: it begins with 0.
+F: How is the index for months Calendar constants?
+B: it begins with 0.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: How is the chaining method in Period Objects?
-_BACK: Period does not allow chaining. Only the last Period method called counts.
+F: How is the chaining method in Period Objects?
+B: Period does not allow chaining. Only the last Period method called counts.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: Name a diference between Period and Duration.
-_BACK: Period format begins with a P and a Duration format begins with PT. They are different types and do not represent the same value even though they are both a day.
+F: Name a diference between Period and Duration.
+B: Period format begins with a P and a Duration format begins with PT. They are different types and do not represent the same value even though they are both a day.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: Name a diference between Period and Duration for measures
-_BACK: Duration uses hours/minutes/seconds and Period uses years months/days for measures
+F: Name a diference between Period and Duration for measures
+B: Duration uses hours/minutes/seconds and Period uses years months/days for measures
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: How we can create an Instant object?
-_BACK: Instant.now() or Instant.ofEpochSecond(epochSeconds) or zonedDateTime.toInstant()
+F: How we can create an Instant object?
+B: Instant.now() or Instant.ofEpochSecond(epochSeconds) or zonedDateTime.toInstant()
        Without a time zone, Java doesn’t know what moment in time to use for the Instant.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: How enable assertions?
-_BACK: Java uses the flags –ea or –enableassertions to turn on assertions. 
+F: How enable assertions?
+B: Java uses the flags –ea or –enableassertions to turn on assertions. 
        –da or –disableassertions turns off assertions. The colon indicates for a specific class.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: What is an assertion?
-_BACK: is a boolean expression followed by an optional colon and message. The boolean expression is allowed to be in parenthesis, but this is not required. 
+F: What is an assertion?
+B: is a boolean expression followed by an optional colon and message. The boolean expression is allowed to be in parenthesis, but this is not required. 
        They should not have side effects.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: How is the variable in a multi-catch?
-_BACK: Since a multi-catch is used, the variable in the catch block is effectively final and cannot be reassigned.
+F: How is the variable in a multi-catch?
+B: Since a multi-catch is used, the variable in the catch block is effectively final and cannot be reassigned.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: A multi-catch can catch both a superclass and subclass?
-_BACK: No.
+F: A multi-catch can catch both a superclass and subclass?
+B: No.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: What is the diference between Low-level streams  and High-level streams ?
-_BACK: Low-level streams provide access directly to underlying bytes. High-level streams build upon low-level streams for additional capabilities.
+F: What is the diference between Low-level streams  and High-level streams ?
+B: Low-level streams provide access directly to underlying bytes. High-level streams build upon low-level streams for additional capabilities.
        The InputStream and OutputStream are abstract classes that use low-level I/O streams.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: What is a FileInputStream?
-_BACK: is a low-level stream that interacts directly with a file resource, not a stream resource.
+F: What is a FileInputStream?
+B: is a low-level stream that interacts directly with a file resource, not a stream resource.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: Which are low-level stream classes? 
-_BACK: All low-level stream classes inherit from either the InputStream or OutputStream abstract classes. 
+F: Which are low-level stream classes? 
+B: All low-level stream classes inherit from either the InputStream or OutputStream abstract classes. 
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: What are ByteArrayInputStream and ByteArrayOutputStream?
-_BACK: Are low-level stream classes that read and write arrays of bytes with buffering.
+F: What are ByteArrayInputStream and ByteArrayOutputStream?
+B: Are low-level stream classes that read and write arrays of bytes with buffering.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: What are FileInputStream and FileOutputStream?
-_BACK: Are low-level stream classes. The FileInputStream receives data from a file in byte form. The FileOutputStream outputs the data to a file.
-       ObjectInputStream and ObjectOutputStream
+F: What are FileInputStream and FileOutputStream?
+B: Are low-level stream classes. The FileInputStream receives data from a file in byte form. The FileOutputStream outputs the data to a file.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: What are ObjectInputStream and ObjectOutputStream?
-_BACK: Are low-level stream classes.The ObjectInputStream deserializes primitive data and objects that have been previously serialized using an 
+F: What are ObjectInputStream and ObjectOutputStream?
+B: Are low-level stream classes.The ObjectInputStream deserializes primitive data and objects that have been previously serialized using an 
        ObjectOutputStream object.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: What are PipedInputStream and PipedOutputStream?
-_BACK: Are low-level stream classes. The PipedInputStream and PipedOutputStream classes work with thread communication. They enable you to create 
+F: What are PipedInputStream and PipedOutputStream?
+B: Are low-level stream classes. The PipedInputStream and PipedOutputStream classes work with thread communication. They enable you to create 
        and connect two sides of a stream.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: What is SequenceInputStream?
-_BACK: Are low-level stream class. The SequenceInputStream class enables you to concatenate other input streams and to read from each of them, in turn.
+F: What is SequenceInputStream?
+B: Are low-level stream class. The SequenceInputStream class enables you to concatenate other input streams and to read from each of them, in turn.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: Which is the result of the bufferedReader.readLine()?
-_BACK: returns a String and reads a line of input from the console. readPassword() returns a char[].
+F: Which is the result of the bufferedReader.readLine()?
+B: returns a String and reads a line of input from the console. readPassword() returns a char[].
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: How many stream has the System class?
-_BACK: The System class has three streams: in is for input, err is for error, and out is for output.
+F: How many stream has the System class?
+B: The System class has three streams: in is for input, err is for error, and out is for output.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: Serialization of an object stores the static class data?
-_BACK: No, stores only the instance variable data.
+F: Serialization of an object stores the static class data?
+B: No, stores only the instance variable data.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: What do ObjectOutputStream and ObjectInputStream?
-_BACK: perform serialization and deserialization on a low-level stream, respectively.
+F: What do ObjectOutputStream and ObjectInputStream?
+B: perform serialization and deserialization on a low-level stream, respectively.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: What do PrintStream and PrintWriter?
-_BACK: format text for a low-level OutputStream and Writer.
+F: What do PrintStream and PrintWriter?
+B: format text for a low-level OutputStream and Writer.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: FileWriter and FileInputStream are low-level streams?
-_BACK: yes, they operate on a file directly.
+F: FileWriter and FileInputStream are low-level streams?
+B: yes, they operate on a file directly.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: What is OutputStream?
-_BACK: is an abstract parent class and is neither high-level nor low-level.
+F: What is OutputStream?
+B: is an abstract parent class and is neither high-level nor low-level.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: How many output methods have Console?
-_BACK: Console defines two output methods, format() and printf(), that are identical in function.
+F: How many output methods have Console?
+B: Console defines two output methods, format() and printf(), that are identical in function.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: What means a transient variable?
-_BACK: that their values will not be saved upon serialization.
+F: What means a transient variable?
+B: that their values will not be saved upon serialization.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: How we can create a directory?
-_BACK: Files.createDirectory(Path) method to create a directory.
+F: How we can create a directory?
+B: Files.createDirectory(Path) method to create a directory.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: How we can create many directories?
-_BACK: like mkdirs() creates the target directory along with any nonexistent parent directories leading up to the target directory in the path.
+F: How we can create many directories?
+B: like mkdirs() creates the target directory along with any nonexistent parent directories leading up to the target directory in the path.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: When DirectoryNotEmptyException is thrown?
-_BACK: Moving a non-empty directory across a drive will throw an NIO.2 DirectoryNotEmptyException. --> Files.move(Paths.get("c:\\zoo"),Paths.get("c:\\zoo-new"));
+F: When DirectoryNotEmptyException is thrown?
+B: Moving a non-empty directory across a drive will throw an NIO.2 DirectoryNotEmptyException. --> Files.move(Paths.get("c:\\zoo"),Paths.get("c:\\zoo-new"));
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: How works delete() and deleteIfExists() for symbol link?
-_BACK: If the target of the path is a symbol link, then the symbolic link will be deleted, not the target of the link.
+F: How works delete() and deleteIfExists() for symbol link?
+B: If the target of the path is a symbol link, then the symbolic link will be deleted, not the target of the link.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: What returns isReadable() and isExecutable() methods when the file not exist?.
-_BACK: Like the isDirectory(), isRegularFile(), and isSymbolicLink() methods do not throw exceptions if the file does not exist but instead return false.
+F: What returns isReadable() and isExecutable() methods when the file not exist?.
+B: Like the isDirectory(), isRegularFile(), and isSymbolicLink() methods do not throw exceptions if the file does not exist but instead return false.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: What is FileTime class?
-_BACK: is a simple container class that stores the date/time information about when a file was accessed, modified, or created. For convenience, it has a 
+F: What is FileTime class?
+B: is a simple container class that stores the date/time information about when a file was accessed, modified, or created. For convenience, it has a 
        toMillis() method that returns the epoch time.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: What Files.getLastModifiedTime(Path) returns?
-_BACK: returns a FileTime object to accomplish this.
+F: What Files.getLastModifiedTime(Path) returns?
+B: returns a FileTime object to accomplish this.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: How convert from the epoch time to a FileTime object?
-_BACK: The FileTime class also has a static fromMillis() method this.
+F: How convert from the epoch time to a FileTime object?
+B: The FileTime class also has a static fromMillis() method this.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: How we can use BasicFileAttributeView?
-_BACK: is used to modify a file’s set of date/time values.
+F: How we can use BasicFileAttributeView?
+B: is used to modify a file’s set of date/time values.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: Where is available the setTimes() method?
-_BACK: only on BasicFileAttributeView, not the read only BasicFileAttributes class.
+F: Where is available the setTimes() method?
+B: only on BasicFileAttributeView, not the read only BasicFileAttributes class.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: What returns resolve() with an absolute path as a parameter?
-_BACK: returns the absolute path. resolve() method does not normalize any path symbols.
+F: What returns resolve() with an absolute path as a parameter?
+B: returns the absolute path. resolve() method does not normalize any path symbols.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: What is the return of Files.lines() and Files.readAllLines()?
-_BACK: The first one returns a Stream<Path>. The second one, returns a List<String>
+F: What is the return of Files.lines() and Files.readAllLines()?
+B: The first one returns a Stream<Path>. The second one, returns a List<String>
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: Which is the diference between Files.lines() and Files.readAllLines()?
-_BACK: Files.lines() reads the file in a lazy manner, while Files.readAllLines() reads the entire file into memory all at once; therefore Files.lines() 
+F: Which is the diference between Files.lines() and Files.readAllLines()?
+B: Files.lines() reads the file in a lazy manner, while Files.readAllLines() reads the entire file into memory all at once; therefore Files.lines() 
        works better on large files with limited memory available
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: What it means NOFOLLOW_LINKS option?
-_BACK: that if the source is a symbolic link, the link itself and not the target will be copied at runtime.
+F: What it means NOFOLLOW_LINKS option?
+B: that if the source is a symbolic link, the link itself and not the target will be copied at runtime.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: What it means ATOMIC_MOVE option?
-_BACK: that any process monitoring the file system will not see an incomplete file during the move.
+F: What it means ATOMIC_MOVE option?
+B: that any process monitoring the file system will not see an incomplete file during the move.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: When isSameFile() returns true?
-_BACK: only if the files pointed to in the file system are the same, without regard to the file contents.
+F: When isSameFile() returns true?
+B: only if the files pointed to in the file system are the same, without regard to the file contents.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: What is the result of the java.io.File.listFiles() method?
-_BACK: retrieves the members of the current directory without traversing any subdirectories.
+F: What is the result of the java.io.File.listFiles() method?
+B: retrieves the members of the current directory without traversing any subdirectories.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: How Files.walk() and Files.find() work?
-_BACK: recursively traverse a directory tree rather than list the contents of the current directory.
+F: How Files.walk() and Files.find() work?
+B: recursively traverse a directory tree rather than list the contents of the current directory.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: What JDBC means?
-_BACK: Java Database Connectivity: Accesses data as rows and columns.
+F: What JDBC means?
+B: Java Database Connectivity: Accesses data as rows and columns.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: Which are de 4 most important interfaces in JDBC?
-_BACK: Driver,Connection,Statement,ResultSet.
+F: Which are de 4 most important interfaces in JDBC?
+B: Driver,Connection,Statement,ResultSet.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: What is the use of Driver Interface?
-_BACK: Knows how to get a connection to the database
+F: What is the use of Driver Interface?
+B: Knows how to get a connection to the database
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: What is the use of Connection Interface?
-_BACK: Knows how to communicate with the database
+F: What is the use of Connection Interface?
+B: Knows how to communicate with the database
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: What is the use of Statement Interface?
-_BACK: Knows how to run the SQL
+F: What is the use of Statement Interface?
+B: Knows how to run the SQL
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: What is the use of ResultSet Interface?
-_BACK: Knows what was returned by a SELECT query
+F: What is the use of ResultSet Interface?
+B: Knows what was returned by a SELECT query
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: How we can get a Connection?
-_BACK: There are two main ways to get a Connection: DriverManager or DataSource.
+F: How we can get a Connection?
+B: There are two main ways to get a Connection: DriverManager or DataSource.
        Es better use DataSource then DriverManager, but the last one is in the exam objectives.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: Which is the defauld mode of ResultSet?
-_BACK: By default, a ResultSet is in TYPE_FORWARD_ONLY mode and is in CONCUR_READ_ONLY mode.
+F: Which is the defauld mode of ResultSet?
+B: By default, a ResultSet is in TYPE_FORWARD_ONLY mode and is in CONCUR_READ_ONLY mode.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: Which statement can be executed with executeUpdate() method?
-_BACK: DELETE, INSERT, or UPDATE.
+F: Which statement can be executed with executeUpdate() method?
+B: DELETE, INSERT, or UPDATE.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: What can run execute() method?
-_BACK: can run query or an update. It returns a boolean so that we know whether there is a ResultSet. true-> ran query. false-> ran update
+F: What can run execute() method?
+B: can run query or an update. It returns a boolean so that we know whether there is a ResultSet. true-> ran query. false-> ran update
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: Which method can we use for a SELECT (query)?
-_BACK: For a SELECT SQL statement, use executeQuery() or execute() . For other SQL statements, use executeUpdate() or execute().
+F: Which method can we use for a SELECT (query)?
+B: For a SELECT SQL statement, use executeQuery() or execute() . For other SQL statements, use executeUpdate() or execute().
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: How is the index in a ResultSet?
-_BACK: The rows in a ResultSet are numbered start-ing with 1.
+F: How is the index in a ResultSet?
+B: The rows in a ResultSet are numbered start-ing with 1.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: What absolute(4) does? 
-_BACK: Calling absolute(4) moves the cursor to the fourth row. Calling absolute(0) moves the cursor to a location immediately 
+F: What absolute(4) does? 
+B: Calling absolute(4) moves the cursor to the fourth row. Calling absolute(0) moves the cursor to a location immediately 
        before the result. Calling absolute(-1) moves the cursor to the last row.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: What happen if we close a Connection?
-_BACK: Closing a Connection also closes the Statement and ResultSet.
+F: What happen if we close a Connection?
+B: Closing a Connection also closes the Statement and ResultSet.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: What happen if we close a Statement?
-_BACK: Closing a Statement also closes the ResultSet.
+F: What happen if we close a Statement?
+B: Closing a Statement also closes the ResultSet.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: Which is the correct order for closing JDBC interface objects?
-_BACK: The ResultSet is closed first, followed by the Statement, and then the Connection.
+F: Which is the correct order for closing JDBC interface objects?
+B: The ResultSet is closed first, followed by the Statement, and then the Connection.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: In JDBC excptions, what returns getMessage() method?
-_BACK: The getMessage() method returns a human-readable message as to what went wrong.
+F: In JDBC excptions, what returns getMessage() method?
+B: The getMessage() method returns a human-readable message as to what went wrong.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: In JDBC excptions, what returns getSQLState() method?
-_BACK: The getSQLState() method returns a code as to what went wrong. 
+F: In JDBC excptions, what returns getSQLState() method?
+B: The getSQLState() method returns a code as to what went wrong. 
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: In JDBC excptions, what is getErrorCode() method?
-_BACK: The getErrorCode() is a database-specific code.
+F: In JDBC excptions, what is getErrorCode() method?
+B: The getErrorCode() is a database-specific code.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: What is CONCUR_READ_ONLY?
-_BACK: Is a mode for Resulset concurrency when creating a Statement. Means that you can read the ResultSet but not write to it. --> is the default.
+F: What is CONCUR_READ_ONLY?
+B: Is a mode for Resulset concurrency when creating a Statement. Means that you can read the ResultSet but not write to it. --> is the default.
 -----------------------------------------------------------------------------------------------------------------------------------
-FRONT: What is  CONCUR_UPDATABLE?
-_BACK: s a mode for Resulset concurrency when creating a Statement. Means that you can both read and write to it.
+F: What is  CONCUR_UPDATABLE?
+B: s a mode for Resulset concurrency when creating a Statement. Means that you can both read and write to it.
 
 
