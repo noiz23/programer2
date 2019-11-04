@@ -13,7 +13,14 @@ Java Interfaces
     - Create and use interfaces with private methods:
         --------------------------------------------------------------------------------------------------------------------------------------
         FRONT:An interface can include a private method?
-        _BACK:Yes, beginning with JDK 9.
+        _BACK:Yes, an interface can contain:
+            constant variables (since Java 1.0)
+            abstract methods (since Java 1.0)
+            nested types (since Java 2.0)
+            default methods (since Java 8.0)
+            static methods (since Java 8.0)
+            private methods (since Java 9.0)
+            private static methods (since Java 9.0)
         --------------------------------------------------------------------------------------------------------------------------------------
         FRONT:Where a private method in an interface can be used?
         _BACK:Can be called only by a default method or another private method defined by the same interface.
