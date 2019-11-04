@@ -7,13 +7,13 @@ Java Fundamentals
                     
 Java Interfaces
     - Create and use interfaces with default methods:
-        FRONT:Name a diference between class and interface.
-        _BACK:The defining difference between an interface and a class is that a class can maintain state information, but an interface cannot.
+        F::Name a diference between class and interface.
+        B:The defining difference between an interface and a class is that a class can maintain state information, but an interface cannot.
         
     - Create and use interfaces with private methods:
         --------------------------------------------------------------------------------------------------------------------------------------
-        FRONT:An interface can include a private method?
-        _BACK:Yes, an interface can contain:
+        F::An interface can include a private method?
+        B:Yes, an interface can contain:
             constant variables (since Java 1.0)
             abstract methods (since Java 1.0)
             nested types (since Java 2.0)
@@ -22,8 +22,8 @@ Java Interfaces
             private methods (since Java 9.0)
             private static methods (since Java 9.0)
         --------------------------------------------------------------------------------------------------------------------------------------
-        FRONT:Where a private method in an interface can be used?
-        _BACK:Can be called only by a default method or another private method defined by the same interface.
+        F::Where a private method in an interface can be used?
+        B:Can be called only by a default method or another private method defined by the same interface.
         --------------------------------------------------------------------------------------------------------------------------------------
 
 Functional Interface and Lambda Expressions
@@ -73,27 +73,27 @@ Concurrency
           This method returns a list of tasks which are waiting to be processed.
         
     - Use java.util.concurrent collections and classes including CyclicBarrier and CopyOnWriteArrayList.
-        FRONT:What is CyclicBarrier?
-        _BACK:Is a synchronizer that allows a set of threads to wait for each other to reach a common execution point, also called a barrier. It's inside
+        F::What is CyclicBarrier?
+        B:Is a synchronizer that allows a set of threads to wait for each other to reach a common execution point, also called a barrier. It's inside
               java.util.concurrent package.
         --------------------------------------------------------------------------------------------------------------------------------------
-        FRONT:Which constructors CyclicBarrier have?
-        _BACK:CyclicBarrier(int numThreads) and
+        F::Which constructors CyclicBarrier have?
+        B:CyclicBarrier(int numThreads) and
               CyclicBarrier(int numThreads, Runnable action)
         --------------------------------------------------------------------------------------------------------------------------------------
-        FRONT:Whats CyclicBarrier.await() method does? 
-        _BACK:pause execution of the thread until all of the other threads also call await( ).Once the specified number of threads has reached the 
+        F::Whats CyclicBarrier.await() method does? 
+        B:pause execution of the thread until all of the other threads also call await( ).Once the specified number of threads has reached the 
               barrier, await( ) will return and execution will resume. Also, if you have specified an action, then that thread is executed.
         --------------------------------------------------------------------------------------------------------------------------------------
-        FRONT:Which are the CyclicBarrier.await() forms?
-        _BACK:int await( ) throws InterruptedException, BrokenBarrierException AND
+        F::Which are the CyclicBarrier.await() forms?
+        B:int await( ) throws InterruptedException, BrokenBarrierException AND
               int await(long wait, TimeUnit tu) throws InterruptedException, BrokenBarrierException, TimeoutException
         --------------------------------------------------------------------------------------------------------------------------------------
-        FRONT:When use CopyOnWriteArrayList API?
-        _BACK:When we want to iterate over a list in a thread-safe way without an explicit synchronization.
+        F::When use CopyOnWriteArrayList API?
+        B:When we want to iterate over a list in a thread-safe way without an explicit synchronization.
         --------------------------------------------------------------------------------------------------------------------------------------
-        FRONT:In CopyOnWriteArrayList when UnsupportedOperationException is present?
-        _BACK:When executes the remove() operation on the returned Iterator.
+        F::In CopyOnWriteArrayList when UnsupportedOperationException is present?
+        B:When executes the remove() operation on the returned Iterator.
         --------------------------------------------------------------------------------------------------------------------------------------
     - Write thread-safe code
     - Identify threading problems such as deadlocks and livelocks    
