@@ -543,9 +543,10 @@ B: Knows how to run the SQL
 F: What is the use of ResultSet Interface?
 B: Knows what was returned by a SELECT query
 -----------------------------------------------------------------------------------------------------------------------------------
+*
 F: How we can get a Connection?
 B: There are two main ways to get a Connection: DriverManager or DataSource.
-       Es better use DataSource then DriverManager, but the last one is in the exam objectives.
+       It better use DataSource then DriverManager, but the last one is in the exam objectives.
 -----------------------------------------------------------------------------------------------------------------------------------
 F: Which is the defauld mode of ResultSet?
 B: By default, a ResultSet is in TYPE_FORWARD_ONLY mode and is in CONCUR_READ_ONLY mode.
@@ -588,6 +589,4 @@ F: What is CONCUR_READ_ONLY?
 B: Is a mode for Resulset concurrency when creating a Statement. Means that you can read the ResultSet but not write to it. --> is the default.
 -----------------------------------------------------------------------------------------------------------------------------------
 F: What is  CONCUR_UPDATABLE?
-B: s a mode for Resulset concurrency when creating a Statement. Means that you can both read and write to it.
-
-
+B: Is a mode for Resulset concurrency when creating a Statement. Means that you can both read and write to it.

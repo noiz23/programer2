@@ -8,7 +8,7 @@ Java Fundamentals
 Java Interfaces
     - Create and use interfaces with default methods:
         F:Name a diference between class and interface.
-        B:The defining difference between an interface and a class is that a class can maintain state information, but an interface cannot.
+        B:A class can maintain state information, but an interface cannot.
         
     - Create and use interfaces with private methods:
         --------------------------------------------------------------------------------------------------------------------------------------
@@ -181,6 +181,11 @@ Secure Coding in Java SE Application
     - Prevent external attack of the code by limiting Accessibility and Extensibility, properly handling input validation, and mutablity
     - Secure constructing sensitive objects
     - Secure Serialization and Deserialization
+
+Java Stream API
+    - Describe the Stream interface and pipelines
+    - Use lambda expressions and method references    
+    
     
 Parallel Streams
     - Develop the code that uses parallel streams
