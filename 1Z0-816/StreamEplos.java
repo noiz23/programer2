@@ -4,8 +4,14 @@ import java.util.*;
 public class StreamEplos{
     public static void main(String... sdfsd){
         // Creating a string stream 
-        Stream<String> s = Stream.of("Geeks", "for","Geeks", "GeeksClasses"); 
+        Stream<String> s = Stream.empty();//Stream.of("Geeks", "for","Geeks", "GeeksClasses"); 
   
+        String firstStr = s.parallel().findFirst().orElseGet(() -> "data");
+                            //.get(); 
+                            
+        System.out.println(firstStr); 
+        
+        /*
         // Using toCollection() method 
         // to create a collection 
         Collection<String> names = s 
@@ -14,6 +20,7 @@ public class StreamEplos{
   
         // Printing the elements 
         System.out.println(names); 
+        */
     
     }
 
