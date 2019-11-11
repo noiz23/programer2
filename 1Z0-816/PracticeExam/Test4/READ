@@ -1,0 +1,12 @@
+https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html
+https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileWriter.html
+https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorService.html#submit(java.lang.Runnable,T)
+https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html
+https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#parse(java.lang.String)
+https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Externalizable.html
+http://openjdk.java.net/projects/jigsaw/spec/sotms/#bottom-up-migration
+https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#reduce(java.util.function.BinaryOperator)
+http://openjdk.java.net/projects/jigsaw/spec/sotms/#services
+https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#relativize(java.nio.file.Path)
+https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#sorted()
+https://www.oracle.com/technetwork/java/seccodeguide-139067.html#3
