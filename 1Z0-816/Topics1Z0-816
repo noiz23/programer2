@@ -235,3 +235,6 @@ Lambda Operations on Streams
     
   *  The static method List.of (Set.of) returns an unmodificable set, meaning any change to a set created  this way lean to
     UnsupportedOperationException.
+    
+    Collections.unmodificableset method returns  a set  that's unmodificable in the sense we cannot add, remove or set its elements to other 
+    objects. But we can do internal changes to the elements  themselves.
