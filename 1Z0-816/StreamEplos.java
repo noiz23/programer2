@@ -6,12 +6,15 @@ public class StreamEplos{
         // Creating a string stream 
         Stream<String> s = Stream.of("Geeks", "for","Geeks", "GeeksClasses"); 
   
-        // Using toCollection() method 
-        // to create a collection 
+        /*// Using toCollection() method to create a collection 
         Collection<String> names = s 
                     .collect(Collectors 
                                 .toCollection(TreeSet::new)); 
-  
+  */
+      //  boolean names = s.noneMatch(st -> st.startsWith("x"));
+      
+      String names = s.findFirst().orElseOf("paila");
+      
         // Printing the elements 
         System.out.println(names); 
     
