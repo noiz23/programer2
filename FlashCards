@@ -590,3 +590,8 @@ B: Is a mode for Resulset concurrency when creating a Statement. Means that you 
 -----------------------------------------------------------------------------------------------------------------------------------
 F: What is  CONCUR_UPDATABLE?
 B: Is a mode for Resulset concurrency when creating a Statement. Means that you can both read and write to it.
+
+
+Comparable in Java is used to sort the objects with natural ordering while Comparator is used to sort attributes of different objects.
+
+Whenever any final field is evaluated as a constant expression, it is serialized by the JVM ignoring the presence of transient keyword.
