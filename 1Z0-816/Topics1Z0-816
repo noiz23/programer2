@@ -238,3 +238,7 @@ Lambda Operations on Streams
     
     Collections.unmodificableset method returns  a set  that's unmodificable in the sense we cannot add, remove or set its elements to other 
     objects. But we can do internal changes to the elements  themselves.
+    
+    Comparable in Java is used to sort the objects with natural ordering while Comparator is used to sort attributes of different objects.
+
+    Whenever any final field is evaluated as a constant expression, it is serialized by the JVM ignoring the presence of transient keyword.

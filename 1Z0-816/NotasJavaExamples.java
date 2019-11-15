@@ -1,6 +1,6 @@
 public class NotasJavaExamples extends SuperClass{
     public static void main(String... args){
-        
+        System.out.print("Val: " + new SuperClass().getVal());
     }
     
      public void method1(){
@@ -14,8 +14,12 @@ public class NotasJavaExamples extends SuperClass{
 }
 
 class SuperClass{
-    public void method1(){
+
+    private static int val=0;
+    
+    public int  getVal(){
         System.out.println("SuperClass.method1");
+        return val;
     }
     
     public static void method2(){
