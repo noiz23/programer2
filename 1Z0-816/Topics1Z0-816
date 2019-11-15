@@ -227,3 +227,18 @@ Lambda Operations on Streams
     - Sort a collection using lambda expressions
     - Use Collectors with streams, including the groupingBy and partitioningBy operation    
 
+    ****************************************************************************************************************************************
+    ****************************************************************************************************************************************
+    Buttom-up migration: convert a regular dependency JAR to a modular one and place it on the module path. 
+    
+    Don't use assertions for argument checking in public methods.
+    
+  *  The static method List.of (Set.of) returns an unmodificable set, meaning any change to a set created  this way lean to
+    UnsupportedOperationException.
+    
+    Collections.unmodificableset method returns  a set  that's unmodificable in the sense we cannot add, remove or set its elements to other 
+    objects. But we can do internal changes to the elements  themselves.
+    
+    Comparable in Java is used to sort the objects with natural ordering while Comparator is used to sort attributes of different objects.
+
+    Whenever any final field is evaluated as a constant expression, it is serialized by the JVM ignoring the presence of transient keyword.

@@ -1,0 +1,44 @@
+- https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html
+- https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileWriter.html
+- https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorService.html#submit(java.lang.Runnable,T)
+- https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html
+- https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#parse(java.lang.String)
+- https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Externalizable.html
+http://openjdk.java.net/projects/jigsaw/spec/sotms/#bottom-up-migration
+https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#reduce(java.util.function.BinaryOperator)
+http://openjdk.java.net/projects/jigsaw/spec/sotms/#services
+https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#relativize(java.nio.file.Path)
+https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#sorted()
+https://www.oracle.com/technetwork/java/seccodeguide-139067.html#3
+https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#iterator()
+https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html
+https://docs.oracle.com/javase/specs/jls/se11/html/jls-15.html#jls-15.27
+https://www.oracle.com/technetwork/java/seccodeguide-139067.html#6
+https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#copy(java.nio.file.Path,java.io.OutputStream)
+https://docs.oracle.com/javase/specs/jls/se11/html/jls-8.html#jls-8.9
+https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#computeIfAbsent(K,java.util.function.Function)
+https://docs.oracle.com/javase/tutorial/essential/concurrency/atomic.html
+https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#list(java.nio.file.Path)
+https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#sort(java.util.List)
+https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/PreparedStatement.html#execute()
+https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#reduce(T,java.util.function.BinaryOperator)
+https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Serializable.html
+https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#reduce(U,java.util.function.BiFunction,java.util.function.BinaryOperator)
+https://docs.oracle.com/javase/tutorial/java/javaOO/localclasses.html
+https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeMap.html#%3Cinit%3E(java.util.Map)
+https://docs.oracle.com/javase/tutorial/java/generics/types.html
+https://docs.oracle.com/javase/tutorial/java/generics/methods.html
+https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#collect(java.util.function.Supplier,java.util.function.BiConsumer,java.util.function.BiConsumer)
+https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html
+https://docs.oracle.com/javase/tutorial/java/javaOO/nested.html
+
+ISO_LOCAL_DATE                                      '2011-11-03'
+ISO_LOCAL_TIME          Time WhitOut offset         '10-15-30'
+ISO_LOCAL_DATE_TIME     ISO Local Date and Time     '2011-12-03T10:15:30'
+
+public class Q {
+    public static void main(String... args){
+    
+    }
+    
+}
