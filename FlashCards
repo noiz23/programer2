@@ -591,7 +591,26 @@ B: Is a mode for Resulset concurrency when creating a Statement. Means that you 
 F: What is  CONCUR_UPDATABLE?
 B: Is a mode for Resulset concurrency when creating a Statement. Means that you can both read and write to it.
 
+-----------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------
+F:When use Comparable or Comparator?
+B:Comparable in Java is used to sort the objects with natural ordering while Comparator is used to sort attributes of different objects.
 
-Comparable in Java is used to sort the objects with natural ordering while Comparator is used to sort attributes of different objects.
+F:What happen whit final field in serialization?
+B:Whenever any final field is evaluated as a constant expression, it is serialized by the JVM ignoring the presence of transient keyword.
 
-Whenever any final field is evaluated as a constant expression, it is serialized by the JVM ignoring the presence of transient keyword.
+F:What Externalizable interface does?
+B:Serves the purpose of custom Serialization, where we can decide what to store in stream.
+
+F:Two keys of Externalizable interface.
+B:-Externalizable interface contains two methods: void writeExternal(ObjectOutput out) and void readExternal(ObjectInput in).
+  -Externalizable requires public no-arg constructor.
+  
+F:Where Path.relativize throws Exception?
+B:When only one Path is absolute. Both must be absolute or both relative. If this path and the given path are equal then an empty path is returned.
+
+F:In Path1.resolve(P2), what happens if P2 is absolute?
+B:Returns Path1.
+
+F:
+B:

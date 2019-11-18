@@ -30,16 +30,16 @@ public class NioExamples{
         
         Path p = path.normalize();
         System.out.println("- p: " + p);
-        
-        
-        Path p1 = Paths.get("rdario");
-        Path p2 = Paths.get("etc");
-        Path p1_p2 = p1.relativize(p2);
-        System.out.println(p1_p2);
-        
-        Path p2_p1 = p2.relativize(p1);
-        System.out.println(p2_p1);
         */
+        
+        Path p1 = Paths.get("/etc");
+        Path p2 = Paths.get("data/8");
+        //Path p1_p2 = p1.relativize(p2);
+        //System.out.println("relativize: " + p1_p2);
+        
+        Path p2_p1 = p1.resolve(p2);
+        System.out.println("resolve: " + p2_p1);
+        
 
     }
 
