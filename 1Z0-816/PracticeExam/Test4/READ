@@ -30,10 +30,10 @@ http://openjdk.java.net/projects/jigsaw/spec/sotms/#services
 - https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeMap.html#%3Cinit%3E(java.util.Map)
 - https://docs.oracle.com/javase/tutorial/java/generics/types.html
 - https://docs.oracle.com/javase/tutorial/java/generics/methods.html
-https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#collect(java.util.function.Supplier,java.util.function.BiConsumer,java.util.function.BiConsumer)
-https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html
-https://docs.oracle.com/javase/tutorial/java/javaOO/nested.html
-https://www.adictosaltrabajo.com/2017/10/30/modularidad-en-java-9-12/
+- https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#collect(java.util.function.Supplier,java.util.function.BiConsumer,java.util.function.BiConsumer)
+- https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html
+- https://docs.oracle.com/javase/tutorial/java/javaOO/nested.html
+- https://www.adictosaltrabajo.com/2017/10/30/modularidad-en-java-9-12/
 
 ISO_LOCAL_DATE                                      '2011-11-03'
 ISO_LOCAL_TIME          Time WhitOut offset         '10-15-30'

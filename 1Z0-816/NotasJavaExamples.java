@@ -1,5 +1,12 @@
+import java.util.*;
+
 public class NotasJavaExamples extends SuperClass{
     public static void main(String... args){
+    
+    List<? extends Number> lt = new ArrayList<Integer>();
+    
+    List<? super Integer> lt1 = new ArrayList<Number>();
+    
         System.out.print("Val: " + new SuperClass().getVal());
     }
     

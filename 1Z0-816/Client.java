@@ -1,4 +1,14 @@
 public class Client {
+
+    private int value;
+    
+    public void setValue(int v){
+        this.value = v;
+    }
+    
+    public int getValue(){
+        return value;
+    }
     static void doCalc(byte... a) {
     System.out.print("byte...");
     }

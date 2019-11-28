@@ -612,5 +612,8 @@ B:When only one Path is absolute. Both must be absolute or both relative. If thi
 F:In Path1.resolve(P2), what happens if P2 is absolute?
 B:Returns Path1.
 
-F:
-B:
+F:Which are the five reduction methods defined in the java.util.stream.Stream interface?
+B:collect,count,max,min and reduce.
+
+F:Where are defined the methods sum and average?
+B:Are defined in interfaces IntStream, LongStream, DoubleStream.
