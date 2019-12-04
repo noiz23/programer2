@@ -617,3 +617,7 @@ B:collect,count,max,min and reduce.
 
 F:Where are defined the methods sum and average?
 B:Are defined in interfaces IntStream, LongStream, DoubleStream.
+
+F:Which class of variables can a local class access?
+B:Local variables and parameters of the enclosing block that are final or  effectively final.
+

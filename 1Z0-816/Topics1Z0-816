@@ -242,3 +242,8 @@ Lambda Operations on Streams
     Comparable in Java is used to sort the objects with natural ordering while Comparator is used to sort attributes of different objects.
 
     Whenever any final field is evaluated as a constant expression, it is serialized by the JVM ignoring the presence of transient keyword.
+    
+    Synchronizing constructors doesn't make sense, because only the thread that creates an object should have access to it while it is being constructed.
+    
+    Using synchronized keyword with a variable is illegal and will result in compilation error.
+

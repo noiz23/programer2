@@ -4,6 +4,9 @@ import java.util.*;
 class IteratorDemo1 { 
     public static void main(String[] args) 
     { 
+        List<Integer> l = List.of(1,2,3);
+        l.add(4);
+    
         ArrayList<Integer> list = new ArrayList<Integer>(); 
   
         list.add(1); 
