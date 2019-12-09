@@ -593,10 +593,11 @@ B: Is a mode for Resulset concurrency when creating a Statement. Means that you 
 
 -----------------------------------------------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------
 F:When use Comparable or Comparator?
 B:Comparable in Java is used to sort the objects with natural ordering while Comparator is used to sort attributes of different objects.
 
-F:What happen whit final field in serialization?
+F:What happen with final field in serialization?
 B:Whenever any final field is evaluated as a constant expression, it is serialized by the JVM ignoring the presence of transient keyword.
 
 F:What Externalizable interface does?
@@ -621,3 +622,26 @@ B:Are defined in interfaces IntStream, LongStream, DoubleStream.
 F:Which class of variables can a local class access?
 B:Local variables and parameters of the enclosing block that are final or  effectively final.
 
+F:What is Buttom-up migration?
+B:Is to convert a regular dependency JAR to a modular one and place it on the module path. 
+
+F:Where don't use assertions?
+B:In argument checking in public methods.
+    
+F:What is the result of static method List.of?
+B:Returns an unmodificable set, meaning any change to a set created  this way lean to UnsupportedOperationException.
+    
+F:What Collections.unmodificableset method does?
+B:Collections.unmodificableset method returns  a set  that's unmodificable in the sense we cannot add, remove or set its elements to other objects. 
+  But we can do   internal changes to the elements  themselves.
+
+F:What transient in final field does?
+B:Whenever any final field is evaluated as a constant expression, it is serialized by the JVM ignoring the presence of transient keyword.
+
+F:Why Synchronizing constructors is incorrect?
+B:Synchronizing constructors doesn't make sense, because only the thread that creates an object should have access to it while it is being constructed.
+
+F:Where use synchronized keyword?
+B:Using synchronized keyword with a variable is illegal and will result in compilation error. 
+  Is correct use in Instance methods, Static methods and Code blocks.
+    
