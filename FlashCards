@@ -38,7 +38,7 @@ B:Yes, and returns false.
 F:Which is the return hashCode()?
 B: public int hashCode() returns a number calculated with all or some of the instance variables used in equals(). 
 -----------------------------------------------------------------------------------------------------------------------------------
-F: Name n caracterictics of Enum types.
+F: Name 3 caracterictics of Enum types.
 B: - can have instance variables
    - The constructors are required to be private or package private (dafault).
    - Are not allowed to have a public or protected constructor.
@@ -99,7 +99,7 @@ F: When the parentheses are optional in a lambda expresion?
 B: Only when there is one parameter and it doesn’t have a type declared.
 -----------------------------------------------------------------------------------------------------------------------------------
 F: When data types for the input parameters of a lambda expression are optional?
-B: When none parameter has it. If one paramter has a data type listed, all input parameters must provide a data type.
+B: When none parameter has it. If one paramater has a data type listed, all input parameters must provide a data type.
 -----------------------------------------------------------------------------------------------------------------------------------
 F:How we can access to a java object?
 B: A Java object may be accessed using:
@@ -159,7 +159,7 @@ F:What is the Immutable Objects pattern?
 B:Is a creational pattern based on the idea of creating objects whose state does not change after they are created and can be easily
      shared across multiple classes.
 -----------------------------------------------------------------------------------------------------------------------------------
-F:Name n features of Immutable Objects pattern.
+F:Name 4 features of Immutable Objects pattern.
 B: - Static methods are not part of the inmutable object pattern.
    - getter methods are not required to be marked synchronized.
    - all instance variables should be private and final to prevent them from being changed by a caller.

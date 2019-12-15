@@ -21,7 +21,7 @@ class Outer{
         System.out.println("--> y: "+ y);
     }
     
-    class Inner{
+    static class Inner{
         int y = 10;
         void display(){
             System.out.println("--> outer_x: "+ outer_x);
