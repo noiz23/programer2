@@ -1,0 +1,8 @@
+
+- a test method must be public void and take no arguments.
+- test-driven development process starts by writing a failing test, writing code to pass the test, and refactoring the
+  code base to improve its design
+
+Pag 15 : 2.1 Readable code is maintainable code
+
+
