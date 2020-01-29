@@ -1,9 +1,6 @@
 3.1.4	THE MANY TYPES OF MODULES
 Pag 162
 
-
-
-
 ----------------------------------
 - The best name for a module is the reverse-domain naming scheme that is already commonly used for packages.
 - The module name must be globally unique and stable.
@@ -11,4 +8,5 @@ Pag 162
 - An exports directive contains a package name.
 - Module descriptor: a module-info.class file in the root directory.
 - Module declaration: is a module-info.java file in the project’s root source folder. -> declaration/source, then descriptor/bytes
-- 
+- Goals of the module system:reliable configuration and strong encapsulation
+
