@@ -7,6 +7,7 @@ Pag 162
 - A requires directive contains a module name.
 - An exports directive contains a package name.
 - Module descriptor: a module-info.class file in the root directory.
-- Module declaration: is a module-info.java file in the project’s root source folder. -> declaration/source, then descriptor/bytes
+- Module declaration: is a module-info.java file in the project’s root source folder.
+	 -> declaration/source, then descriptor/bytes
 - Goals of the module system:reliable configuration and strong encapsulation
 
